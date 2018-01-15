@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <div class="container-fluid login-base">
+        <div class="base">
+            <div class="row">
+                <div class="col-md-6 texto">
+                    <p>Gesti&oacuten </br> de Turnos</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form">
+                        <h4>HISJB</h4>
+                        <form class="form-signin" action="" method="post" name="login">
+                            <div class="form-group">
+                                <label for="usuario">Id de Usuario</label>
+                                <input type="text" class="form-control" placeholder="Usuario" required autofocus name="usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Ingrese contrase&ntilde;a</label>
+                                <input type="password" class="form-control" placeholder="Contrase&ntilde;a" required name="password">      
+                            </div>
+                            <button class="btn btn-success btn-block" type="submit" onclick="login.submit()">Ingresar </button>
+                            <p><i>Los datos de inicio requeridos para el ingreso en el sistema, son proporcionados &uacutenicamente por <strong>personal autorizado del HISJB</strong>.</i></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    <!-- FIN PIE PAGINA -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
