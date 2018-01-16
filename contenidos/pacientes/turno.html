@@ -10,6 +10,37 @@
     <link rel="stylesheet" type="text/css" href="../../css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="../../css/turno.css">
+
+<script>
+
+function mostrarmed(cod){
+
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+xmlhttp=new XMLHttpRequest();
+}
+else
+{// code for IE6, IE5
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.onreadystatechange=function()
+{
+if (xmlhttp.readyState==4 && xmlhttp.status==200)
+{
+document.getElementById("datos").innerHTML=xmlhttp.responseText;
+}else{ 
+document.getElementById("datos").innerHTML='Cargando...';
+}
+}
+xmlhttp.open("POST","../../controlador/selecmed.php",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("cod_banda="+cod);
+
+}
+
+</script>
+
+
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -124,14 +155,11 @@
             <div class="container">
                 <div class="row form-style justify-content-center">
                     <div class="col-xs-12 col-lg-10 col-md-8 ">
-                        <form action="" method="" class="flex-column flex-md-row">
+                        <!--<form action="turno.php" method="POST" class="flex-column flex-md-row">-->
+                        <form  class="flex-column flex-md-row">
                             <div class="form-group">
-                                <label for="nombrePas" >Nombre</label>
+                                <label for="nombrePas" >Nombre Completo</label>
                                 <input class="form-control" type="text" id="nombrePas" placeholder="Nombre paciente">
-                            </div>
-                            <div class="form-group">
-                                <label for="apellidoPas">Apellido</label>
-                                <input class="form-control" type="text" id="apellidoPas" placeholder="Apellido paciente">
                             </div>
                             <div class="form-group">
                                 <label for="identidad">Identificaci&oacuten</label>
@@ -167,29 +195,38 @@
                                 <label for="">Obra Social</label>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="os_si" checked>
+                                        <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
                                         Tengo Obra Social
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="os_no">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
                                         Sin Obra Social
                                     </label>
                                 </div>
-        
-                                <input class="form-control" type="text" placeholder="Nombre Obra Social">
+
+                                   
                             </div>
 
+                             <div id="flo" >
+                                    
+                                    <input class="form-control" type="text" placeholder="Nombre Obra Social">
+
+                             </div>
+
+                             
                             <div class="row form-style justify-content-center">
                                 <div class="form-group">
                                     <div class="col-md-">
+                               
                                         <label for="especialidad">Especialidad</label>
-                                        <select name="" id="especialidad" class="form-control">
-                                                <option value="dni">Cardiolog&iacutea</option>
-                                                <option value="dni">Cirug&iacutea General</option>
-                                                <option value="dni">Cl&iacutenica M&eacutedica</option>
-                                                <option value="dni">Ginecolog&iacutea</option>
+                                        <select name="" id="especialidad" class="form-control" onchange="mostrarmed(this.value)">
+                                                <option value="">Seleccione</option>
+                                                <option value="cardiologia">Cardiolog&iacutea</option>
+                                                <option value="cirugia">Cirug&iacutea General</option>
+                                                <option value="clinica">Cl&iacutenica M&eacutedica</option>
+                                                <option value="ginecologia">Ginecolog&iacutea</option>
                                         </select>
                                     </div>
                                     <div class="col-md-">
@@ -210,6 +247,10 @@
                                                 <option value="dni">Jueves</option>
                                                 <option value="dni">Viernes</option>
                                         </select>
+
+                                <div id="datos"></div>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +266,7 @@
             <div class="container">
                 <div class="row justify-content-center barra-h">
                     <div class="col-lg-3 ">
-                            <img src="img/iconos/isologo-blanco.png" alt="" width="220px">
+                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="220px">
                     </div>
                 </div>
                 <div class="row pie-menu">
@@ -252,8 +293,9 @@
         </div>
     </footer>
     <!-- FIN PIE PAGINA -->
-
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="../../js/func_bas.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/func_bas.js"></script>
 </body>
 </html>
