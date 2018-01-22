@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    background: #7f8c8d;
+    overflow-y: scroll;
+}
+
+.login-base{
+    position: relative;
+    height: 300px;
+
+    background: #3d97d3;
+
+    z-index: -1;
+
+    bottom: -150px;
+    position: fixed;
+}
+
+.login-base:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    transform-origin: top left;
+    transform: skewY(-4deg);
+    z-index: -1;
+}
+
+.base{
+    z-index: 2000;
+}
+
+.titulo{
+    padding-top: 4%;  /*ver responsive*/
+
+}
+
+h1{
+    color: white;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #7f8c8d;
+}
+
+.fondo{
+    background: rgba(255, 255, 255, 0.7);
+
+    width: 100%;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    border-radius: 5px;
+}
+
+img{
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+
+    margin-left: 3%;
+
+    z-index: 5000;
+
+    width: 230px;
+
+    position: fixed;
+}
+
+
+/* *********************** Estilo de tabla ***************************  */
+table{
+   width: 90%;
+   font-family: 'Roboto', sans-serif;
+}
+
+th{
+    border-bottom: 1px solid #7f8c8d;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
