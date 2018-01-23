@@ -23,10 +23,10 @@
                 <div class="col-md-6">
                     <div class="form">
                         <h4>HISJB</h4>
-                        <form class="form-signin" action="" method="post" name="login">
+                        <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?> " method="post" name="login">
                             <div class="form-group">
                                 <label for="usuario">Id de Usuario</label>
-                                <input type="text" class="form-control" placeholder="Usuario" required autofocus name="usuario">
+                                <input type="text" class="form-control" placeholder="Usuario"  required autofocus name="usuario">
                             </div>
                             <div class="form-group">
                                 <label for="password">Ingrese contrase&ntilde;a</label>
@@ -34,6 +34,17 @@
                             </div>
                             <button class="btn btn-success btn-block" type="submit" onclick="login.submit()">Ingresar </button>
                             <p><i>Los datos de inicio requeridos para el ingreso en el sistema, son proporcionados &uacutenicamente por <strong>personal autorizado del HISJB</strong>.</i></p>
+                        
+                            <?php if(!empty($errores)): ?>
+                            <div class="error">
+                            <ul>
+                                <?php echo $errores; ?>
+
+                            </ul>
+
+                            </div>
+                            <?php endif; ?>
+                        
                         </form>
                     </div>
                 </div>
