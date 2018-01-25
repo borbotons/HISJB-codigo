@@ -4,13 +4,24 @@
 
 session_start();
 
+if(isset($_SESSION['usuario'])&&($_SESSION['usuario'] != 'admin'))
+{
+    header('Location:panel_user.php');
+}
+if(isset($_SESSION['usuario'])&&($_SESSION['usuario'] == 'admin'))
+{
+    header('Location:panel_admin.php');
+}
 require 'funciones.php';
 
-comprobar_ses_norm();
+//comprobar_ses_norm();
 
 $errores = '';
 
-if($_SERVER['REQUEST_METHOD']) =='POST'){
+
+
+
+if (($_SERVER['REQUEST_METHOD'] =='POST')&&( $_POST['usuario'] != null)){
 
 
     $usuario = filter_var(limpiar($_POST['usuario']), FILTER_SANITIZE_STRING);
@@ -37,21 +48,41 @@ if($_SERVER['REQUEST_METHOD']) =='POST'){
     $resultado = $statement->fetch();
     if($resultado !== false){
         $_SESSION['usuario'] = $usuario;
-        header('Location: /admin');
+
+                if ($usuario == 'admin') {
+                    header('Location: panel_admin.php');
+                     }
+                     
+                     else
+                     {
+                    header('Location: panel_user.php');
+                     }
+                 
+
+
+
+
+
+
+
 
     } else{
 
         $errores .='<li>La contrasenia y/o usuario son incorrectos</li>';
     }
 
-
     
+    
+
 
 }
 
-require '../../atencion.html';
 
 
+
+
+
+include '../atencion.html';
 
 
 
