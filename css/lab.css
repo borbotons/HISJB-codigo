@@ -1,3 +1,9 @@
+.imagen{
+    background-image: url(../img/baner/paciente.jpg);
+    background-size: 100% 80%;
+    background-attachment: fixed;
+}
+
 .contenido-variable
 {
     background: white;

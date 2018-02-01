@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pacientes - Hospital SJB</title>
+    <title>Laboratorio - Hospital SJB</title>
 
     <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
-    <link rel="stylesheet" href="../../css/turno.css">
+    <link rel="stylesheet" href="../../css/lab.css">
+    <link rel="stylesheet" href="../../css/llegar.css">
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -20,7 +20,7 @@
             <a href="">Emergencias</a>
         </div>
     </div>
-    <div class="container-fluid imagen" style="">
+    <div class="container-fluid imagen" >
 
     </div>
     <div class="container-fluid menu-principal" >
@@ -120,118 +120,39 @@
     
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
-        <div class="container-fluid form-pacientes">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                            <h3 class="display-4">Solicitud de Turno on-line
-                                    <small class="text-muted">Bienvenido</small>
-                                </h3>
-                                <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12 contenido-variable">
+                    <div class="row left right">
+                        <h1> &iquest;C&oacutemo llegar al hospital?</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2085.630391877951!2d-65.79001829033001!3d-28.461525030089!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1517505792408" width="800" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="row justify-content-between listado">
+                        <div class="col-md-6 alert alert-info">
+                                <h5 class="display-4">Colectivos</h5>
+                                <ul>
+                                    <li>105 Hospital GM</li>
+                                    <li>109 Cooperativa San Fernando</li>
+                                    <li>106 </li>
+                               
+                                </ul>
+                        </div>
+                        <div class="col-md-6 alert alert-success">
+                                <h5 class="display-4">Distancias</h5>
+                                <ul>
+                                    <li>1km desde Universidad Nacional de Catamarca</li>
+                                    <li>4km desde Catedral Basilica</li>
+                                    <li>6km desde Terminal de Omnibus </li>
+                               
+                                </ul>
+                        </div> 
                     </div>
                     
                 </div>
-                <div class="row form-style justify-content-center">
-                    <div class="col-xs-12 col-lg-10 col-md-8 ">
-                        <form action="" method="" class="flex-column flex-md-row">
-                            <div class="form-group">
-                                <label for="nombrePas" >Nombre</label>
-                                <input class="form-control" type="text" id="nombrePas" placeholder="Nombre paciente">
-                            </div>
-                            <div class="form-group">
-                                <label for="apellidoPas">Apellido</label>
-                                <input class="form-control" type="text" id="apellidoPas" placeholder="Apellido paciente">
-                            </div>
-                            <div class="form-group">
-                                <label for="identidad">Identificaci&oacuten</label>
-                                <select name="" id="" class="form-control">
-                                        <option value="dni">DNI</option>
-                                        <option value="dni">DNI</option>
-                                        <option value="dni">DNI</option>
-                                </select>
-                                <input class="form-control" type="text" id="identidad" placeholder="Identificacion paciente">
-                            </div>
-                            <div class="form-group">
-                                <label for="nacimiento">Fecha nacimiento</label>
-                                <input class="form-control" type="text" id="nacimiento" placeholder="Nombre paciente">
-                            </div>
-                            <div class="form-group">
-                                <label for="domicilio">Domicilio</label>
-                                <input class="form-control" type="text" id="domicilio" placeholder="Domicilio paciente">
-                            </div>
-                            <div class="form-group">
-                                <label for="particular">Tel&eacutefono partiular</label>
-                                <input class="form-control" type="text" id="particular" placeholder="0383 456654">
-                            </div>
-                            <div class="form-group">
-                                <label for="celular">Tel&eacutefono celular</label>
-                                <input class="form-control" type="text" id="celular" placeholder="0383 154000000">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input class="form-control" type="mail" id="email" placeholder="mail@mail.com">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="">Obra Social</label>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="os_si" checked>
-                                        Tengo Obra Social
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="os_no">
-                                        Sin Obra Social
-                                    </label>
-                                </div>
-        
-                                <input class="form-control" type="text" placeholder="Nombre Obra Social">
-                            </div>
-
-                            <div class="row form-style justify-content-center">
-                                <div class="form-group">
-                                    <div class="col-md-">
-                                        <label for="especialidad">Especialidad</label>
-                                        <select name="" id="especialidad" class="form-control">
-                                                <option value="dni">Cardiolog&iacutea</option>
-                                                <option value="dni">Cirug&iacutea General</option>
-                                                <option value="dni">Cl&iacutenica M&eacutedica</option>
-                                                <option value="dni">Ginecolog&iacutea</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-">
-                                        <label for="especialista">Especialista</label>
-                                        <select name="" id="especialista" class="form-control">
-                                                <option value="dni">Doctor 1</option>
-                                                <option value="dni">Doctor 2</option>
-                                                <option value="dni">Doctor 3</option>
-                                                <option value="dni">doctor 4</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-">
-                                        <label for="diaPref">D&iacutea de preferencia</label>
-                                        <select name="" id="diaPref" class="form-control">
-                                                <option value="dni">Lunes</option>
-                                                <option value="dni">Martes</option>
-                                                <option value="dni">Miercoles</option>
-                                                <option value="dni">Jueves</option>
-                                                <option value="dni">Viernes</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-success btn-block" type="submit" onclick="">Solicitar Turno </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
+    </div>
      <!-- FIN CUERPO PAGINA -->
     <!-- INICIO PIE PAGINA -->
     <footer>
@@ -239,7 +160,7 @@
             <div class="container">
                 <div class="row justify-content-center barra-h">
                     <div class="col-lg-3 ">
-                            <img src="img/iconos/isologo-blanco.png" alt="" width="220px">
+                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="220px">
                     </div>
                 </div>
                 <div class="row pie-menu">
@@ -267,7 +188,7 @@
     </footer>
     <!-- FIN PIE PAGINA -->
 
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
 </body>
 </html>
