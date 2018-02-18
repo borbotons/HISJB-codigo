@@ -135,7 +135,114 @@ z-index: 12;
     z-index: 15;
   }
   
+/*  ----------------------------------------------------------------------------------
+        carrusel   -    estilos y caracteristicas
+-------------------------------------------------------------------------------------*/
+.carousel {
+    background:#007aeb;
+  }
   
+  /*
+  Forces image to be 100% width and not max width of 100%
+  */
+  .carousel-item .img-fluid {
+    width:100%;
+  }
+  
+  /* 
+  anchors are inline so you need ot make them block to go full width
+  */
+  .carousel-item a {
+    display: block;
+    width:100%;
+  }
+  
+  .izquierda{
+      position: absolute;
+
+  }
+
+  .carousel-caption{
+      position: absolute;
+      right: 0 !important;
+      left: 0 !important;
+  }
+
+  .baner-mora h2{
+    background: #a16ac5;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .baner-mora p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+  .baner-rojo h2{
+    background: #ef4247;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .baner-rojo p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+  .baner-verde h2{
+    background: #17b800;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .baner-verde p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+  .baner-azul h2{
+    background: #3a63c2;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .baner-azul p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
   
 /*     ----------------------------------- SECCION ACCESO RAPIDO DE PACIENTES -----------------------------------------     */
 .acceso
@@ -159,12 +266,18 @@ z-index: 12;
 }
 
 .titular {
-    font-size: 36px;
+    font-size: 40px;
     font-family: "Saira ExtraCondensed";
     color: rgb(52, 152, 219);
-    line-height: 36.6px;
+    line-height: 40px;
     text-align: center;
     z-index: 139;
+
+    font-weight: 300;
+  }
+
+  .titular-barra{
+    border-bottom: 5px solid #3d97d3;
   }
 
   .acceso-enlaces a
@@ -226,10 +339,22 @@ z-index: 12;
 /*     ----------------------------------- fin SECCION ACCESO RAPIDO DE PACIENTES -----------------------------------------     */
 
 /*     ----------------------------------- SECCION NOTICIAS -----------------------------------------     */
+.m-top{
+    margin-top: 2%;
+}
+
 .noticias
 {
-    padding-top: 20px;
+    padding-top: 3%;
     padding-bottom: 20px;
+}
+
+.noticias a {
+    color: #706F6F;
+}
+
+.noticias a:hover {
+    color: #3d97d3;
 }
 
 .noticias-block
@@ -320,6 +445,28 @@ z-index: 12;
     padding-bottom: 20px;
 }
 /*     ----------------------------------- fin SECCION EVENTOS -----------------------------------------     */
+
+/*  ----------------------------------------- 
+        SECCION PROGRAMAS 
+    -----------------------------------------   */
+.programas{
+    background: white;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.pro-uno{
+    background: #f03e3e;
+}
+
+.pro-dos{
+    background: #1862ab;
+}
+
+.pro-tres{
+    background: #fab005;
+}
+
 /*     ----------------------------------- SECCION PREFOOTER -----------------------------------------     */
 .pre-footer
 {

@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="css/capellania.css">
+    <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
+
+    <link rel="icon" href="img/iconos/mano3.ico">
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -19,9 +22,13 @@
             <a href="">Emergencias</a>
         </div>
     </div>
-    <div class="container-fluid imagen" >
 
+    <div class="container-fluid imagen">
+        <div class="baner-titulo">
+            <h1>Capellan&iacutea San Juan Bautista</h1>
+        </div>  
     </div>
+
     <div class="container-fluid menu-principal" >
         <div class="container">
             <div class="topics-row">
@@ -31,7 +38,7 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/inicio.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/inicio.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Ir a Inicio</h5>
+                                    <h5 class="topic-title">INICIO</h5>
                                 </div>
                             </div>
                         </a>
@@ -42,22 +49,34 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/hospital.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/hospital.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Institucional</h5>
+                                    <h5 class="topic-title">INSTITUCIONAL</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
-                        <a href="pacientes.html" class="ga-topic-selector">
-                            <div class="topic-link-container">
-                                <div class="topic-link">
-                                    <img src="img/iconos/act/teamwork.svg" alt="" class="hover-on">
-                                    <img src="img/iconos/desact/teamwork.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Pacientes</h5>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="topic-container menu-pacientes">      
+                        <ul class="">
+                            <li class="dropdown"><a href="pacientes.html" class="ga-topic-selector">
+                                    <div class="topic-link-container">
+                                        <div class="topic-link">
+                                            <img src="img/iconos/act/teamwork.svg" alt="" class="hover-on">
+                                            <img src="img/iconos/desact/teamwork.svg" alt="" class="hover-off">
+                                            <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-content">
+                                    <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                                    <li><a href="contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                                    <li><a href=""><i class="fas fa-bed"></i> &nbsp;Internaciones</a></li>
+                                    <li><a href=""><i class="far fa-clock"></i> &nbsp;Horarios de Visita</a></li>
+                                    <li><a href="contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                                    <li><a href="contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                                </ul>
+                            </li>
+                        </ul> 
                     </div>
+                    <!--
                     <div class="topic-container">
                         <a href="noticias.html" class="ga-topic-selector">
                             <div class="topic-link-container">
@@ -90,14 +109,14 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div>-->
                     <div class="topic-container">
                         <a href="capellania.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
                                     <img src="img/iconos/act/cityscape.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/cityscape.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Capellania</h5>
+                                    <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
                                 </div>
                             </div>
                         </a>
@@ -108,29 +127,129 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/user.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/user.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Contacto</h5>
+                                    <h5 class="topic-title">CONTACTO</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
             </div>
         </div>
-    </div>
-    
+    </div>  
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
+    <div class="container-fluid acceso ">
+        <div class="row justify-content-center">
+                <div class="col-md-10">
+                        <div class="row justify-content-start titular-barra">
+                            <h1 class="titular">SERVICIOS DE CAPELLAN&IacuteA</h1>
+                        </div>
+                </div>
+        </div> 
+    </div>
     <div class="container">
-        <div class="row">
-                <div class="col-md-12 contenido-variable">
-                    <div class="row left right">
-                        <h1>Servicio de Capellan&iacutea</h1>
-                    </div>
-                    <div class="row left right">
-                        
-                    </div>
+        <div id="about" class="base">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Misa Dominical</h2><br>
+                    <h4>Domingo, 9:00 hs a partir del mes de Marzo de 2018.</h4><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-signal logo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-white base">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/baner/virgen-maria.jpg" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <h2>SANTO ROSARIO</h2><br>
+                    <h4>Lunes a Viernes, 18:00 hs rezo del Santo Rosario.</h4><br>
+                    <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="about" class="container-fluid base">
+            <div class="row">
+                <div class="col-sm-7">
+                    <h2>GRUPO DE ORACI&OacuteN</h2><br>
+                    <h4>Sabados, 19:00 hs a partir del mes de Marzo de 2018.</h4><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-sm-5">
+                    <img src="img/baner/adoracion.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-verde">
+        <div class="container">
+                <div class="row verde-titulo">
+                        <div class="col-sm-6">
+                            <h2>RECIBIMOS SU INTENCI&OacuteN</h2><br>
+                            <h4>Puede dejar aqu&iacute sus intenciones en favor de un paciente, las mismas ser&aacuten le&iacutedas en la pr&oacutexima Misa Dominical. &iexcl;Encienda una vela de esperanza!.</h4><br>                  
+                        </div>
+                        <div class="col-sm-6 slideanim">        
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Escriba aqui su intención..." rows="5"></textarea><br>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <button class="btn btn-block pull-right" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
                 </div>
         </div>
     </div>
+    <div class="container-fluid bg-blue">
+            <div class="container">
+                    <div class="row verde-titulo uncion-titulo">
+                            <div class="col-sm-6">
+                                <h2>Solicitar <strong>Sacramento Unci&oacuten de los Enfermos</strong> </h2><br>
+                                <h4>Puede dejar aqu&iacute sus intenciones en favor de un paciente, las mismas ser&aacuten le&iacutedas en la pr&oacutexima Misa Dominical. &iexcl;Encienda una vela de esperanza!.</h4><br>                  
+                            </div>
+                            <div class="col-sm-6 slideanim">   
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" id="nombre" name="nombre" placeholder="Nombre del paciente" type="text" required>
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" id="habitacion" name="habitacion" placeholder="Habitacion" type="text" required>
+                                    </div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-sm-12 form-group">
+                                            <div class="form-group">
+                                                <label for="servicio">Servicio</label>
+                                                <select class="form-control" id="servicio">
+                                                    <option>Cl&iacutenica M&eacutedica</option>
+                                                    <option value="">Emergencia</option>
+                                                    <option>Oncolog&iacutea y cuidados paliativos</option>
+                                                    <option>Salud Mental</option>
+                                                    <option>Traumatolog&iacutea</option>
+                                                    <option value="">Unidad Coronaria</option>
+                                                    <option value="">Unidad Terapia Intensiva</option>
+                                                </select>
+                                            </div>
+                                    </div>
+                                </div>    
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12 form-group">
+                                        <button class="btn btn-block pull-right" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
      <!-- FIN CUERPO PAGINA -->
     <!-- INICIO PIE PAGINA -->
     <footer>

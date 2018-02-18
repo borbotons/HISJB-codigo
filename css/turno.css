@@ -3,10 +3,22 @@
     padding: 0;
 }
 
+.menu-principal{
+
+}
+
+.titular{
+   background:  #3d97d3;
+   padding-top: 8%;
+   padding-bottom: 6%;
+}
 .form-pacientes
 {
     width: 100%;
 
     padding-top: 5%;
     padding-bottom: 6%;
+
 }
+
+

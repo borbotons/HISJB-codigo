@@ -78,7 +78,7 @@
 }
 
 .imagen{
-    background-image: url(../img/baner/paciente.jpg);
+    background-image: url(../img/baner/paciente2.jpg);
     background-size: 100% 80%;
     background-attachment: fixed;
 }
@@ -138,4 +138,23 @@
     width: 54px;
     height: 50px;
     z-index: 590;
+  }
+
+  .titular {
+    font-size: 40px;
+    font-family: "Saira ExtraCondensed";
+    color: rgb(52, 152, 219);
+    line-height: 40px;
+    text-align: center;
+    z-index: 139;
+
+    font-weight: 300;
+  }
+
+  .titular-barra{
+    border-bottom: 5px solid #3d97d3;
+  }
+
+  .m-top{
+      margin-top: 3%;
   }

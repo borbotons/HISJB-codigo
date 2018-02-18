@@ -8,10 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
-    <link rel="stylesheet" href="../../css/lab.css">
     <link rel="stylesheet" href="../../css/llegar.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+
+    <link rel="icon" href="../../img/iconos/mano3.ico">
 </head>
-<body>
+<body onload="">
     <!-- INICIO HEADER PAGINA-->
     <div class="container-fluid box1">
         <div class="container">
@@ -20,9 +22,7 @@
             <a href="">Emergencias</a>
         </div>
     </div>
-    <div class="container-fluid imagen" >
-
-    </div>
+   
     <div class="container-fluid menu-principal" >
         <div class="container">
             <div class="topics-row">
@@ -32,7 +32,7 @@
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/inicio.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/inicio.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Ir a Inicio</h5>
+                                    <h5 class="topic-title">INICIO</h5>
                                 </div>
                             </div>
                         </a>
@@ -43,22 +43,34 @@
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/hospital.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/hospital.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Institucional</h5>
+                                    <h5 class="topic-title">INSTITUCIONAL</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
-                        <a href="../../pacientes.html" class="ga-topic-selector">
-                            <div class="topic-link-container">
-                                <div class="topic-link">
-                                    <img src="../../img/iconos/act/teamwork.svg" alt="" class="hover-on">
-                                    <img src="../../img/iconos/desact/teamwork.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Pacientes</h5>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="topic-container menu-pacientes">      
+                        <ul class="">
+                            <li class="dropdown"><a href="../../pacientes.html" class="ga-topic-selector">
+                                    <div class="topic-link-container">
+                                        <div class="topic-link">
+                                            <img src="../../img/iconos/act/teamwork.svg" alt="" class="hover-on">
+                                            <img src="../../img/iconos/desact/teamwork.svg" alt="" class="hover-off">
+                                            <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-content">
+                                    <li><a href="../../contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                                    <li><a href="../../contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                                    <li><a href=""><i class="fas fa-bed"></i> &nbsp;Internaciones</a></li>
+                                    <li><a href=""><i class="far fa-clock"></i> &nbsp;Horarios de Visita</a></li>
+                                    <li><a href="../../contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                                    <li><a href="../../contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                                </ul>
+                            </li>
+                        </ul> 
                     </div>
+                    <!--
                     <div class="topic-container">
                         <a href="../../noticias.html" class="ga-topic-selector">
                             <div class="topic-link-container">
@@ -91,14 +103,14 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div>-->
                     <div class="topic-container">
                         <a href="../../capellania.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/cityscape.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/cityscape.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Capellania</h5>
+                                    <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
                                 </div>
                             </div>
                         </a>
@@ -109,7 +121,7 @@
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/user.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/user.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Contacto</h5>
+                                    <h5 class="topic-title">CONTACTO</h5>
                                 </div>
                             </div>
                         </a>
@@ -117,41 +129,53 @@
             </div>
         </div>
     </div>
-    
+    <div class="container-fluid " style="">
+        <div class="row justify-content-center titular">
+            <div class="col-md-10">
+                    <h3 class="display-4">&iquest;C&oacutemo llegar al Hospital?</h3>
+                    <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
+            </div>
+        </div>
+    </div>
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
-    <div class="container">
+    <div class="container-fluid">
+        <div class="row justify-content-center m-top">
+            <div class="col-md-11">
+                <div class="row justify-content-start titular2-barra">
+                    <h1 class="titular2"><i class="far fa-map"></i> Ubicaci&oacuten del hospital en SFVC</h1>
+                </div> 
+            </div>
+        </div> 
+    </div>
+    <div class="container-fluid">
         <div class="row">
-                <div class="col-md-12 contenido-variable">
-                    <div class="row left right">
-                        <h1> &iquest;C&oacutemo llegar al hospital?</h1>
-                    </div>
-                    <div class="row justify-content-center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2085.630391877951!2d-65.79001829033001!3d-28.461525030089!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1517505792408" width="800" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="row justify-content-between listado">
-                        <div class="col-md-6 alert alert-info">
-                                <h5 class="display-4">Colectivos</h5>
-                                <ul>
-                                    <li>105 Hospital GM</li>
-                                    <li>109 Cooperativa San Fernando</li>
-                                    <li>106 </li>
-                               
-                                </ul>
-                        </div>
-                        <div class="col-md-6 alert alert-success">
-                                <h5 class="display-4">Distancias</h5>
-                                <ul>
-                                    <li>1km desde Universidad Nacional de Catamarca</li>
-                                    <li>4km desde Catedral Basilica</li>
-                                    <li>6km desde Terminal de Omnibus </li>
-                               
-                                </ul>
-                        </div> 
-                    </div>
-                    
+                <div class="col-md-12 contenido-variable">  
+                    <div id="googleMap" style="width:100%;height:400px;"></div>  
                 </div>
         </div>
+    </div>
+    <div class="container">
+            <div class="row justify-content-between listado">
+                <div class="col-md-6 alert alert-info">
+                        <h5 class="display-4">Colectivos</h5>
+                        <ul>
+                            <li>105 Hospital GM</li>
+                            <li>109 Cooperativa San Fernando</li>
+                            <li>106 </li>
+                        
+                        </ul>
+                </div>
+                <div class="col-md-6 alert alert-success">
+                        <h5 class="display-4">Distancias</h5>
+                        <ul>
+                            <li>1km desde Universidad Nacional de Catamarca</li>
+                            <li>4km desde Catedral Basilica</li>
+                            <li>6km desde Terminal de Omnibus </li>
+                        
+                        </ul>
+                </div> 
+            </div>
     </div>
      <!-- FIN CUERPO PAGINA -->
     <!-- INICIO PIE PAGINA -->
@@ -190,5 +214,24 @@
 
     <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script>
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(-28.461666, -65.790112),
+            zoom:15,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker=new google.maps.Marker({
+            position:new google.maps.LatLng(-28.461666, -65.790112),
+            map:map,
+            icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+        });
+        }
+
+        
+    </script>
+        
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA19Nmy1g7Ga9P0jJ_QgLbLbGcU4vvwQig&callback=myMap"></script>
 </body>
 </html>

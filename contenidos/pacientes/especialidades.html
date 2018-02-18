@@ -6,9 +6,13 @@
     <title>Especialidades - Hospital SJB</title>
 
     <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="../../css/esp.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+
+    <link rel="icon" href="../../img/iconos/mano3.ico">
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -19,9 +23,7 @@
             <a href="">Emergencias</a>
         </div>
     </div>
-    <div class="container-fluid imagen" style="">
-
-    </div>
+    
     <div class="container-fluid menu-principal" >
         <div class="container">
             <div class="topics-row">
@@ -31,7 +33,7 @@
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/inicio.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/inicio.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Ir a Inicio</h5>
+                                    <h5 class="topic-title">INICIO</h5>
                                 </div>
                             </div>
                         </a>
@@ -42,22 +44,34 @@
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/hospital.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/hospital.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Institucional</h5>
+                                    <h5 class="topic-title">INSTITUCIONAL</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
-                        <a href="../../pacientes.html" class="ga-topic-selector">
-                            <div class="topic-link-container">
-                                <div class="topic-link">
-                                    <img src="../../img/iconos/act/teamwork.svg" alt="" class="hover-on">
-                                    <img src="../../img/iconos/desact/teamwork.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Pacientes</h5>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="topic-container menu-pacientes">      
+                        <ul class="">
+                            <li class="dropdown"><a href="../../pacientes.html" class="ga-topic-selector">
+                                    <div class="topic-link-container">
+                                        <div class="topic-link">
+                                            <img src="../../img/iconos/act/teamwork.svg" alt="" class="hover-on">
+                                            <img src="../../img/iconos/desact/teamwork.svg" alt="" class="hover-off">
+                                            <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-content">
+                                    <li><a href="../../contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                                    <li><a href="../../contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                                    <li><a href=""><i class="fas fa-bed"></i> &nbsp;Internaciones</a></li>
+                                    <li><a href=""><i class="far fa-clock"></i> &nbsp;Horarios de Visita</a></li>
+                                    <li><a href="../../contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                                    <li><a href="../../contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                                </ul>
+                            </li>
+                        </ul> 
                     </div>
+                    <!--
                     <div class="topic-container">
                         <a href="../../noticias.html" class="ga-topic-selector">
                             <div class="topic-link-container">
@@ -90,14 +104,14 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div>-->
                     <div class="topic-container">
                         <a href="../../capellania.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/cityscape.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/cityscape.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Capellania</h5>
+                                    <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
                                 </div>
                             </div>
                         </a>
@@ -108,7 +122,7 @@
                                 <div class="topic-link">
                                     <img src="../../img/iconos/act/user.svg" alt="" class="hover-on">
                                     <img src="../../img/iconos/desact/user.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Contacto</h5>
+                                    <h5 class="topic-title">CONTACTO</h5>
                                 </div>
                             </div>
                         </a>
@@ -116,16 +130,44 @@
             </div>
         </div>
     </div>
-    
+    <div class="container-fluid " style="">
+        <div class="row justify-content-center titular">
+            <div class="col-md-10">
+                    <h3 class="display-4">Cat&aacutelogo de especialidades HISJB</h3>
+                    <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
+            </div>
+        </div>
+    </div>
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
     <div class="container">
         <div class="row">
                 <div class="col-md-12 contenido-variable">
-                    <div class="row left right">
-                        <h1>Cat&aacutelogo de especialidades HISJB</h1>
+                    <div class="row justify-content-center letras">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#a">A</a></li>
+                                <li class="page-item"><a class="page-link" href="#c">C</a></li>
+                                <li class="page-item"><a class="page-link" href="#d">D</a></li>
+                                <li class="page-item"><a class="page-link" href="#e">E</a></li>
+                                <li class="page-item"><a class="page-link" href="#g">G</a></li>
+                                <li class="page-item"><a class="page-link" href="#h">H</a></li>
+                                <li class="page-item"><a class="page-link" href="#i">I</a></li>
+                                <li class="page-item"><a class="page-link" href="#m">M</a></li>
+                                <li class="page-item"><a class="page-link" href="#n">N</a></li>
+                                <li class="page-item"><a class="page-link" href="#o">O</a></li>
+                                <li class="page-item"><a class="page-link" href="#p">P</a></li>
+                                <li class="page-item"><a class="page-link" href="#r">R</a></li>
+                                <li class="page-item"><a class="page-link" href="#t">T</a></li>
+                                <li class="page-item"><a class="page-link" href="#u">U</a></li>
+                            </ul>
+                            </nav>
                     </div>
-                    
+                    <div class="row justify-content-center ayuda">
+                        <p><i class="far fa-check-circle"></i> Localiza r&aacutepidamente la especialidad que buscas seleccionando su <strong>letra inicial</strong>. </p>
+                    </div>
+                    <div class="row" id="a" >
+                    </div>
                     <div class="row left right barra">
                         <div class="col-md-6">
                             <h1>Adicciones</h1>
@@ -135,8 +177,8 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. KAHAN</h4>
-                                <h6>LUNES MIERCOLES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6><h6 class="etiqueta">MIERCOLES</h6><h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                         </div>
                         <div class="col-md-6">
                                 <h1>Alergia</h1>
@@ -146,30 +188,32 @@
                                     </p>
                                     <h5>Horarios</h5>
                                     <h4>Dra. GIORDANO</h4>
-                                    <h6>LUNES MARTES MIERCOLES JUEVES VIERNES</h6>
-                                    <h6>8:00 hs</h6>
+                                    <h6 class="etiqueta">LUNES</h6><h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">JUEVES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                    <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                     </div>
+                    <div class="row" id="c"></div>
+                    <div class="row" id=""></div>
                     <div class="row left right">
-                        <div class="col-md-6">
-                            <h1>Cardiolog&iacutea</h1>
+                        <div  class="col-md-6">
+                            <h1 id="">Cardiolog&iacutea</h1>
                             <p>But I must explain to you how all this mistaken idea of
                                     denouncing pleasure and praising pain was born and I will
                                     give you a complete account of the system
                             </p>
                             <h5>Horarios</h5>
                             <h4>Dr. ACOSTA</h4>
-                            <h6>LUNES VIERNES</h6>
-                            <h6>8:00 hs</h6>
+                            <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">VIERNES</h6>
+                            <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             <h4>Dra. RAMONDA</h4>
-                            <h6>LUNES MIERCOLES JUEVES</h6>
-                            <h6>8:00 hs</h6>
+                            <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">JUEVES</h6>
+                            <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             <h4>Dr. PAULETO</h4>
-                            <h6>LUNES MARTES JUEVES</h6>
-                            <h6>8:00 hs</h6>
+                            <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6>
+                            <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             <h4>Dr. MORENO</h4>
-                            <h6>MARTES MIERCOLES VIERNES</h6>
-                            <h6>8:00 hs</h6>
+                            <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                            <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                         </div>
                         <div class="col-md-6">
                             <h1>Cl&iacutenica m&eacutedica</h1>
@@ -181,29 +225,29 @@
                                 <div class="col-md-6">
                                     <h5>Horarios turno mañana</h5>
                                     <h4>Dr. REINOSO</h4>
-                                    <h6>LUNES VIERNES</h6>
-                                    <h6>8:00 hs</h6>
+                                    <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                    <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                     <h4>Dr. DELGADO</h4>
-                                    <h6>LUNES</h6>
-                                    <h6>10:00 hs</h6>
+                                    <h6 class="etiqueta">LUNES</h6>
+                                    <h6><i class="far fa-clock"></i> 10:00 hs</h6>
                                     <h4>Dra. TAPIA</h4>
-                                    <h6>MARTES </h6>
-                                    <h6>8:00 hs</h6>
+                                    <h6 class="etiqueta">MARTES </h6>
+                                    <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                     <h4>Dra. VARGAS</h4>
-                                    <h6>JUEVES</h6>
-                                    <h6>8:00 hs</h6>
+                                    <h6 class="etiqueta">JUEVES</h6>
+                                    <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                     <h4>Dr. AGUIRRE</h4>
-                                    <h6>VIERNES</h6>
-                                    <h6>10:00 hs</h6>
+                                    <h6 class="etiqueta">VIERNES</h6>
+                                    <h6><i class="far fa-clock"></i> 10:00 hs</h6>
                                 </div>
                                 <div class="col-md-6">
                                         <h5>Horarios turno tarde</h5>
                                         <h4>Dra. HERRERA</h4>
-                                        <h6>LUNES MIERCOLES VIERNES</h6>
-                                        <h6>14:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                        <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                                         <h4>Dra. FREITES</h4>
-                                        <h6>LUNES MARTES MIERCOLES VIERNES</h6>
-                                        <h6>14:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                        <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                                 </div>
                             </div>
                             
@@ -218,11 +262,11 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. REINOSO</h4>
-                                <h6>MARTES</h6>
-                                <h6>9:30 a 12:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6>
+                                <h6><i class="far fa-clock"></i> 9:30 hs a 12:00 hs</h6>
                                 <h4>Dr. AGUIRRE</h4>
-                                <h6>VIERNES</h6>
-                                <h6>14:00 hs</h6>
+                                <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                             </div>
                             <div class="col-md-6">
                                 <h1>Cirug&iacutea</h1>
@@ -231,65 +275,67 @@
                                         give you a complete account of the system
                                 </p>
                                 <div class="row">
-                                    <div class="col-sm-12 col-md-4">
+                                    <div class="col-sm-12 col-md-6">
                                         <h5>Horarios turno ma&ntilde;ana</h5>
                                         <h4>Dr. BLANCO</h4>
-                                        <h6>LUNES VIERNES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                         <h4>Dr. LEIVA - Dra. CANIL</h4>
-                                        <h6>LUNES JUEVES</h6>
-                                        <h6>9:30 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                        <h6><i class="far fa-clock"></i> 9:30 hs a 12:00 hs</h6>
                                         <h4>Dr. SARQUIS</h4>
-                                        <h6>MARTES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">MARTES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                         <h4>Dr. BRIZUELA DEL MORAL</h4>
-                                        <h6>MARTES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">MARTES</h6>
+                                        <h6><i class="far fa-clock"></i>8:00 hs a 12:00 hs</h6>
                                         <h4>Dr. TULA</h4>
-                                        <h6>MARTES JUEVES</h6>
-                                        <h6>10:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                        <h6><i class="far fa-clock"></i> 10:00 hs a 12:00 hs</h6>
                                     </div>
-                                    <div class="col-sm-12 col-md-4">
+                                    <div class="col-sm-12 col-md-6">
                                         <h4>Dr. MONFERRAN</h4>
-                                        <h6>MIERCOLES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">MIERCOLES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                         <h4>Dr. SOTOMAYOR</h4>
-                                        <h6>MIERCOLES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">MIERCOLES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                         <h4>Dr. ZULIANI</h4>
-                                        <h6>JUEVES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">JUEVES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                         <h4>Dr. LESTUSSI</h4>
-                                        <h6>JUEVES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">JUEVES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                         <h4>Dr. RAVETTI</h4>
-                                        <h6>JUEVES</h6>
-                                        <h6>8:00 a 12:00 hs</h6>
+                                        <h6 class="etiqueta">JUEVES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                     </div>
-                                    <div class="col-sm-12 col-md-4">
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 tarde">
                                             <h5>Horarios turno tarde</h5>
                                             <h4>Dr. CORONEL</h4>
-                                            <h6>LUNES </h6>
-                                            <h6>14:00 hs</h6>
+                                            <h6 class="etiqueta">LUNES </h6>
+                                            <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                                             <h4>Dr. CARRIZO</h4>
-                                            <h6>MARTES </h6>
-                                            <h6>14:00 hs</h6>
+                                            <h6 class="etiqueta">MARTES </h6>
+                                            <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                                             <h4>Dr. VALDIVIEZO</h4>
-                                            <h6>MARTES </h6>
-                                            <h6>14:00 hs</h6>
+                                            <h6 class="etiqueta">MARTES </h6>
+                                            <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                                             <h4>Dr. VEGA</h4>
-                                            <h6>MIERCOLES </h6>
-                                            <h6>14:00 hs</h6>
+                                            <h6 class="etiqueta">MIERCOLES </h6>
+                                            <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                                             <h4>Dr. ACOSTA</h4>
-                                            <h6>JUEVES </h6>
-                                            <h6>14:00 hs</h6>
+                                            <h6 class="etiqueta">JUEVES </h6>
+                                            <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                                     </div>
                                 </div>
                                 
                             </div>
                         </div>
                         <div class="row left right">
-                            <div class="col-md-6">
+                            <div id="d" class="col-md-6">
                                 <h1>dermatoLOG&IacuteA</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -297,13 +343,13 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dra. SORIA</h4>
-                                <h6>LUNES MIERCOLES VIERNES</h6>
-                                <h6>8:00 a 12:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                                 <h4>Dr. COLOMBO</h4>
-                                <h6>MARTES - JUEVES</h6>
-                                <h6>8:00 a 12:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6>  <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs a 12:00 hs</h6>
                             </div>
-                            <div class="col-md-6">
+                            <div id="e" class="col-md-6">
                                 <h1>ENDOCRINOLOG&IacuteA</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                     denouncing pleasure and praising pain was born and I will
@@ -311,14 +357,14 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. TOLOZA</h4>
-                                <h6>LUNES MIERCOLES </h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES </h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dra. PIGNATTA</h4>
-                                <h6>MARTES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. OLMOS</h4>
-                                <h6>MIERCOLES </h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES </h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
@@ -326,10 +372,10 @@
                                 <h1>ecordiograma</h1>
                                 <h5>Horarios</h5>
                                 <h4>Dra. CADO</h4>
-                                <h6>LUNES MARTES MIERCOLES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
-                            <div class="col-md-6">      
+                            <div id="g" class="col-md-6">      
                                 <h1>GASTROENTEROLOG&IacuteA</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -337,11 +383,11 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. BRIZUELA</h4>
-                                <h6>LUNES MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. PACHECO</h4>
-                                <h6>MARTES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                
                             </div>
                         </div>
@@ -354,17 +400,17 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dra. BILBAO</h4>
-                                <h6>LUNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. MARTINEZ</h4>
-                                <h6>MIERCOLES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. MASULLO</h4>
-                                <h6>JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. DIAZ</h4>
-                                <h6>VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 
                             </div>
                             <div class="col-md-6">
@@ -375,12 +421,12 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dra. BILBAO</h4>
-                                <h6>MARTES MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
-                            <div class="col-md-6">
+                            <div id="h" class="col-md-6">
                                 <h1>HEMATOLOG&IacuteA</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -388,13 +434,13 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dra. IBA&Ntilde;EZ</h4>
-                                <h6>MARTES MIERCOLES</h6>
-                                <h6>9:30 a 12:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 9:30 hs a 12:00 hs</h6>
                                 <h4>Dra. GISLBERT</h4>
-                                <h6>JUEVES</h6>
-                                <h6>9:30 a 12:00 hs</h6>      
+                                <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 9:30 hs a 12:00 hs</h6>      
                             </div>
-                            <div class="col-md-6">
+                            <div id="i" class="col-md-6">
                                 <h1>infectolog&iacutea</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -402,12 +448,12 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dra. OYOLA</h4>
-                                <h6>MARTES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
 
                             </div>
                         </div>
-                        <div class="row left right">
+                        <div id="m" class="row left right">
                             <div class="col-md-6">
                                 <h1>maxilo facial</h1>
                                 <p>But I must explain to you how all this mistaken idea of
@@ -416,16 +462,16 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. BOSCATTO</h4>
-                                <h6>LUNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. CORPACCI</h4>
-                                <h6>MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. ROMERO</h4>
-                                <h6>VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
-                            <div class="col-md-6">
+                            <div id="n" class="col-md-6">
                                 <h1>Nefrolog&iacutea</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -433,17 +479,17 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. VILLAFAÑEZ</h4>
-                                <h6>LUNES MIERCOLES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. PALACIOS</h4>
-                                <h6>MARTES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dra. PERNASETTI</h4>
-                                <h6>MARTES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. IRIARTE</h4>
-                                <h6>JUEVES</h6>
-                                <h6> hs</h6>
+                                <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
@@ -455,17 +501,17 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. FIGUEROA</h4>
-                                <h6>LUNES MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. SANNA</h4>
-                                <h6>MARTES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. CERVERO</h4>
-                                <h6>JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. GALARZA</h4>
-                                <h6>VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                             <div class="col-md-6">
                                 <h1>Neumonolog&iacutea</h1>
@@ -475,8 +521,8 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. TERAN</h4>
-                                <h6>LUNES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
@@ -488,12 +534,12 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>CONSULTORIO</h4>
-                                <h6>MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
-                                <h6>MARTES JUEVES</h6>
-                                <h6>14:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 14:00 hs</h6>
                             </div>
-                            <div class="col-md-6">
+                            <div id="o" class="col-md-6">
                                 <h1>oftalmoLOG&IacuteA</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -501,14 +547,14 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. DEL PINO</h4>
-                                <h6>LUNES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. VAZQUEZ</h4>
-                                <h6>MIERCOLES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. FERREYRA</h4>
-                                <h6>MIERCOLES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
@@ -520,11 +566,11 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. CACERES</h4>
-                                <h6>LUNES MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dra. LOBOS</h4>
-                                <h6>MIERCOLES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                             <div class="col-md-6">
                                 <h1>o.r.l</h1>
@@ -534,15 +580,15 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. CARRIZO</h4>
-                                <h6>LUNES MIERCOLES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. CAMPI</h4>
-                                <h6>MARTES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
-                            <div class="col-md-6">
+                            <div id="p" class="col-md-6">
                                 <h1>p.a.t mamaria</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -550,11 +596,11 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. SAVIO</h4>
-                                <h6>MARTES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. CORDOBA</h4>
-                                <h6>JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                             <div class="col-md-6">
                                 <h1>p.a.p</h1> 
@@ -564,17 +610,17 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. SAVIO</h4>
-                                <h6>LUNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. DIAZ</h4>
-                                <h6>MARTES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MARTES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Lic. REINOSO</h4>
-                                <h6>MIERCOLES JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. MASULLO</h4>
-                                <h6>VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
@@ -586,16 +632,16 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. BRICE</h4>
-                                <h6>LUNES MARTES JUEVES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">JUEVES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dra. VERA</h4>
-                                <h6>LUNES MARTES MIERCOLES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MARTES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. CORPACCI</h4>
-                                <h6>LUNES MIERCOLES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
-                            <div class="col-md-6">
+                            <div id="r" class="col-md-6">
                                 <h1>reumatolog&iacutea</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -603,12 +649,12 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. GUARAZ</h4>
-                                <h6>LUNES MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         <div class="row left right">
-                            <div class="col-md-6">
+                            <div id="t" class="col-md-6">
                                 <h1>traumatolog&iacutea</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -618,39 +664,39 @@
                                     <div class="col-md-6">
                                         <h5>Horarios</h5>
                                         <h4>Dr. BARRERA</h4>
-                                        <h6>LUNES</h6>
-                                        <h6>8:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                         <h4>Dr. CABRAL</h4>
-                                        <h6>LUNES</h6>
-                                        <h6>8:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                         <h4>Dr. MOYA</h4>
-                                        <h6>LUNES MIERCOLES VIERNES</h6>
-                                        <h6>12:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                        <h6><i class="far fa-clock"></i> 12:00 hs</h6>
                                         <h4>Dr. MOUSKARZEL</h4>
-                                        <h6>LUNES JUEVES VIERNES</h6>
-                                        <h6>12:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">JUEVES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                        <h6><i class="far fa-clock"></i> 12:00 hs</h6>
                                         <h4>Dr. MONTALVA</h4>
-                                        <h6>LUNES MIERCOLES JUEVES</h6>
-                                        <h6>12:00 hs</h6>
+                                        <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">MIERCOLES</h6> <h6 class="etiqueta">JUEVES</h6>
+                                        <h6><i class="far fa-clock"></i> 12:00 hs</h6>
                                     </div>
                                     <div class="col-md-6">
                                         <h4>Dr. FIGUEROA</h4>
-                                        <h6>MEIRCOLES</h6>
-                                        <h6>8:00 hs</h6>
+                                        <h6 class="etiqueta">MIERCOLES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                         <h4>Dr. OVEJERO</h4>
-                                        <h6>MIERCOLES</h6>
-                                        <h6>8:00 hs</h6>
+                                        <h6 class="etiqueta">MIERCOLES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                         <h4>Dr. MEDINA</h4>
-                                        <h6>VIERNES</h6>
-                                        <h6>8:00 hs</h6>
+                                        <h6 class="etiqueta">VIERNES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                         <h4>Dr. FLORES</h4>
-                                        <h6>VIERNES</h6>
-                                        <h6>8:00 hs</h6>
+                                        <h6 class="etiqueta">VIERNES</h6>
+                                        <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                     </div>
                                 </div>
                                
                             </div>
-                            <div class="col-md-6">
+                            <div id="u" class="col-md-6">
                                 <h1>urolog&iacutea</h1>
                                 <p>But I must explain to you how all this mistaken idea of
                                         denouncing pleasure and praising pain was born and I will
@@ -658,17 +704,17 @@
                                 </p>
                                 <h5>Horarios</h5>
                                 <h4>Dr. MENDIZABAL</h4>
-                                <h6>LUNES VIERNES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">LUNES</h6> <h6 class="etiqueta">VIERNES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. FERREYRA</h4>
-                                <h6>MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. BAZANO</h4>
-                                <h6>MIERCOLES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">MIERCOLES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                                 <h4>Dr. ANTONI</h4>
-                                <h6>JUEVES</h6>
-                                <h6>8:00 hs</h6>
+                                <h6 class="etiqueta">JUEVES</h6>
+                                <h6><i class="far fa-clock"></i> 8:00 hs</h6>
                             </div>
                         </div>
                         
@@ -718,5 +764,43 @@
 
     <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.scrollUp.js"></script>
+    <script>
+        $(function(){
+            $.scrollUp({
+                scrollText: 'Ir Arriba !', // Text for element
+                topSpeed: 600, // Speed back to top (ms)
+                animation: 'fade' // Fade, slide, none
+            });
+        });
+    </script>
+    <script src="../../js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+        // Selectors
+        ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+        header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+        // Speed & Easing
+        speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+        offset: 100, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+        easing: 'easeInOutCubic', // Easing pattern to use
+        customEasing: function (time) {
+
+            // Function. Custom easing pattern
+            // If this is set to anything other than null, will override the easing option above
+
+            // return <your formulate with time as a multiplier>
+
+            // Example: easeInOut Quad
+            return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+        },
+
+        // Callback API
+        before: function (anchor, toggle) {}, // Callback to run before scroll
+        after: function (anchor, toggle) {} // Callback to run after scroll
+});
+    </script>
 </body>
 </html>

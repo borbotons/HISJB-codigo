@@ -8,14 +8,17 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="css/pacientes.css">
+
+    <link rel="icon" href="img/iconos/mano3.ico">
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
     <div class="container-fluid box1">
         <div class="container">
-            <a href="">HISJB</a>
+            <a href="">Hospital Interzonal San Juan Bautista</a>
             <p></p>
             <a href="">Emergencias</a>
         </div>
@@ -38,7 +41,7 @@
                             <div class="topic-link">
                                 <img src="img/iconos/act/inicio.svg" alt="" class="hover-on">
                                 <img src="img/iconos/desact/inicio.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Ir a Inicio</h5>
+                                <h5 class="topic-title">INICIO</h5>
                             </div>
                         </div>
                     </a>
@@ -49,7 +52,7 @@
                             <div class="topic-link">
                                 <img src="img/iconos/act/hospital.svg" alt="" class="hover-on">
                                 <img src="img/iconos/desact/hospital.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Institucional</h5>
+                                <h5 class="topic-title">INSTITUCIONAL</h5>
                             </div>
                         </div>
                     </a>
@@ -60,7 +63,7 @@
                             <div class="topic-link">
                                 <img src="img/iconos/act/teamwork.svg" alt="" class="hover-on">
                                 <img src="img/iconos/desact/teamwork.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Pacientes</h5>
+                                <h5 class="topic-title">PACIENTES</h5>
                             </div>
                         </div>
                     </a>
@@ -98,14 +101,14 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div>-->
                 <div class="topic-container">
                     <a href="capellania.html" class="ga-topic-selector">
                         <div class="topic-link-container">
                             <div class="topic-link">
                                 <img src="img/iconos/act/cityscape.svg" alt="" class="hover-on">
                                 <img src="img/iconos/desact/cityscape.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Capellania</h5>
+                                <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
                             </div>
                         </div>
                     </a>
@@ -116,28 +119,52 @@
                             <div class="topic-link">
                                 <img src="img/iconos/act/user.svg" alt="" class="hover-on">
                                 <img src="img/iconos/desact/user.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Contacto</h5>
+                                <h5 class="topic-title">CONTACTO</h5>
                             </div>
                         </div>
                     </a>
-                </div> -->
+                </div> 
             </div>
         </div>
     </div>
     
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
+    <div class="md-modal md-effect-12" id="modal-12">
+        <div class="md-content">
+            <h3 class="display-4">Horarios de Visita</h3>
+            <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
+            <div>
+                <p>HORARIO DE VISITA LA INTERNADO</p>
+                <ul>
+                    <li><i class="far fa-clock"></i> DE 11 hs a 13 hs.</li>
+                    <li><i class="far fa-clock"></i> DE 18 hs a 21 hs.</li>
+                </ul>  
+            </div>
+            <div>
+                <p>U.C.O Y QUEMADO</p>
+                <ul>
+                    <li><i class="far fa-clock"></i> DE 12 hs a 13 hs.</li>
+                    <li><i class="far fa-clock"></i> DE 20 hs a 21 hs.</li>
+                </ul>  
+            </div>
+            <button class="md-close">Cerrar</button>
+        </div>
+    </div>
+
         <div class="container-fluid menu-pacientes">
             <div class="row justify-content-center">
-                    <h3 class="">Servicios para Pacientes
-                        <small class="text-muted">HISJB</small>
-                    </h3>
-            </div>
-            <hr class="barra">
+                <div class="col-md-10">
+                        <div class="row justify-content-start titular-barra">
+                            <h1 class="titular">SERVICIOS PARA PACIENTES <small class="text-muted">HISJB</small></h1>
+                        </div>
+                </div>
+            </div> 
+        
             <div class="container">
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center m-top">
                 <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
-                    <a href="#">   
+                    <a href="#" class="md-trigger" data-modal="modal-12">   
                         <div class="group show-icons active">
                             <div class="group-text">
                                 <img src="img/pacientes/visita.png" alt="">
@@ -201,7 +228,7 @@
                                 <img src="img/pacientes/surgeon.png" alt="">
                                 <div class="group-table">
                                     <div class="group-cell">
-                                        Preparaci&oacuten Quirurgica
+                                        Preparaci&oacuten Quirurgica <span class="badge badge-warning">Pr&oacuteximamente</span>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +272,7 @@
                                 <img src="img/pacientes/interno.png" alt="">
                                 <div class="group-table">
                                     <div class="group-cell">
-                                        Mapa interno del Hospital
+                                        Mapa interno <br> <span class="badge badge-warning">Pr&oacuteximamente</span>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +286,7 @@
                                 <img src="img/pacientes/internacion.png" alt="">
                                 <div class="group-table">
                                     <div class="group-cell">
-                                        Internaciones
+                                        Internaciones <br> <span class="badge badge-warning">Pr&oacuteximamente</span>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +316,7 @@
                                 <img src="img/pacientes/callcenter.png" alt="">
                                 <div class="group-table">
                                     <div class="group-cell" style="color:darkgray">
-                                        Farmacia <span class="badge badge-warning">Pr&oacuteximamente</span>
+                                        Farmacia <br> <span class="badge badge-warning">Pr&oacuteximamente</span>
                                     </div>
                                 </div>
                             </div>
@@ -337,5 +364,19 @@
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <div class="md-overlay"></div><!-- fondo de emergente modal -->
+	
+	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script src="js/cssParser.js"></script>
+	<script src="Js/css-filters-polyfill.js"></script>
 </body>
 </html>

@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="css/institucional.css">
+    <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
+
+    <link rel="icon" href="img/iconos/mano3.ico">
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -20,7 +23,13 @@
         </div>
     </div>
     <div class="container-fluid imagen" style="">
-
+        <h1 class="rotulo">Institucional</h1>
+        
+        <div class="isologo_blanco">
+            <img src="img/iconos/isotipo blanco.png" alt="">
+        </div>
+        <h4 class="HOSPITAL_INTERZONAL">Hospital Interzonal</h4>
+        <h4 class="SAN_JUAN_BAUTISTA">San Juan Bautista</h4>
     </div>
     <div class="container-fluid menu-principal" >
         <div class="container">
@@ -31,7 +40,7 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/inicio.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/inicio.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Ir a Inicio</h5>
+                                    <h5 class="topic-title">INICIO</h5>
                                 </div>
                             </div>
                         </a>
@@ -42,22 +51,34 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/hospital.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/hospital.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Institucional</h5>
+                                    <h5 class="topic-title">INSTITUCIONAL</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
-                        <a href="pacientes.html" class="ga-topic-selector">
-                            <div class="topic-link-container">
-                                <div class="topic-link">
-                                    <img src="img/iconos/act/teamwork.svg" alt="" class="hover-on">
-                                    <img src="img/iconos/desact/teamwork.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Pacientes</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <div class="topic-container menu-pacientes">      
+                        <ul class="">
+                            <li class="dropdown"><a href="pacientes.html" class="ga-topic-selector">
+                                    <div class="topic-link-container">
+                                        <div class="topic-link">
+                                            <img src="img/iconos/act/teamwork.svg" alt="" class="hover-on">
+                                            <img src="img/iconos/desact/teamwork.svg" alt="" class="hover-off">
+                                            <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-content">
+                                    <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                                    <li><a href="contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                                    <li><a href=""><i class="fas fa-bed"></i> &nbsp;Internaciones</a></li>
+                                    <li><a href=""><i class="far fa-clock"></i> &nbsp;Horarios de Visita</a></li>
+                                    <li><a href="contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                                    <li><a href="contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                                </ul>
+                            </li>
+                        </ul> 
+                    </div> 
+                    <!--
                     <div class="topic-container">
                         <a href="noticias.html" class="ga-topic-selector">
                             <div class="topic-link-container">
@@ -90,14 +111,14 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div>-->
                     <div class="topic-container">
                         <a href="capellania.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
                                     <img src="img/iconos/act/cityscape.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/cityscape.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Capellania</h5>
+                                    <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
                                 </div>
                             </div>
                         </a>
@@ -108,7 +129,7 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/user.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/user.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Contacto</h5>
+                                    <h5 class="topic-title">CONTACTO</h5>
                                 </div>
                             </div>
                         </a>
@@ -119,6 +140,8 @@
     
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
+
+    <!--
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 submenu">
@@ -137,6 +160,120 @@
 
             </div>
         </div>
+    </div>-->
+
+    <div class="container-fluid">
+            <div class="row justify-content-center m-top m-bot">
+                <div class="col-md-10">
+                        <div class="row justify-content-start titular-barra">
+                            <h1 class="titular">MISI&OacuteN Y FUNCI&OacuteN <small class="text-muted">HISJB</small></h1>
+                        </div>
+                </div>
+            </div>
+    </div>
+    <div class="container mision">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                        <h2><i class="fas fa-expand-arrows-alt"></i> Misión del Hospital San Juan Bautista</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p> Nuestra misión es la Atención Integral de adolescentes y adultos al nivel ambulatorio, de
+                        internación programada y de urgencia, garantizando como entidad pública la accesibilidad
+                        equitativa y la cobertura igualitaria para toda la comunidad. Articulamos la atención en los tres
+                        niveles del Sistema de Salud: Provincial, Regional y Nacional, para cumplir con estrategias de
+                        políticas que apunten a la calidad, el desarrollo y la formación de Personal Sanitario. </p>
+                    <p>Como Hospital Escuela capacitamos a nuestros colaboradores, a la Sociedad sobre
+                        temáticas de Competencia e Interés General, y a Profesionales de la Salud a través de nuestras
+                        Residencias articuladas por los Ministerios de Salud de la Nación y la Provincia, y avaladas por
+                        las Universidades Nacionales de Córdoba y de Tucumán.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                        <h2><i class="fas fa-eye"></i> Visión del Hospital San Juan Bautista</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>Instituir al HISJB como el nosocomio de alta complejidad de referencia en la provincia, logrando
+                        la eficiente articulación con todos los niveles de atención, Centros Primarios de Salud y
+                        Hospitales del Interior Provincial. Proponiendo en nuestra labor, la mejora continua a nivel de
+                        Atención Médica, Innovación Tecnológica, Docencia e Investigación. </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 azul">
+                    <h2><i class="far fa-heart"></i> Valores</h2>   
+                    <p> <strong> Compromiso:</strong> Compromiso con la Atención Médica brindada y la recuperación integral de todos nuestros Pacientes.</p> <br> 
+                    <p> <strong> Equidad:</strong> Aseguramos como entidad pública el acceso y el goce equitativo de nuestros servicios.</p> <br>
+                    <p> <strong>Calidad:</strong>  Nos esforzamos para trabajar bajo procesos, buscando la mejora continua, la atención
+                                eficiente y la calidad en los servicios brindados a la comunidad. </p><br>
+                    <p> <strong> Respeto:</strong> Respeto por nuestro entorno, buscando establecer con la comunidad lazos que permitan
+                                el beneficio común</p> <br>
+                    <p> <strong> Responsabilidad Social:</strong> Trabajamos conscientes de la prevención y la minimización de los factores de riesgos
+                                identificables, para el resguardo de su integridad psicofísica de nuestros pacientes y
+                                colaboradores, con estricto cumplimiento de las normas de higiene y seguridad laboral, control y
+                                tratamiento de residuos, y con un consumo responsable de recursos y energías no renovables.</p> <br>
+                    <p> <strong> Honestidad: </strong>Gestionamos de manera eficiente y transparente todos nuestros recursos. </p>     
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">  
+                    <h2>Objetivos Generales</h2> 
+                    
+                    <p><i class="far fa-check-circle"></i> La recuperación integral de la salud de la población adulta mayor de 15 años,
+                        con el desarrollo de acciones que garanticen la eficiente articulación con los
+                        otros niveles de atención, Centros Primarios de Salud y Hospitales del Interior
+                        provincial.</p>
+                    <p><i class="far fa-check-circle"></i> Coordinar tareas con todos los responsables de la cobertura asistencial del
+                        sistema de salud para un efectivo cumplimiento de la derivación, de la referencia
+                        y contrarreferencia, en todo el territorio provincial y regional.</p>
+                      
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">  
+                    <h2>Objetivos Específicos</h2> 
+                    <h3>Objetivos orientados a la Comunidad: </h3>
+                    
+                    <p><i class="fas fa-chevron-right"></i> Brindar una atención integral para que el enfermo recupere su salud.</p>
+                    <p><i class="fas fa-chevron-right"></i> Concientizar en el cuidado y prevención de la Salud.</p>
+                    <p><i class="fas fa-chevron-right"></i> Fomentar equidad en la obtención de la atención médica integral, con los
+                        mejores profesionales y la tecnología e insumos necesarios.</p>
+                       
+                    <h3>Objetivos orientados a los RR.HH. </h3>
+                    
+                        <p><i class="fas fa-chevron-right"></i> Búsqueda de asegurar el desarrollo de todos los empleados de la organización,
+                                no solo dentro un marco ético y de respeto, sino también bajo el cumplimiento
+                                de estrictas normas de higiene y seguridad laboral. Posibilitar a sus empleados
+                                capacitaciones constantes que permitan el mejor desempeño dentro de su
+                                puesto de trabajo, en miras al bienestar organizacional.</p>
+                        <p><i class="fas fa-chevron-right"></i> Posibilitar la capacitación constante y la formación de personal profesional,
+                                técnico y auxiliar, como la investigación en salud, la realización de cursos,
+                                jornadas, seminarios, ateneos y toda actividad que propenda al desarrollo del
+                                personal sanitario.</p>
+                        <p><i class="fas fa-chevron-right"></i> Participar en el sistema de residencias médicas para la formación especializada
+                                de recurso humano conforme las políticas en salud delineadas a nivel nacional
+                                como provincial.</p>
+                      
+                    <h3>Objetivos Orientados a la Administración de Bienes Materiales, tecnológicos e
+                            infraestructura: </h3>
+                    
+                    <p><i class="fas fa-chevron-right"></i> Asegurar el presupuesto necesario y la aplicación eficaz de todos los recursos al
+                            logro de los objetivos asistenciales, al cumplimiento de los estudios
+                            complementarios de diagnóstico y a la provisión de insumos materiales, de
+                            aparatología y equipamiento, dirigidos al desarrollo de los tratamientos para la
+                            recuperación de la salud.</p>
+                    <p><i class="fas fa-chevron-right"></i> Incorporar la tecnología acorde a la evidencia científica y a las necesidades
+                            epidemiológicas que demande la población.</p>
+                    <p><i class="fas fa-chevron-right"></i> Fortalecer el desarrollo eficaz y eficiente de todas las áreas de apoyo a los
+                            procesos asistenciales, en el suministro de medicamentos, insumos, materiales,
+                            herramientas y aparatología indispensables.</p>
+                     
+                </div>
+            </div> 
     </div>
      <!-- FIN CUERPO PAGINA -->
     <!-- INICIO PIE PAGINA -->
