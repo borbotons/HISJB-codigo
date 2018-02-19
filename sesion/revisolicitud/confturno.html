@@ -1,93 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Hospital SJB</title>
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmacion de turno - Hospital SJB</title>
 
-	<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.8.1/combined/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.8.1/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
--->
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="../../confirmacion-turno.css">
+
+    <link rel="icon" href="../../img/iconos/mano3.ico">
 </head>
 <body>
-<h1>Turno</h1>
 
-
-
-<form  name="conf" action="enviarconf.php" method="post" enctype="multipart/form-data">
-  <fieldset>
-    <input type="hidden" name="numero"   value="<?php echo $resulta['cod_solicitud']; ?>"  />
-    <br/>
-    <legend>Datos del Paciente</legend>
-	Nombre Completo<br/>
-    <input type="text" name="nombre" value="<?php echo $resulta['paciente'] ?>" disabled />
-    <br/>
-    Telefono <br/>
-    <input type="text" name="tel" value="<?php echo $resulta['telefono'] ?>" size="10" disabled />
-    <br/>
-    Email <br/>
-    <input type="email" name="email" value="<?php echo $resulta['email'] ?>" size="25" disabled />
-
-    <!--size="10" maxlength="9"-->
-
-  </fieldset>
- 
-  <fieldset>
-    <legend>Datos de la Solicitud</legend>
-    Especialidad<br/>
-    <input type="text" name="espec" value="<?php echo $resulta['especialidad'] ?>"  />
-    <br/>
-    Motivo<br/>
-    <input type="text" name="motivo" value="<?php echo $resulta['descripcion'] ?>" disabled />
-    <br/>
-    Medico<br/>
-    <input type="text" name="med" value="<?php echo $resulta['medico'] ?>"  />
-    <br/>
-    Dia Preferencia<br/>
-    <input type="text" name="diapref" value="<?php echo $resulta['diapreferencia'] ?>" disabled />
-    <br/>
-    Turno Preferencia<br/>
-    <input type="text" name="turnopref" value="<?php echo $resulta['turnopreferencia'] ?>" disabled />
-    <br/>
-    
-  </fieldset>
-  <fieldset>
-    <legend>Observaciones</legend>
-    Fecha Turno<br/>
-    <input type="date" name="fechatur" value="10/02/2018"  />
-    <br/>
-    
-    <!--<input id="datepicker" width="276" name="fechatur" />
-    <script>
-        $('#datepicker').datepicker({
-            uiLibrary: 'bootstrap4'
-        });
-    </script>-->
-
-    Hora Turno<br/>
-    <input type="time" name="horatur" value="13:50"  />
-    <br/>
-    Observaciones<br/>
-    <textarea name="observatur" value="" >   </textarea>  
-    <br/>
-    Informacion Util<br/>
-    <input type=file size=60 name="file1"><br><br>
-    <br/>
-
-  </fieldset>
-
-	</div>
-                
-    <button class="md-close" type="submit" onclick="conf.submit();">Incorporar</button>
-                
+<div class="container-fluid base">
+    <div class="container">
+            <h1><i class="fas fa-list-ol"></i> Turno nro: 00123</h1>
     </div>
-    <a class="btn btn-success" href="">Confirmar</a>
-    <a class="btn btn-danger" href="../controladores/panel_user.php">Cancelar</a>
-    
+</div>
+<div class="container-fluid datos">
+    <div class="container">
+        <form  name="conf" action="enviarconf.php" method="post" enctype="multipart/form-data">
+            <div class="datos-paciente">
+                <div class="row ">
+                    <div class="col-sm-12 barra">
+                        <input type="hidden" name="numero"   value="<?php echo $resulta['cod_solicitud']; ?>"  />
+                        <h3><i class="fas fa-male"></i> Datos del Paciente</h3>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="nombre" >Nombre completo</label>
+                        <input class="form-control" type="text" name="nombre" value="<?php echo $resulta['paciente'] ?>" disabled />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="tel" >Telefono</label>
+                        <input class="form-control" type="text" name="tel" value="<?php echo $resulta['telefono'] ?>" size="10" disabled />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="email" >Email</label>
+                        <input class="form-control" type="email" name="email" value="<?php echo $resulta['email'] ?>" size="25" disabled />
+                    </div>
+                </div>
+            </div>
 
-</form>
+            <div class="datos-paciente">
+                <div class="row">
+                    <div class="col-sm-12 barra">
+                        <h3><i class="fas fa-edit"></i> Datos de la Solicitud</h3>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="espec" >Especialidad</label>
+                        <input class="form-control" type="text" name="espec" value="<?php echo $resulta['especialidad'] ?>" />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="motivo" >Motivo</label>
+                        <input class="form-control" type="text" name="motivo" value="<?php echo $resulta['descripcion'] ?>" disabled />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="med" >Medico</label>
+                        <input class="form-control" type="text" name="med" value="<?php echo $resulta['medico'] ?>"  />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="diapref" >Dia Preferencia</label>
+                        <input class="form-control" type="text" name="diapref" value="<?php echo $resulta['diapreferencia'] ?>" disabled  />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="turnopref" >Turno Preferencia</label>
+                        <input class="form-control" type="text" name="turnopref" value="<?php echo $resulta['turnopreferencia'] ?>" disabled  />
+                    </div>
+                </div>
+            </div>
+
+            <div class="datos-paciente">
+                <div class="row">
+                    <div class="col-sm-12 barra">
+                        <h3><i class="fas fa-search"></i> Observaciones</h3> 
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="fechatur" >Fecha Turno</label>
+                        <input class="form-control" type="date" name="fechatur" value="10/02/2018"   />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="horatur" >Hora Turno</label>
+                        <input class="form-control" type="time" name="horatur" value="13:50" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="observatur" >Observaciones</label>
+                        <textarea class="form-control" id="comments" name="observatur" placeholder="Escriba aqui su observacion..." rows="5"></textarea>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="file1" >Informacion Util</label>
+                        <input class="form-control" type=file size=60 name="file1" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 form-group">
+                    <button class="md-close btn btn-secondary btn-block" type="submit" onclick="conf.submit();">Incorporar</button>
+                </div>
+                <div class="col-sm-4 form-group">
+                    <a class="btn btn-success btn-block" href="">Confirmar</a>
+                </div>
+                <div class="col-sm-4 form-group">
+                        <a class="btn btn-danger btn-block" href="../../controladores/panel_user.php">Cancelar</a>
+                </div> 
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container-fluid pie">
+    <div class="row justify-content-center">
+        <h4> <strong> Hospital Interzonal</strong> San Juan Bautista</h4>
+    </div>
+</div>
 
 
+
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
 </body>
 </html>
