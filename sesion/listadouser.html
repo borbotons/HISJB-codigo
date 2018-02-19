@@ -101,25 +101,26 @@
                     <a class="btn btn-success btn-block" href="../controladores/panel_admin.php">Volver atras</a>
                 <div class="fondo">
                     <div class="row justify-content-center">
-                        <table>
-                            <tr>
-                                <th>Nombre y Apellido</th>
-                                <th>Division</th>
-                                <th>Dni</th>
-                                <th>Email</th>
-                            
-                            </tr>
-                            <?php foreach ($resulta as $result ) { ?>
-                            <tr>
-                            <td><?php echo $result['nombrecomp']; ?></td>
-                            <td><?php echo $result['division']; ?></td>
-                            <td><?php echo $result['dni']; ?></td>
-                            <td><?php echo $result['email']; ?></td>
-                            
-                            </tr>
-                            <?php } ?>
-                                                                                             
-                        </table>
+                    <table>
+                        <tr>
+                            <th>Nombre y Apellido</th>
+                            <th>Division</th>
+                            <th>Dni</th>
+                            <th>Email</th>
+                        
+                        </tr>
+                        <?php foreach ($resulta as $result ) { ?>
+                        <tr>
+                        <td><?php echo $result['nombrecomp']; ?></td>
+                        <td><?php echo $result['division']; ?></td>
+                        <td><?php echo $result['dni']; ?></td>
+                        <td><?php echo $result['email']; ?></td>
+                        
+                        </tr>
+                        <?php } ?>
+                        
+                                                                                        
+                    </table>
                 </div>
             </div>
         </div>

@@ -12,6 +12,8 @@ if(isset($_SESSION['usuario'])&&($_SESSION['usuario'] == 'admin'))
 {
     header('Location:panel_admin.php');
 }
+
+
 require 'funciones.php';
 
 //comprobar_ses_norm();
