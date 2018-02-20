@@ -23,7 +23,7 @@
         </div>
     </div>-->
     <div class="container-fluid imagen" style="">
-        <h1 class="rotulo">Institucional</h1>
+        <h1 class="rotulo">_Institucional</h1>
         
         <div class="isologo_blanco">
             <img src="img/iconos/isotipo blanco.png" alt="">
@@ -124,7 +124,7 @@
                         </a>
                     </div>
                     <div class="topic-container">
-                        <a href="contacto.html" class="ga-topic-selector">
+                        <a href="#" id="btn-toggle" class="ga-topic-selector btn-toggle">
                             <div class="topic-link-container">
                                 <div class="topic-link">
                                     <img src="img/iconos/act/user.svg" alt="" class="hover-on">
@@ -140,7 +140,48 @@
     
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
-
+    <div class="seccionToggle">
+        <div class="wrap">
+            
+            <div class="row justify-content-center sobre">
+                <h1><i class="far fa-envelope-open"></i></h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="nombre">1- Ingrese su nombre</label>
+                    <input class="form-control" id="nombre" name="nombre" placeholder="Juan Perez" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                        <label for="nombre">2- Ingrese su correo</label>
+                    <input class="form-control" id="habitacion" name="habitacion" placeholder="mail@ejemplo.com" type="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                        <div class="form-group">
+                            <label for="servicio">3- Seleccione el motivo del contacto</label>
+                            <select class="form-control" id="servicio">
+                                <option>Consulta</option>
+                                <option value="">Sugerencia</option>
+                                <option>Denuncia</option>
+                                <option>Otro</option>  
+                            </select>
+                        </div>
+                </div>
+            </div>    
+            <br>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Escriba aqui su comentario..." rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-block pull-right" type="submit">Enviar</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row justify-content-start cerrar">
+            <h3 id="btn-toggle2"><i class="fas fa-chevron-circle-left"></i> CERRAR</h3>
+        </div>
+    </div>  
     <!--
     <div class="container-fluid">
         <div class="row">
@@ -312,5 +353,6 @@
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
 </body>
 </html>

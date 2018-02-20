@@ -83,7 +83,7 @@
     font-family: "Source Sans Pro";
     color: rgb(255, 255, 255);
     line-height: 1.2;
-    text-align: justifyLeft;
+    letter-spacing: 5px;
     position: absolute;
     left: 100.88px;
     top: 128px;
@@ -101,7 +101,7 @@
     -ms-transform: matrix( 0.66771292039513,0,0,0.66666666666667,0,0);
     position: absolute;
     left: 124.492px;
-    top: 346.5px;
+    top: 326.5px;
     z-index: 591;
   }
 
@@ -116,14 +116,14 @@
     -ms-transform: matrix( 0.66771292039513,0,0,0.66666666666667,0,0);
     position: absolute;
     left: 93.048px;
-    top: 358px;
+    top: 338px;
     z-index: 592;
   }
   
   .isologo_blanco {
     position: absolute;
     left: 102px;
-    top: 358px;
+    top: 338px;
     width: 54px;
     height: 50px;
     z-index: 590;
