@@ -14,6 +14,7 @@
     $division = limpiar($_POST['division']);
     $dni = $_POST['dni'];
     $email = $_POST['email'];
+    $tipo = $_POST['tipo'];
     //$pass = hash('sha512', $pass);
 
    // echo '<h1>'.$usuario.$pass.$nombrecomp.'</h1>';
@@ -29,7 +30,7 @@
     }
 
     $statement = $conexion->prepare('INSERT INTO usuarios (
-    	usuario, pass, idusuario, division, nombrecomp, dni, email) VALUES (:usuario,:pass,null,:div,:nomb,:dni,:email )');
+    	usuario, pass, idusuario, division, nombrecomp, dni, email, tipo) VALUES (:usuario,:pass,null,:div,:nomb,:dni,:email,:tipo )');
 
 
     $statement->execute(array(
@@ -38,7 +39,8 @@
         ':div' => $division,
         ':nomb' => $nombrecomp,
         ':dni' => $dni,
-        ':email' => $email   
+        ':email' => $email,
+        ':tipo' => $tipo 
          ));
 
    // echo "<script>alert('Usuario creado con exito')</script>";

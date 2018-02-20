@@ -4,11 +4,11 @@
 
 session_start();
 
-if(isset($_SESSION['usuario'])&&($_SESSION['usuario'] != 'admin'))
+if(isset($_SESSION['usuario'])&&($_SESSION['tipo'] != 'admin'))
 {
     header('Location:panel_user.php');
 }
-if(isset($_SESSION['usuario'])&&($_SESSION['usuario'] == 'admin'))
+if(isset($_SESSION['usuario'])&&($_SESSION['tipo'] == 'admin'))
 {
     header('Location:panel_admin.php');
 }
@@ -50,8 +50,9 @@ if (($_SERVER['REQUEST_METHOD'] =='POST')&&( $_POST['usuario'] != null)){
     $resultado = $statement->fetch();
     if($resultado !== false){
         $_SESSION['usuario'] = $usuario;
+        $_SESSION['tipo'] = $resultado['tipo'];
 
-                if ($usuario == 'admin') {
+                if ($_SESSION['tipo'] == 'admin') {
                     header('Location: panel_admin.php');
                      }
                      

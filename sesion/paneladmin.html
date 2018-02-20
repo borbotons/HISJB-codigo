@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/component.css"/>
     <link rel="stylesheet" type="text/css" href="../css/admin-main.css">
-    <script src="../js/modernizr.custom.js"></script>
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -33,11 +32,14 @@
                     <div class="form-group">
                         <label for="nombrecomp">Nombre Completo</label>
                         <input type="text" name="nombrecomp" id="nombrecomp">
+                    </div>
+                    <div class="form-group">
+                        <label for="division">Tipo</label>
+                        <input type="text" name="tipo" id="tipo">
                     </div>       
-                   
                     <div class="form-group">
                         <label for="division">Division</label>
-                        <input type="email" name="division" id="division">
+                        <input type="text" name="division" id="division">
                     </div>
                     <div class="form-group">
                         <label for="dni">DNI</label>
@@ -134,7 +136,7 @@
                     <button ><a href="../controladores/listauser.php" >Listar Usuarios</a></button>
                     <button class="md-trigger" data-modal="modal-1">Agregar Usuario</button>
                     <button class="md-trigger" data-modal="modal-3">Eliminar Usuario existente</button>
-                    <button class="md-trigger" data-modal="modal-4">Estad&iacutesticas</button>
+                    
                     <button ><a href="../controladores/cerrar_ses.php" >Cerrar Sesion</a></button>
                 </div>
             </div>
@@ -165,5 +167,7 @@
 	</script>
 	<script src="../js/cssParser.js"></script>
 	<script src="../js/css-filters-polyfill.js"></script>
+    <script src="../js/modernizr.custom.js"></script>
+
 </body>
 </html>

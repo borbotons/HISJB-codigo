@@ -9,6 +9,14 @@ if (!isset($_SESSION['usuario'])) {
 	# code...
 }
 
+if(isset($_SESSION['usuario'])&&($_SESSION['tipo'] != 'admin'))
+{
+    header('Location:panel_user.php');
+}
+//if(isset($_SESSION['usuario'])&&($_SESSION['tipo'] == 'admin'))
+//{
+  //  header('Location:panel_admin.php');
+//}
 
 require '../sesion/paneladmin.html';
 

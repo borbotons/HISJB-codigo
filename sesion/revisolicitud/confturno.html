@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmacion de turno - Hospital SJB</title>
 
-    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
-    <link rel="stylesheet" href="../../confirmacion-turno.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="../confirmacion-turno.css">
 
     <link rel="icon" href="../../img/iconos/mano3.ico">
 </head>
@@ -17,7 +17,7 @@
 
 <div class="container-fluid base">
     <div class="container">
-            <h1><i class="fas fa-list-ol"></i> Turno nro: 00123</h1>
+            <h1><i class="fas fa-list-ol"></i> Turno nro: <?php echo $resulta['cod_solicitud']; ?></h1>
     </div>
 </div>
 <div class="container-fluid datos">
@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <label for="espec" >Especialidad</label>
-                        <input class="form-control" type="text" name="espec" value="<?php echo $resulta['especialidad'] ?>" />
+                        <input class="form-control" type="text" name="espec" value="<?php echo $resulta['especialidad'] ?>" disabled />
                     </div>
                     <div class="col-sm-6 form-group">
                         <label for="motivo" >Motivo</label>
@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <label for="med" >Medico</label>
-                        <input class="form-control" type="text" name="med" value="<?php echo $resulta['medico'] ?>"  />
+                        <input class="form-control" type="text" name="med" value="<?php echo $resulta['medico'] ?>"  disabled/>
                     </div>
                     <div class="col-sm-6 form-group">
                         <label for="diapref" >Dia Preferencia</label>
@@ -111,14 +111,14 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-4 form-group">
-                    <button class="md-close btn btn-secondary btn-block" type="submit" onclick="conf.submit();">Incorporar</button>
-                </div>
+                <!--<div class="col-sm-4 form-group">
+                    <button class="md-close btn btn-secondary btn-block" type="submit" onclick="conf.submit();">Aceptar</button>
+                </div>-->
                 <div class="col-sm-4 form-group">
                     <a class="btn btn-success btn-block" href="">Confirmar</a>
                 </div>
                 <div class="col-sm-4 form-group">
-                        <a class="btn btn-danger btn-block" href="../../controladores/panel_user.php">Cancelar</a>
+                        <a class="btn btn-danger btn-block" href="../controladores/panel_user.php">Rechazar</a>
                 </div> 
             </div>
         </form>
@@ -132,7 +132,7 @@
 
 
 
-    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </body>
 </html>
