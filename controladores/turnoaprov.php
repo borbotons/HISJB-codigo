@@ -15,6 +15,8 @@ $resulta = '';
 
 $estado = 'aprobado';
 
+$errores = '';
+
 #Lista de solicitudes aprovadas-->Turnos
 
 

@@ -47,6 +47,7 @@ try {
 <html>
 <head>
 	<title>ArchivoPdf</title>
+  <link rel="stylesheet" type="text/css" href="../css/imprimir.css">
 </head>
 <body>
 

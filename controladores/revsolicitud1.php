@@ -24,7 +24,7 @@ try {
 
 
 
-   $statemente = $conexion->prepare('SELECT cod_solicitud,paciente,telefono,email,estado,diapedido,especialidad,descripcion,medico,diapreferencia,turnopreferencia FROM solicitudrespaldo WHERE cod_solicitud = :id ');
+   $statemente = $conexion->prepare('SELECT * FROM solicitudrespaldo WHERE cod_solicitud = :id ');
 
    $statemente->execute(array(
         ':id' => $num
