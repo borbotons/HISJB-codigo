@@ -9,64 +9,97 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/component.css"/>
     <link rel="stylesheet" type="text/css" href="../css/admin-main.css">
+    <link rel="stylesheet" href="../css/awesome/css/fontawesome-all.min.css">
+
+    <link rel="icon" href="../img/iconos/mano3.ico">
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
     <!-- colección de ventanas modales  -->
-    <form  action="../controladores/nuevo_user.php " method="post" name="form1">
-    <div class="md-modal md-effect-1" id="modal-1">
+    
+
+    <div class="md-modal md-effect-9" id="modal-1">
         <div class="md-content">
             <h3>Nuevo Usuario</h3>
             <div>
-                <div class="row justify-content-around">
-                    <div class="form-group">
-                        <label for="usuario">Nombre de Usuario-Nick</label>
-                        <input type="text" name="usuario" id="usuario">
-                    </div> 
-                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="text" name="password" id="password">
+                <form  action="../controladores/nuevo_user.php " method="post" name="form1">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="usuario" >Nick de Usuario</label>
+                        <input class="form-control" name="usuario" id="usuario" placeholder="Juan08" type="text" required>
                     </div>
-                    <div class="form-group">
-                        <label for="nombrecomp">Nombre Completo</label>
-                        <input type="text" name="nombrecomp" id="nombrecomp">
+                    <div class="col-sm-6 form-group">
+                        <label for="password" >Password</label>
+                        <input class="form-control" name="password" id="password" placeholder="123456" type="text" required>
                     </div>
-                    <div class="form-group">
-                        <label for="division">Tipo</label>
-                        <input type="text" name="tipo" id="tipo">
-                    </div>       
-                    <div class="form-group">
-                        <label for="division">Division</label>
-                        <input type="text" name="division" id="division">
-                    </div>
-                    <div class="form-group">
-                        <label for="dni">DNI</label>
-                        <input type="number" name="dni" id="dni">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    
                 </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="nombrecomp">Nombre completo trabajador</label>
+                        <input class="form-control" name="nombrecomp" id="nombrecomp" placeholder="Juan Marcos Blanco" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="division">Tipo</label>
+                        <select  name="tipo" id="tipo" placeholder="Categoria 1" class="form-control" required>
+                                <option value="dni">Administrador A</option>
+                                <option value="dni">Administrador B</option>
+                                <option value="dni">Redactor Noticias</option>
+                                <option value="dni">Editor noticias</option>
+                                <option value="dni">Redactor Educaci&oacuten</option>
+                                <option value="dni">Editor Educaci&oacuten</option>
+                        </select> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="division">Divisi&oacuten</label>
+                        <select name="division" id="division"  placeholder="Sector 1"  class="form-control" required>
+                                <option value="dni">Sector A</option>
+                                <option value="dni">Sector B</option>
+                                <option value="dni">Sector C</option>
+                                <option value="dni">Sector D</option>
+                        </select>    
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="dni">DNI</label>
+                        <input class="form-control" type="number" name="dni" id="dni" placeholder="10123456" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="email">Correo</label>
+                        <input class="form-control"  type="email" name="email" id="email" placeholder="correo@ejemplo.com"  required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <button class=" btn btn-success btn-block" type="submit" onclick="form1.submit();">Incorporar</button>
+                    <!-- si este codigo no es necesario quitalo porque deforma el formulario  :D
+                    <?php if(!empty($errores)): ?>
+                    <div class="error">
+                        <ul>
+                            <?php echo $errores; ?>
+                        </ul>
+                    </div>
+                    <?php endif; ?>   -->
+                </form>
+                    </div>
+
+                    
+                    <div class="col-sm-6 form-group">
+                        <button class="md-close btn btn-secondary btn-block " >Cancelar</button>
+                    </div>
                 
-                    <button class="md-close" type="submit" onclick="form1.submit();">Incorporar</button>
-                
+                </div>
             </div>
         </div>
     </div>
-       <?php if(!empty($errores)): ?>
-                            <div class="error">
-                            <ul>
-                                <?php echo $errores; ?>
-
-                            </ul>
-
-                            </div>
-                            <?php endif; ?>
-    </form>
+       
     <div class="md-modal md-effect-2" id="modal-2">
         <div class="md-content">
             <h3>Listado de Usuarios</h3>
@@ -81,27 +114,39 @@
             </div>
         </div>
     </div>
-    <form  action="../controladores/borrar_user.php " method="post" name="form2">
-    <div class="md-modal md-effect-2" id="modal-3">
+
+    
+    <div class="md-modal md-effect-9" id="modal-3">
         <div class="md-content">
             <h3>Dar de baja a Usuario</h3>
             <div>
-                <p>Recuerde que dar de baja a un usuario implica un cambio irreversible:</p>
-                <ul>
-                    <li><strong>Nota:</strong> Asegurese de colocar el DNI correcto correspondiente al usuario que se desea dar de baja.</li>
-                    
-                </ul>
+                <div class="row ">
+                    <p><i class="fas fa-exclamation-triangle"></i> Recuerde que dar de baja a un usuario implica un <strong> cambio irreversible</strong>: 
+                        Asegurese de colocar correctamente el DNI correspondiente al usuario que se desea dar de baja.</p>
+                </div>
+                
+                <form  action="../controladores/borrar_user.php " method="post" name="form2"></form>
                 <div class="row justify-content-center">
-                    <div class="form-group">
-                        <label for="dni">DNI</label>
-                        <input type="number" name="dni" id="dni">
+                    <div class="col-sm-6 form-group">
+                        <label for="dni">N&UacuteMERO DE DNI</label>
+                        <input class="form-control" type="number" name="dni" id="dni" placeholder="10123456" required>
                     </div>
                 </div>
-                <button class="md-close" type="submit" onclick="form2.submit();">Eliminar</button>
+                
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <button class=" btn-block" type="submit" onclick="form2.submit();">Eliminar</button>
+                    </div>
+                </form>
+                    <div class="col-sm-6 form-group">
+                        <button class="md-close btn btn-secondary btn-block" >Cancelar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </form>
+    
+
     <div class="md-modal md-effect-2" id="modal-4">
         <div class="md-content">
             <h3>Estad&iacutesticas</h3>
@@ -117,27 +162,30 @@
         </div>
     </div>
     
-    <div class="container "> <!-- esta clase debe estar sola de lo contrario no se activan los modales -->
+    <div class="container-fluid "> <!-- esta clase debe estar sola de lo contrario no se activan los modales -->
         <div class="base">
-            <div class="row justify-content-center titulo">
-                <h1>Administraci&oacuten de Usuarios - HISJB</h1>
+            <div class="titular">
+                <div class="row  titulo">
+                    <h1><i class="fas fa-cogs"></i> Administraci&oacuten de Usuarios - HISJB</h1>
+                </div>
+                <div class="row  subtitulo">
+                    <h5>Crea, actualiza y gestiona las cuentas de usuario.</h5>
+                </div>
             </div>
-            <div class="row justify-content-center subtitulo">
-                <h5>Crea, actualiza y gestiona las cuentas de usuario</h5>
-            </div>
+           
             <div class="row main clearfix">
                 <div class="column col-md-6 texto">
-                    <p>Panel del Administrador.</p>
+                    <p>Panel del <strong> Administrador</strong>.</p>
                 </div>
                 <div class="column col-md-4 botones">
 
                     <!--<button ><a href="../controladores/listauser.php" target="_blanck">Listar Usuarios</a></button>-->
 
-                    <button ><a href="../controladores/listauser.php" >Listar Usuarios</a></button>
-                    <button class="md-trigger" data-modal="modal-1">Agregar Usuario</button>
-                    <button class="md-trigger" data-modal="modal-3">Eliminar Usuario existente</button>
+                    <button ><a href="../controladores/listauser.php" ><i class="fas fa-users"></i> Listar Usuarios</a></button>
+                    <button class="md-trigger" data-modal="modal-1"><i class="fas fa-user-plus"></i> Agregar Usuario</button>
+                    <button class="md-trigger" data-modal="modal-3"><i class="fas fa-user-times"></i> Eliminar Usuario existente</button>
                     
-                    <button ><a href="../controladores/cerrar_ses.php" >Cerrar Sesion</a></button>
+                    <button ><a href="../controladores/cerrar_ses.php" ><i class="fas fa-sign-out-alt"></i> Cerrar Sesion</a></button>
                 </div>
             </div>
         </div>
@@ -153,6 +201,8 @@
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
+    
+
     <div class="md-overlay"></div><!-- fondo de emergente modal -->
 	
 	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
@@ -166,8 +216,7 @@
 		var polyfilter_scriptpath = '/js/';
 	</script>
 	<script src="../js/cssParser.js"></script>
-	<script src="../js/css-filters-polyfill.js"></script>
-    <script src="../js/modernizr.custom.js"></script>
+	<script src="../Js/css-filters-polyfill.js"></script>
 
 </body>
 </html>

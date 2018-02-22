@@ -4,7 +4,7 @@ body{
     background: #7f8c8d;
     overflow-y: scroll;
 }
-
+/*
 .login-base{
     position: relative;
     height: 300px;
@@ -32,14 +32,23 @@ body{
     transform-origin: top left;
     transform: skewY(-4deg);
     z-index: -1;
+}*/
+
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
-.base{
-    z-index: 2000;
+.titular{
+   background: #3d97d3;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   padding-left: 8%;
 }
+
 
 .titulo{
-    padding-top: 4%;  /*ver responsive*/
+    padding-top: %;  /*ver responsive*/
 
 }
 
