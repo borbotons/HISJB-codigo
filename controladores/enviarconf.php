@@ -27,7 +27,7 @@ $correodest = $_POST['email2'];
 
 try {
 
-	 $conexion = new PDO('mysql:host=localhost;dbname=hsjb','root','');
+    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
 
 	
  	}catch(PDOException $e){
@@ -47,7 +47,7 @@ try {
    //Accion1 Confirmar
 
        //esto debe ser un UPDATE con el numero id que tengo y cambiando principalmente el estado y ademas agregar todo esto a la lista de TURNOS que queda asentada dentro de la base de datos.
-   $statemente = $conexion->prepare('UPDATE solicitudrespaldo 
+   $statemente = $conexion->prepare('UPDATE solicitud
    SET estado = :estado, descripcion = :des, medico = :med,dia = :dia, horario = :hora, observacion = :obs                
    WHERE cod_solicitud = :id ');
 
@@ -89,6 +89,8 @@ try {
    //$statement->execute();
 
    $resulta2 = $statementz->fetch();
+   header( "refresh:0;http://www.hisjb.com.mialias.net/HISJB-codigo/controladores/panel_user.php" );
+   echo "<script>alert('Turno Confirmado.');</script>";
 
 
    //Envio de correo tratar que no sea spam
@@ -105,7 +107,7 @@ try {
 
   //Accion2 Rechazado
 
-   $statemente = $conexion->prepare('UPDATE solicitudrespaldo 
+   $statemente = $conexion->prepare('UPDATE solicitud 
    SET estado = :estado, descripcion = :des, medico = :med, observacion = :obs                
    WHERE cod_solicitud = :id ');
 
@@ -123,22 +125,11 @@ try {
    $resulta = $statemente->fetch();
 
 
+   header( "refresh:0;http://www.hisjb.com.mialias.net/HISJB-codigo/controladores/panel_user.php" );
+   echo "<script>alert('Turno Rechazado.');</script>";
+    
   }  
  
 
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-
-	<H1> Terminado <?php echo $resulta['obs']?></H1>
-
-	<h2> nombre paciente <?php echo $resulta2['pas']?></h2>
-
-	<a href="panel_user.php">Volver</a>
-</body>
-</html>

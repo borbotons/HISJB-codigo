@@ -13,6 +13,66 @@
     <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
 
     <link rel="icon" href="../../img/iconos/mano3.ico">
+
+<script>
+            
+            function mostrarmed(cod){
+            
+            if (window.XMLHttpRequest)
+            {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function()
+            {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+            document.getElementById("datos").innerHTML=xmlhttp.responseText;
+            document.getElementById("med").innerHTML=xmlhttp.responseText;
+            }else{ 
+            document.getElementById("datos").innerHTML='Cargando...';
+            }
+            }
+            xmlhttp.open("POST","../../controladores/selecmed.php",true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xmlhttp.send("cod_banda="+cod);
+            
+            }
+            
+</script>
+            
+<script>
+                
+                function mostrardia(medi){
+                
+                if (window.XMLHttpRequest)
+                {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+                }
+                else
+                {// code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange=function()
+                {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                document.getElementById("datos2").innerHTML=xmlhttp.responseText;
+                document.getElementById("diamed").innerHTML=xmlhttp.responseText;
+                }else{ 
+                document.getElementById("datos2").innerHTML='Cargando...';
+                }
+                }
+                xmlhttp.open("POST","../../controladores/selecdia.php",true);
+                xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                xmlhttp.send("cod_banda="+medi);
+                
+                }
+                
+</script>
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -134,7 +194,7 @@
         <div class="row justify-content-center titular">
             <div class="col-md-10">
                     <h3 class="display-4">Solicitud de Turno on-line
-                        <small class="text-muted">Bienvenido</small>
+                        <small class="text-muted">HISJB</small>
                     </h3>
                     <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
             </div>
@@ -146,45 +206,70 @@
             <div class="container">
                 
                
-            <form action="" method="" class="flex-column flex-md-row">
+    <form action="../../controladores/turno.php" method="GET" name="turnos">
+
                 <div class="row">
                     <div class="col-xs-12 col-lg-10 col-md-8 ">
                         <h3>Datos personales</h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <label for="nombre" >Nombre</label>
-                        <input class="form-control" id="nombre" name="nombre" placeholder="Juan" type="text" required>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                        <label for="nombre" >Nombre Completo</label>
+                        <input class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo" type="text" required>
+                         </div>
+                    
+                         <div class="col-sm-6 form-group">
+                        <label for="numero" >Dni</label>
+                        <input class="form-control" id="numero" name="numero" placeholder="Ingrese dni" type="number" required>
+                        </div>
+                 </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="fechanac" >Fecha de Nacimiento</label>
+                            <input class="form-control" id="fechanac" name="fechanac" placeholder="" type="date" required>
+                        </div>
+                        <div class="col-sm-6 form-group" id="flo" style="display:none;">
+                            <label for="obra_soci" >Obra Social</label>
+                            <input class="form-control" type="text" placeholder="Nombre Obra Social" name="obra_soci" id="obra_soci" value="">
+
+                     </div>
+
+
+
                     </div>
-                    <div class="col-sm-6 form-group">
-                        <label for="nombre" >Apellido</label>
-                        <input class="form-control" id="habitacion" name="apellido" placeholder="Perez" type="text" required>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <label for="nombre" >Tipo documento</label>
-                        <select name="tipo_doc" id="tipo_doc" class="form-control">
-                                <option value="dni">DNI</option>
-                                <option value="dni">DNI</option>
-                                <option value="dni">DNI</option>
-                        </select>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <label for="numero" >Numero</label>
-                        <input class="form-control" id="numero" name="numero" placeholder="12345678" type="number" required>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <label for="fecha_nac" >Fecha de Nacimiento</label>
-                        <input class="form-control" id="fecha_nac" name="fecha_nac" placeholder="" type="date" required>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        
-                    </div>
-                </div> 
+                   
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                        <label for="">Obra Social</label>
+                        <div class="col-sm-6 form-group">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
+                                Tengo Obra Social
+                            </label>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
+                                Sin Obra Social
+                            </label>
+                        </div>
+
+                           
+                        </div>
+
+                     
+                    </div> 
+                     
+
+
+
+
+                 
+    
+
                 
                 <div class="row">
                     <h3>Datos de contacto</h3>
@@ -195,13 +280,13 @@
                         <input class="form-control" id="domicilio" name="domicilio" placeholder="Domicilio del paciente" type="text" required>
                     </div>
                     <div class="col-sm-6 form-group">
-                        <label for="nombre" >Telefono</label>
-                        <input class="form-control" id="telefono" name="telefono" placeholder="0383 456654" type="text" required>
+                        <label for="telefono" >Telefono</label>
+                        <input class="form-control" id="telefono" name="telefono" placeholder="Ingrese cel/tel" type="number" required>
                     </div>
                 </div> 
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <label for="domicilio" >Email</label>
+                        <label for="mail" >Email</label>
                         <input class="form-control" id="mail" name="mail" placeholder="mail@mail.com" type="text" required>
                     </div>
                     
@@ -210,109 +295,106 @@
                 <div class="row">
                     <h3>Datos de consulta</h3>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        
+                
+                <div class="row form-style justify-content-center">
+                    <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="especialidad">Especialidad</label>
+                                <select name="especia" id="especialidad" class="form-control" onchange="mostrarmed(this.value)" required>
+                                        <option value="" disabled selected>Seleccione</option>
+                                        <option value="cardiologia">Cardiolog&iacutea</option>
+                                        <option value="cirugia">Cirug&iacutea General</option>
+                                        <option value="clinica">Cl&iacutenica M&eacutedica</option>
+                                        <option value="ginecologia">Ginecolog&iacutea</option>
+                                </select>
+                         </div>
+                        </div>
+                    
+                    <div class="col-md-3">
+                        <div class="form-group">
+                                <label for="med">Especialista</label>
+                                <select name="med" id="med" class="form-control" onclick="mostrardia(this.value)">
+                                        
+                                </select>
+                        </div>
                     </div>
-                    <div class="col-sm-6 form-group">
-                        <label for="nombre" >Telefono</label>
-                        <input class="form-control" id="telefono" name="telefono" placeholder="0383 456654" type="text" required>
+                
+                    <div class="col-md-3">
+                        <div class="form-group">
+                                <label for="diamed">D&iacutea de preferencia</label>
+                                <select name="diamed" id="diamed" class="form-control" required>
+                                        
+                                </select>
+
+                            <div id="datos" style="display:none;"></div>
+                            <div id="datos2" style="display:none;"></div>
+                        </div>
                     </div>
-                </div> 
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                    <label for="turn">Turno</label>
+                                    <select name="turn" id="turn" class="form-control" required>
+                                            <option value="" disabled selected>Seleccione</option>
+                                            <option value="mañana">ma&ntildeana</option>
+                                            <option value="tarde">tarde</option>
+                                            
+                                    </select>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                
                 <div class="row form-style justify-content-center">
                     <div class="col-xs-12 col-lg-10 col-md-8 ">
-                        <div class="form-group">
-                            o-inline"><input type="radio" name="optradio">Sin Obra Social</label>
-                                
-                            
-                           
-    
-                            <input class="form-control" type="text" placeholder="Nombre Obra Social">
-                        </div>
+                        <button class="btn btn-success btn-block" type="submit" >Solicitar Turno </button>
                     </div>
                 </div>
-                <div class="row form-style justify-content-center">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="especialidad">Especialidad</label>
-                            <select name="" id="especialidad" class="form-control">
-                                    <option value="dni">Cardiolog&iacutea</option>
-                                    <option value="dni">Cirug&iacutea General</option>
-                                    <option value="dni">Cl&iacutenica M&eacutedica</option>
-                                    <option value="dni">Ginecolog&iacutea</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="especialista">Especialista</label>
-                            <select name="" id="especialista" class="form-control">
-                                    <option value="dni">Doctor 1</option>
-                                    <option value="dni">Doctor 2</option>
-                                    <option value="dni">Doctor 3</option>
-                                    <option value="dni">doctor 4</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="diaPref">D&iacutea de preferencia</label>
-                            <select name="" id="diaPref" class="form-control">
-                                    <option value="dni">Lunes</option>
-                                    <option value="dni">Martes</option>
-                                    <option value="dni">Miercoles</option>
-                                    <option value="dni">Jueves</option>
-                                    <option value="dni">Viernes</option>
-                            </select>
-                        </div>
+    </form>
                     </div>
                 </div>
-                <div class="row form-style justify-content-center">
-                    <div class="col-xs-12 col-lg-10 col-md-8 ">
-                        <button class="btn btn-success btn-block" type="submit" onclick="">Solicitar Turno </button>
-                    </div>
-                </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
      <!-- FIN CUERPO PAGINA -->
     <!-- INICIO PIE PAGINA -->
     <footer>
         <div class="container-fluid pie">
             <div class="container">
                 <div class="row justify-content-center barra-h">
-                    <div class="col-lg-3 ">
-                            <img src="img/iconos/isologo-blanco.png" alt="" width="220px">
+                    <div class="col-lg-2 ">
+                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="160px">
                     </div>
-                </div>
-                <div class="row pie-menu">
-                    <div class="col-md-5 info">
-                        <h3>&iquest;C&oacute;mo llegar?</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1753.7916364358193!2d-65.79011901870062!3d-28.46197603763918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9424289732928a55%3A0x1594c252a464ef86!2sHospital+Interzonal+%22San+Juan+Bautista%22!5e0!3m2!1ses!2sar!4v1513049520417" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>     
+                <div class="row pie-menu justify-content-center">
+                    <div class="col-md-3 info info-b">
+                        <h3><i class="fas fa-shield-alt"></i> Pacientes</h3>
+                        <a href="">Especialidades</a>
+                        <a href="">Laboratorio</a>
+                        <a href="">Internaciones</a>
+                        <a href="">Horarios de visita</a>
+                        <a href="">Solicitar Turno online</a>
                     </div>
-                    <div class="col-lg-2 info">
-                        <h3>Institucional</h3>
+                    <div class="col-lg-3 info info-b">
+                        <h3><i class="fas fa-info"></i> Institucional</h3>
                         <a href="">Organigrama</a>
                         <a href="">Historia</a>
                         <a href="">Innovaciones edilicias</a>
                         <a href="">Trabaja con nosotros</a>
                     </div>
-                    <div class="col-lg-4 info">
-                        <h3>Contacto</h3>
+                    <div class="col-lg-3 info">
+                        <h3><i class="fas fa-bullhorn"></i> Contacto</h3>
                         <a href=""></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid post-pie">
-            <h4>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4>
+            <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4>
         </div>
     </footer>
     <!-- FIN PIE PAGINA -->
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/func_bas.js"></script>
 </body>
 </html>

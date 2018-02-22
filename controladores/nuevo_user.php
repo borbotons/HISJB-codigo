@@ -21,7 +21,7 @@
 
     try {
 
-        $conexion = new PDO('mysql:host=localhost;dbname=hsjb','root','');
+        $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
 
 
     }catch(PDOException $e){

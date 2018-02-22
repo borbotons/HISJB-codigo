@@ -1,52 +1,10 @@
-<?php 
-
-
-ob_start();
-
-session_start();
-//$nombrepdf = $_GET['fecha'];
-
-$nombrepdf = getdate();
-
-
-
-
-
-
-
-$estado = 'pendiente';
-
-#Lista de solicitudes
-
-
-try {
-
-    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
-
-    }catch(PDOException $e){
-
-       echo "Error:" .$e->getMessage();;
-    }
-    #Podemos ordenar mediante el dia y hora...
-   $statemente = $conexion->prepare('SELECT paciente,estado,diapedido FROM solicitud WHERE estado = :estado ORDER BY paciente');
-
-   $statemente->execute(array(
-        ':estado' => $estado
-        
-    ));
-
-   $statemente->execute();
-
-   $resulta = $statemente->fetchALL();
-
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>ArchivoPdf</title>
-
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/awesome/css/fontawesome-all.min.css">
 
     <link rel="stylesheet" href="../css/archivopdf.css">
 </head>
@@ -100,29 +58,9 @@ try {
             </tr>
       </table>
     </div>
-               
+             	 
 
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-<?php
-
-require_once("../exportarpdf/dompdf/dompdf_config.inc.php");
-$dompdf = new DOMPDF();
-$dompdf->load_html(ob_get_clean());
-$dompdf->render();
-$pdf = $dompdf->output();
-$filename =  $nombrepdf['mday'] . '_' . $nombrepdf['month'] . '_' . $nombrepdf['year'] . '_' . $_SESSION['usuario'];
-$dompdf->stream($filename,  array("Attachment" => 0 ));
-
-
-
-
-
-
-
-?>
