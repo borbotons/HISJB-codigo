@@ -70,8 +70,9 @@
                     <?php } ?>
 
 
-                     <?php if(!empty($errores)): ?>
-                            <div class="error">
+              </table>
+               <?php if(!empty($errores)): ?>
+                            <div class="text-warning">
                             <ul>
                                 <?php echo $errores; ?>
 
@@ -79,9 +80,6 @@
 
                             </div>
                             <?php endif; ?>
-
-          
-              </table>
              
               <div class="row imprimir">
                   <a class="btn btn-default" href="../controladores/imprimir.php" target="_blank">Imprimir listado</a>

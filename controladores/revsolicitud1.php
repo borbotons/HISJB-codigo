@@ -14,7 +14,7 @@ if (!isset($_SESSION['usuario'])) {
 
 try {
 
-        $conexion = new PDO('mysql:host=localhost;dbname=hsjb','root','');
+    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
 
 
     }catch(PDOException $e){
@@ -24,7 +24,7 @@ try {
 
 
 
-   $statemente = $conexion->prepare('SELECT cod_solicitud,paciente,telefono,email,estado,diapedido,especialidad,descripcion,medico,diapreferencia,turnopreferencia FROM solicitudrespaldo WHERE cod_solicitud = :id ');
+   $statemente = $conexion->prepare('SELECT * FROM solicitud WHERE cod_solicitud = :id ');
 
    $statemente->execute(array(
         ':id' => $num

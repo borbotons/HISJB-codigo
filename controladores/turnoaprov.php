@@ -15,12 +15,14 @@ $resulta = '';
 
 $estado = 'aprobado';
 
+$errores = '';
+
 #Lista de solicitudes aprovadas-->Turnos
 
 
 try {
 
-        $conexion = new PDO('mysql:host=localhost;dbname=hsjb','root','');
+    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
 
 
     }catch(PDOException $e){
@@ -28,7 +30,7 @@ try {
        echo "Error:" .$e->getMessage();;
     }
     #Podemos ordenar mediante el dia y hora...
-   $statemente = $conexion->prepare('SELECT cod_solicitud,paciente,diapedido,especialidad,descripcion,medico,dia,horario,observacion,estado FROM solicitudrespaldo WHERE estado = :estado ORDER BY cod_solicitud');
+   $statemente = $conexion->prepare('SELECT cod_solicitud,paciente,diapedido,especialidad,descripcion,medico,dia,horario,observacion,estado FROM solicitud WHERE estado = :estado ORDER BY cod_solicitud');
 
    $statemente->execute(array(
         ':estado' => $estado

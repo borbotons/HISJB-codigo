@@ -21,15 +21,14 @@ $estado = 'pendiente';
 
 try {
 
-        $conexion = new PDO('mysql:host=localhost;dbname=hsjb','root','');
-
+    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
 
     }catch(PDOException $e){
 
        echo "Error:" .$e->getMessage();;
     }
     #Podemos ordenar mediante el dia y hora...
-   $statemente = $conexion->prepare('SELECT paciente,estado,diapedido FROM solicitudrespaldo WHERE estado = :estado ORDER BY paciente');
+   $statemente = $conexion->prepare('SELECT paciente,estado,diapedido FROM solicitud WHERE estado = :estado ORDER BY paciente');
 
    $statemente->execute(array(
         ':estado' => $estado
@@ -47,9 +46,7 @@ try {
 <html>
 <head>
     <title>ArchivoPdf</title>
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/awesome/css/fontawesome-all.min.css">
+
 
     <link rel="stylesheet" href="../css/archivopdf.css">
 </head>
@@ -103,7 +100,7 @@ try {
             </tr>
       </table>
     </div>
-             	 
+               
 
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>

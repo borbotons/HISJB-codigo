@@ -35,17 +35,23 @@
                         <label for="nombre" >Nombre completo</label>
                         <input class="form-control" type="text" name="nombre" value="<?php echo $resulta['paciente'] ?>" disabled />
                     </div>
+                    <input type="hidden" name="nombre2"   value="<?php echo $resulta['paciente']; ?>"  />
+                    <div class="col-sm-6 form-group">
+                        <label for="nombre" >Dni</label>
+                        <input class="form-control" type="text" name="dni" value="<?php echo $resulta['dni'] ?>" disabled />
+                    </div>
+                    <input type="hidden" name="dni2"   value="<?php echo $resulta['dni']; ?>"  />
                     <div class="col-sm-6 form-group">
                         <label for="tel" >Telefono</label>
                         <input class="form-control" type="text" name="tel" value="<?php echo $resulta['telefono'] ?>" size="10" disabled />
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-sm-6 form-group">
                         <label for="email" >Email</label>
                         <input class="form-control" type="email" name="email" value="<?php echo $resulta['email'] ?>" size="25" disabled />
                     </div>
+                     <input type="hidden" name="email2"   value="<?php echo $resulta['email']; ?>"  />
                 </div>
+                
             </div>
 
             <div class="datos-paciente">
@@ -59,16 +65,19 @@
                         <label for="espec" >Especialidad</label>
                         <input class="form-control" type="text" name="espec" value="<?php echo $resulta['especialidad'] ?>" disabled />
                     </div>
+                    <input type="hidden" name="espec2"   value="<?php echo $resulta['especialidad']; ?>"  />
                     <div class="col-sm-6 form-group">
                         <label for="motivo" >Motivo</label>
                         <input class="form-control" type="text" name="motivo" value="<?php echo $resulta['descripcion'] ?>" disabled />
                     </div>
-                </div>
+                    
+            </div>
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <label for="med" >Medico</label>
                         <input class="form-control" type="text" name="med" value="<?php echo $resulta['medico'] ?>"  disabled/>
                     </div>
+                    <input type="hidden" name="med2"   value="<?php echo $resulta['medico']; ?>"  />
                     <div class="col-sm-6 form-group">
                         <label for="diapref" >Dia Preferencia</label>
                         <input class="form-control" type="text" name="diapref" value="<?php echo $resulta['diapreferencia'] ?>" disabled  />
@@ -101,7 +110,7 @@
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <label for="observatur" >Observaciones</label>
-                        <textarea class="form-control" id="comments" name="observatur" placeholder="Escriba aqui su observacion..." rows="5"></textarea>
+                        <textarea class="form-control" id="comments" name="observatur" placeholder="Escriba aqui su observacion..." rows="5" required ></textarea>
                     </div>
                     <div class="col-sm-6 form-group">
                         <label for="file1" >Informacion Util</label>
@@ -115,11 +124,13 @@
                     <button class="md-close btn btn-secondary btn-block" type="submit" onclick="conf.submit();">Aceptar</button>
                 </div>-->
                 <div class="col-sm-4 form-group">
-                    <a class="btn btn-success btn-block" href="">Confirmar</a>
-                </div>
-                <div class="col-sm-4 form-group">
-                        <a class="btn btn-danger btn-block" href="../controladores/panel_user.php">Rechazar</a>
+                <input type='submit'  class="btn btn-success btn-block" name='boton1' value='Confirmar'>
                 </div> 
+                <div class="col-sm-4 form-group">
+                <input type='submit' class="btn btn-danger btn-block" name='boton2' value='Rechazar'>
+                </div> 
+
+
             </div>
         </form>
     </div>
