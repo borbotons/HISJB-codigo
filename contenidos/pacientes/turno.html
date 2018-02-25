@@ -203,73 +203,53 @@
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
         <div class="container-fluid form-pacientes">
-            <div class="container">
-                
-               
-    <form action="../../controladores/turno.php" method="GET" name="turnos">
-
+            <div class="container">          
+                <form action="../../controladores/turno.php" method="GET" name="turnos">
                 <div class="row">
                     <div class="col-xs-12 col-lg-10 col-md-8 ">
                         <h3>Datos personales</h3>
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                        <label for="nombre" >Nombre Completo</label>
-                        <input class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo" type="text" required>
-                         </div>
-                    
-                         <div class="col-sm-6 form-group">
-                        <label for="numero" >Dni</label>
-                        <input class="form-control" id="numero" name="numero" placeholder="Ingrese dni" type="number" required>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                    <label for="nombre" >Nombre Completo</label>
+                    <input class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo" type="text" required>
                         </div>
+                
+                        <div class="col-sm-6 form-group">
+                    <label for="numero" >Dni</label>
+                    <input class="form-control" id="numero" name="numero" placeholder="Ingrese dni" type="number" required>
+                    </div>
                  </div>
 
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <label for="fechanac" >Fecha de Nacimiento</label>
-                            <input class="form-control" id="fechanac" name="fechanac" placeholder="" type="date" required>
-                        </div>
-                        <div class="col-sm-6 form-group" id="flo" style="display:none;">
-                            <label for="obra_soci" >Obra Social</label>
-                            <input class="form-control" type="text" placeholder="Nombre Obra Social" name="obra_soci" id="obra_soci" value="">
-
-                     </div>
-
-
-
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="fechanac" >Fecha de Nacimiento</label>
+                        <input class="form-control" id="fechanac" name="fechanac" placeholder="" type="date" required>
                     </div>
-                   
+                    
+                </div>
 
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                        <label for="">Obra Social</label>
-                        <div class="col-sm-6 form-group">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
-                                Tengo Obra Social
-                            </label>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
-                                Sin Obra Social
-                            </label>
-                        </div>
-
-                           
-                        </div>
-
-                     
-                    </div> 
-                     
-
-
-
-
-                 
-    
-
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                    <label for="">Obra Social</label>
+                    <div class="col-sm-6 form-group">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
+                            Tengo Obra Social
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
+                            Sin Obra Social
+                        </label>
+                    </div>
+                                    
+                    </div>  
+                    <div class="col-sm-6 form-group" id="flo" style="display:none;">
+                        <label for="obra_soci" >Obra Social</label>
+                        <input class="form-control" type="text" placeholder="Nombre Obra Social" name="obra_soci" id="obra_soci" value="">                                                      
+                    </div>  
+                </div> 
                 
                 <div class="row">
                     <h3>Datos de contacto</h3>
