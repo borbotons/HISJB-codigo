@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Hospital SJB</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -10,43 +10,16 @@
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="css/menu-movil.css">
     <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
 
     <link rel="icon" href="img/iconos/mano3.ico">
 </head>
 <body>
-     <!-- screen bienvenida 
-    <div class="welcome-section content-hidden">
-        <div class="content-wrap">
-            <ul class="fly-in-text">
-                <li>HOSPITAL</li>
-                <li>INTERZONAL</li>
-            </ul>
-            
-            <a href="index.html" class="enter-button">SAN JUAN BAUTISTA</a>
-            <a href="index.html" class="small">Ingresar</a>
-        </div>
-    </div>-->
-
+    
     <!-- INICIO HEADER PAGINA-->
-    <!--<div class="container-fluid box1">
-        <div class="container">
-            <a href="">HISJB</a>
-            <p></p>
-            <a href="">Emergencias</a>
-        </div>
-    </div>
-    <div class="container-fluid baner" >
-        <div class="isologo_blanco">
-            <img src="img/iconos/isotipo blanco.png" width="78px" alt="">
-        </div>
-
-        <h4 class="HOSPITAL_INTERZONAL">Hospital Interzonal</h4>
-        <h4 class="SAN_JUAN_BAUTISTA">San Juan Bautista</h4>
-
-        <p class="frase">"Sed ut perspiciatis unde omnis iste natus error sit voluptatems omnis iste natus"</p>
-    </div>-->
-
+   
+    <!--  CARRUSEL INICIO PAGINA -->
     <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -149,9 +122,34 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!-- /.carousel -->
+    
+    <!-- MENU MOVIL -->
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
 
-    <div class="container-fluid menu-principal" >
+            <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
                 <div class="topic-container">
@@ -259,8 +257,10 @@
     </div>
     
     <!-- FIN HEADER PAGINA -->
-    <!-- INICIO CUERPO PAGINA -->
-    <div class="seccionToggle">
+    <!-- SECCION 2 ... INICIO CUERPO PAGINA -->
+
+    <!-- FORMULARIO DE CONTACTO EN TABLETS, DESKTOP -->
+    <!-- <div class="seccionToggle md-modal">
         <div class="wrap">
             
             <div class="row justify-content-center sobre">
@@ -301,8 +301,9 @@
         <div class="row justify-content-start cerrar">
             <h3 id="btn-toggle2"><i class="fas fa-chevron-circle-left"></i> CERRAR</h3>
         </div>
-    </div>  
+    </div>   -->
 
+    <!-- SECCION ENLACES UTILES PARA EL PACIENTE -->
     <div class="container-fluid acceso ">
         <div class="row justify-content-center">
                 <div class="col-md-10">
@@ -327,6 +328,7 @@
         </div> 
     </div>
 
+    <!-- SECCION NOTICIAS -->
     <div class="container-fluid">
             <div class="row justify-content-center m-top">
                     <div class="col-md-10">
@@ -448,6 +450,8 @@
                     </div>
                 </div>
     </div>
+
+    <!-- SECCION CALENDARIO Y EVENTOS -->
     <div class="container-fluid calendario">
         <div class="container">
             <div class="row titular">
@@ -608,6 +612,8 @@
             </div>
         </div>
     </div>
+
+    <!-- SECCION PROGRAMAS Y CAMPAÑAS DE SALUD -->
     <div class="container-fluid programas">
         <div class="row  justify-content-center">
             <h1 class="titular">PROGRAMAS ACTIVOS</h1>
@@ -633,6 +639,7 @@
         <h2>voluptatemsdas — <em>Dra. Silvia Lopez</em></h2>
     </div>
     <!-- FIN CUERPO PAGINA -->
+
     <!-- INICIO PIE PAGINA -->
     <footer>
         <div class="container-fluid pie">
@@ -643,7 +650,7 @@
                     </div>
                 </div>
                 <div class="row pie-menu justify-content-center">
-                    <div class="col-md-3 info info-b">
+                    <div class="col-12 col-md-3 info info-b">
                         <h3><i class="fas fa-shield-alt"></i> Pacientes</h3>
                         <a href="">Especialidades</a>
                         <a href="">Laboratorio</a>
@@ -651,14 +658,14 @@
                         <a href="">Horarios de visita</a>
                         <a href="">Solicitar Turno online</a>
                     </div>
-                    <div class="col-lg-3 info info-b">
+                    <div class="col-12 col-md-3 info info-b">
                         <h3><i class="fas fa-info"></i> Institucional</h3>
                         <a href="">Organigrama</a>
                         <a href="">Historia</a>
                         <a href="">Innovaciones edilicias</a>
                         <a href="">Trabaja con nosotros</a>
                     </div>
-                    <div class="col-lg-3 info">
+                    <div class="col-12 col-md-3 info">
                         <h3><i class="fas fa-bullhorn"></i> Contacto</h3>
                         <a href=""></a>
                     </div>
@@ -674,6 +681,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/contacto.js"></script>
+    <script type="text/javascript" src="js/menu-movil.js"></script>
     <script type="text/javascript">       
         $(function() {
             

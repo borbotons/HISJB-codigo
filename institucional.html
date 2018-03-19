@@ -2,27 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Institucional - Hospital SJB</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="css/institucional.css">
-    <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
+    
 
     <link rel="icon" href="img/iconos/mano3.ico">
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
-    <!--<div class="container-fluid box1">
-        <div class="container">
-            <a href="">HISJB</a>
-            <p></p>
-            <a href="">Emergencias</a>
-        </div>
-    </div>-->
-    <div class="container-fluid imagen" style="">
+    <div class="container-fluid imagen-movil d-block d-md-none d-lg-none d-xl-none">
+        <h1 class="rotulo">_Institucional</h1>   
+    </div>
+
+    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block">
         <h1 class="rotulo">_Institucional</h1>
         
         <div class="isologo_blanco">
@@ -31,7 +30,32 @@
         <h4 class="HOSPITAL_INTERZONAL">Hospital Interzonal</h4>
         <h4 class="SAN_JUAN_BAUTISTA">San Juan Bautista</h4>
     </div>
-    <div class="container-fluid menu-principal" >
+    
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
                 <div class="topic-container">
@@ -140,7 +164,7 @@
     
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
-    <div class="seccionToggle">
+    <div class="seccionToggle d-none">
         <div class="wrap">
             
             <div class="row justify-content-center sobre">
@@ -205,7 +229,7 @@
 
     <div class="container-fluid">
             <div class="row justify-content-center m-top m-bot">
-                <div class="col-md-10">
+                <div class="col-11 col-md-10">
                         <div class="row justify-content-start titular-barra">
                             <h1 class="titular">MISI&OacuteN Y FUNCI&OacuteN <small class="text-muted">HISJB</small></h1>
                         </div>
@@ -358,5 +382,26 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/contacto.js"></script>
+    <script src="js/menu-movil.js"></script>
+
+    <!-- <script type="text/javascript">
+
+        $("nav div").click(function() {
+              $("ul").slideToggle();
+              $("ul ul").css("display", "none");
+        });
+  
+        $("ul li").click(function() {
+              $("ul ul").slideUp();
+              $(this).find('ul').slideToggle();
+        });
+  
+        $(window).resize(function() {
+              if($(window).width() > 768) {
+                    $("ul").removeAttr('style');
+              }
+        });
+  
+    </script> -->
 </body>
 </html>

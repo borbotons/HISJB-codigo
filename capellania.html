@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Capellania - Hospital SJB</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="css/capellania.css">
-    <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
-
+    
     <link rel="icon" href="img/iconos/mano3.ico">
 </head>
 <body>
@@ -22,14 +22,41 @@
             <a href="">Emergencias</a>
         </div>
     </div> -->
+    <div class="container-fluid imagen-movil d-block d-md-none d-lg-none d-xl-none"> 
+        <h1 class="rotulo">Capellan&iacutea San Juan Bautista</h1>   
+    </div>
 
-    <div class="container-fluid imagen">
+    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block">
         <div class="baner-titulo">
             <h1>Capellan&iacutea San Juan Bautista</h1>
         </div>  
     </div>
 
-    <div class="container-fluid menu-principal" >
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
                 <div class="topic-container">
@@ -137,7 +164,7 @@
     </div>  
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
-    <div class="seccionToggle">
+    <div class="seccionToggle d-none">
         <div class="wrap">
             
             <div class="row justify-content-center sobre">
@@ -182,7 +209,7 @@
 
     <div class="container-fluid acceso ">
         <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-10 col-md-10">
                         <div class="row justify-content-start titular-barra">
                             <h1 class="titular">SERVICIOS DE CAPELLAN&IacuteA</h1>
                         </div>
@@ -192,9 +219,9 @@
     <div class="container">
         <div id="about" class="base">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-12 col-md-8">
                     <h2><i class="fas fa-plus"></i> Misa Dominical</h2><br>
-                    <h4>Domingo, 9:00 hs a partir del mes de Marzo de 2018.</h4><br>
+                    <h4>Domingo, 9:00 hs a partir del mes de marzo de 2018.</h4><br>
                     <p> <strong>"Este es el d&iacutea que hizo el Señor: alegr&eacutemonos y regocij&eacutemonos en &eacutel" (Sal 118, 24) </strong> <br> <br> El domingo recuerda, en la sucesi&oacuten semanal del tiempo, el d&iacutea de la resurreci&oacuten de Cristo. Es la <em> Pascua de la semana</em> en la que se celebra la victoria de Cristo sobre el pecado y la muerte, la realizaci&oacuten en &eacutel de la nueva creaci&oacuten. (Dies Domini 1)</p>
                     
                 </div>
@@ -207,37 +234,27 @@
     <div class="container-fluid bg-white base">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <img src="img/baner/virgen-maria.jpg" alt="">
+                <div class="col-12 col-sm-6">
+                    <img src="img/baner/virgen-maria.jpg" alt="Imagen de la Virgen Maria - cielo">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-12 col-sm-6 mt-5">
                     <h2>SANTO ROSARIO</h2><br>
-                    <h4>Lunes a Viernes, 18:00 hs rezo del Santo Rosario.</h4><br>
-                    <p> El Santo Rosario de la Virgen Maria, difundido gradualmente en el segundo Milenio bajo el soplo del Esp&iacuteritu de Dios, es una oraci&oacuten apreciada por numerosos Santos y fomentada por el Magisterio de la Iglesia. En su sencillez y prufundidad sigue siendo tambi&eacuten en este tercer Milenio apenas iniciado una oraci&oacuten de gran significado, destinada a producir frutos de santidad. (Rosarium Virginis Mariae 1) </p>
+                    <h4>Lunes a viernes, 18:00 hs rezo del Santo Rosario.</h4><br>
+                    <p> El Santo Rosario de la Virgen Maria, difundido gradualmente en el segundo Milenio bajo el soplo del Esp&iacuteritu de Dios, es una oraci&oacuten apreciada por numerosos Santos y fomentada por el Magisterio de la Iglesia. En su sencillez y profundidad sigue siendo tambi&eacuten en este tercer Milenio apenas iniciado una oraci&oacuten de gran significado, destinada a producir frutos de santidad. (Rosarium Virginis Mariae 1) </p>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="img/baner/virgen-maria.jpg" alt="">
-            </div>
-            <div class="col-sm-6">
-                <h2>SANTO ROSARIO</h2><br>
-                <h4>Lunes a Viernes, 18:00 hs rezo del Santo Rosario.</h4><br>
-                <p> El Santo Rosario de la Virgen Maria, difundido gradualmente en el segundo Milenio bajo el soplo del Esp&iacuteritu de Dios, es una oraci&oacuten apreciada por numerosos Santos y fomentada por el Magisterio de la Iglesia. En su sencillez y prufundidad sigue siendo tambi&eacuten en este tercer Milenio apenas iniciado una oraci&oacuten de gran significado, destinada a producir frutos de santidad. (Rosarium Virginis Mariae 1) </p>
             </div>
         </div>
     </div>
     <div class="container">
         <div id="about" class="container-fluid base">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-6">
                     <h2>GRUPO DE ORACI&OacuteN</h2><br>
-                    <h4>Sabados, 19:00 hs a partir del mes de Marzo de 2018.</h4><br>
-                    <p>No hay otro camino de oraci&oacuten cristiana que Cristo. Sea comunitaria o individual, vocal o interior, nuestra oraci&oacuten no tiene acceso al Padre m&aacutes que si oramos "en el nombre" de Jes&uacutes. La santa humanidad de Jes&uacutes es pues, el camino por el que el Espiritu Santo nos ense&ntildea a orar a Dios nuestro Padre. (CIC 2664)</p>
+                    <h4>S&aacutebados, 19:00 hs a partir del mes de marzo de 2018.</h4><br>
+                    <p>No hay otro camino de oraci&oacuten cristiana que Cristo. Sea comunitaria o individual, vocal o interior. Nuestra oraci&oacuten no tiene acceso al Padre m&aacutes que si oramos "en el nombre" de Jes&uacutes. La santa humanidad de Jes&uacutes es pues, el camino por el que el Espiritu Santo nos ense&ntildea a orar a Dios nuestro Padre. (CIC 2664)</p>
                 </div>
-                <div class="col-sm-5">
-                    <img src="img/baner/adoracion.jpg" alt="">
+                <div class="col-sm-6">
+                    <img src="img/baner/adoracion.jpg" alt="Imagen del Santisimo Sacramento - Adoracion">
                 </div>
             </div>
         </div>
@@ -247,13 +264,13 @@
                 <div class="row verde-titulo">
                         <div class="col-sm-6">
                             <h2>RECIBIMOS SU <strong>INTENCI&OacuteN</strong> </h2><br>
-                            <h4>Puede dejar aqu&iacute sus intenciones en favor de un paciente, las mismas ser&aacuten le&iacutedas en la pr&oacutexima Misa Dominical. &iexcl;Encienda una vela de esperanza!.</h4><br>                  
+                            <h4>Puede dejar aqu&iacute sus intenciones en favor de un paciente, las mismas ser&aacuten le&iacutedas en la pr&oacutexima Misa Dominical. &iexcl;Encienda una vela de esperanza!</h4><br>                  
                         </div>
                         <div class="col-sm-6 slideanim">        
                             <textarea class="form-control" id="comments" name="comments" placeholder="Escriba aqui su intención..." rows="5"></textarea><br>
                             <div class="row">
                                 <div class="col-sm-12 form-group">
-                                    <button class="btn btn-block pull-right" type="submit">Enviar</button>
+                                    <button class="btn btn-block btn-light pull-right" type="submit">Enviar</button>
                                 </div>
                             </div>
                         </div>
@@ -295,7 +312,7 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-sm-12 form-group">
-                                        <button class="btn btn-block pull-right" type="submit">Enviar</button>
+                                        <button class="btn btn-block btn-light pull-right" type="submit">Enviar</button>
                                     </div>
                                 </div>
                             </div>
@@ -344,5 +361,6 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/contacto.js"></script>
+    <script src="js/menu-movil.js"></script>
 </body>
 </html>

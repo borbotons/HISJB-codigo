@@ -7,11 +7,16 @@
 
 }
 
-.titular{
+.titular-base{
    background:  #3d97d3;
    padding-top: 8%;
    padding-bottom: 6%;
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   margin-right: 0 !important;
+   width: 100%;
 }
+
 .form-pacientes
 {
     width: 100%;
@@ -19,6 +24,15 @@
     padding-top: 5%;
     padding-bottom: 6%;
 
+}
+
+.titular {
+    font-size: 35px;
+    font-family: "Saira ExtraCondensed";
+    color: rgb(52, 152, 219);
+    line-height: 37px;
+
+    font-weight: 300;
 }
 
 

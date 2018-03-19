@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Pacientes - Hospital SJB</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -16,14 +16,12 @@
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
-    <!--<div class="container-fluid box1">
-        <div class="container">
-            <a href="">Hospital Interzonal San Juan Bautista</a>
-            <p></p>
-            <a href="">Emergencias</a>
-        </div>
-    </div>-->
-    <div class="container-fluid imagen" style="">
+    
+    <div class="container-fluid imagen-movil d-block d-md-none d-lg-none d-xl-none">
+        <h1 class="rotulo">_Pacientes</h1>   
+    </div>
+
+    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block">
             <h1 class="rotulo">_Pacientes</h1>
         
             <div class="isologo_blanco">
@@ -32,7 +30,32 @@
             <h4 class="HOSPITAL_INTERZONAL">Hospital Interzonal</h4>
             <h4 class="SAN_JUAN_BAUTISTA">San Juan Bautista</h4>
     </div>
-    <div class="container-fluid menu-principal" >
+
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
                 <div class="topic-container">
@@ -130,7 +153,7 @@
     
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
-    <div class="seccionToggle">
+    <div class="seccionToggle d-none">
         <div class="wrap">
             
             <div class="row justify-content-center sobre">
@@ -202,7 +225,7 @@
 
         <div class="container-fluid menu-pacientes">
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-10 col-md-10">
                         <div class="row justify-content-start titular-barra">
                             <h1 class="titular">SERVICIOS PARA PACIENTES <small class="text-muted">HISJB</small></h1>
                         </div>
@@ -211,7 +234,7 @@
         
             <div class="container">
             <div class="row justify-content-center m-top">
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="#" class="md-trigger" data-modal="modal-12">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -225,7 +248,7 @@
                         </div> 
                     </a>    
                 </div>
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="contenidos/pacientes/especialidades.html">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -239,7 +262,7 @@
                         </div> 
                     </a>    
                 </div>
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="contenidos/pacientes/como-llegar.html">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -269,21 +292,21 @@
                         </div> 
                     </a>    
                 </div>-->
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="#">   
                         <div class="group show-icons active">
                             <div class="group-text">
                                 <img src="img/pacientes/surgeon.png" alt="">
                                 <div class="group-table">
                                     <div class="group-cell">
-                                        Preparaci&oacuten Quirurgica <span class="badge badge-warning">Pr&oacuteximamente</span>
+                                        Preparaci&oacuten Quir&uacutergica <span class="badge badge-warning">Pr&oacuteximamente</span>
                                     </div>
                                 </div>
                             </div>
                         </div> 
                     </a>    
                 </div>
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="contenidos/pacientes/turno.html">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -297,7 +320,7 @@
                         </div> 
                     </a>    
                 </div>
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="https://www.facebook.com/Hospital-Interzonal-San-Juan-Bautista-1565077120424570/" target="_blank">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -313,7 +336,7 @@
                 </div>
             </div>
             <div class="row justify-content-center ">
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="#">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -327,7 +350,7 @@
                         </div> 
                     </a>    
                 </div>
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="#">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -341,7 +364,7 @@
                         </div> 
                     </a>    
                 </div>
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="contenidos/pacientes/laboratorio.html">   
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -357,7 +380,7 @@
                 </div>
             </div>
             <div class="row justify-content-center ">
-                <div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                        
                         <div class="group show-icons active">
                             <div class="group-text">
@@ -417,6 +440,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/contacto.js"></script>
+    <script src="js/menu-movil.js"></script>
 
     <div class="md-overlay"></div><!-- fondo de emergente modal -->
 	

@@ -7,10 +7,10 @@
 
     <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="../../css/turno.css">
-    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+    
 
     <link rel="icon" href="../../img/iconos/mano3.ico">
 
@@ -76,7 +76,7 @@
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
-    <div class="container-fluid box1">
+    <div class="container-fluid box1 d-none d-md-block d-lg-block d-xl-block">
         <div class="container">
             <a href="">HISJB</a>
             <p></p>
@@ -84,7 +84,31 @@
         </div>
     </div>
     
-    <div class="container-fluid menu-principal" >
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="../../index.html">INICIO</a></li>
+                    <li><a href="../../institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
                 <div class="topic-container">
@@ -190,10 +214,10 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid " style="">
-        <div class="row justify-content-center titular">
-            <div class="col-md-10">
-                    <h3 class="display-4">Solicitud de Turno on-line
+    <div class="container-fluid titular-base">
+        <div class="row justify-content-center ">
+            <div class="col-10 col-md-10">
+                    <h3 class="display-4 text-white">Solicitud de Turno on-line
                         <small class="text-muted">HISJB</small>
                     </h3>
                     <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
@@ -202,12 +226,12 @@
     </div>
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
-        <div class="container-fluid form-pacientes">
-            <div class="container">          
-                <form action="../../controladores/turno.php" method="GET" name="turnos">
+    <div class="container-fluid form-pacientes">
+        <div class="container">          
+            <form action="../../controladores/turno.php" method="GET" name="turnos">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-10 col-md-8 ">
-                        <h3>Datos personales</h3>
+                    <div class="col-11 col-md-8 col-lg-10 ">
+                        <h3 class="titular">Datos personales</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -220,7 +244,7 @@
                     <label for="numero" >Dni</label>
                     <input class="form-control" id="numero" name="numero" placeholder="Ingrese dni" type="number" required>
                     </div>
-                 </div>
+                    </div>
 
                 <div class="row">
                     <div class="col-sm-6 form-group">
@@ -232,18 +256,21 @@
 
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                    <label for="">Obra Social</label>
-                    <div class="col-sm-6 form-group">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
-                            Tengo Obra Social
-                        </label>
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
-                            Sin Obra Social
-                        </label>
-                    </div>
-                                    
+                        <label for="">Obra Social</label>
+                        <!-- <div class="col-sm-6 form-group"> -->
+                        <div class="row justify-content-center">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
+                                Tengo Obra Social
+                            </label>
+                        </div>
+                        <div class="row justify-content-center">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
+                                Sin Obra Social
+                            </label>
+                        </div>
+                        <!-- </div> -->      
                     </div>  
                     <div class="col-sm-6 form-group" id="flo" style="display:none;">
                         <label for="obra_soci" >Obra Social</label>
@@ -251,8 +278,10 @@
                     </div>  
                 </div> 
                 
-                <div class="row">
-                    <h3>Datos de contacto</h3>
+                <div class="row mt-2">
+                    <div class="col-11 col-md-8 col-lg-10  ">
+                        <h3 class="titular">Datos de contacto</h3>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 form-group">
@@ -272,23 +301,25 @@
                     
                 </div> 
 
-                <div class="row">
-                    <h3>Datos de consulta</h3>
+                <div class="row mt-3">
+                    <div class="col-11 col-md-8 col-lg-10  ">
+                        <h3 class="titular">Datos de consulta</h3>
+                    </div>
                 </div>
                 
                 <div class="row form-style justify-content-center">
                     <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="especialidad">Especialidad</label>
-                                <select name="especia" id="especialidad" class="form-control" onchange="mostrarmed(this.value)" required>
-                                        <option value="" disabled selected>Seleccione</option>
-                                        <option value="cardiologia">Cardiolog&iacutea</option>
-                                        <option value="cirugia">Cirug&iacutea General</option>
-                                        <option value="clinica">Cl&iacutenica M&eacutedica</option>
-                                        <option value="ginecologia">Ginecolog&iacutea</option>
-                                </select>
-                         </div>
+                        <div class="form-group">
+                            <label for="especialidad">Especialidad</label>
+                            <select name="especia" id="especialidad" class="form-control" onchange="mostrarmed(this.value)" required>
+                                    <option value="" disabled selected>Seleccione</option>
+                                    <option value="cardiologia">Cardiolog&iacutea</option>
+                                    <option value="cirugia">Cirug&iacutea General</option>
+                                    <option value="clinica">Cl&iacutenica M&eacutedica</option>
+                                    <option value="ginecologia">Ginecolog&iacutea</option>
+                            </select>
                         </div>
+                    </div>
                     
                     <div class="col-md-3">
                         <div class="form-group">
@@ -311,29 +342,27 @@
                         </div>
                     </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                    <label for="turn">Turno</label>
-                                    <select name="turn" id="turn" class="form-control" required>
-                                            <option value="" disabled selected>Seleccione</option>
-                                            <option value="mañana">ma&ntildeana</option>
-                                            <option value="tarde">tarde</option>
-                                            
-                                    </select>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                                <label for="turn">Turno</label>
+                                <select name="turn" id="turn" class="form-control" required>
+                                        <option value="" disabled selected>Seleccione</option>
+                                        <option value="mañana">ma&ntildeana</option>
+                                        <option value="tarde">tarde</option>
+                                        
+                                </select>
                         </div>
-
                     </div>
-                
+                </div>  
                 
                 <div class="row form-style justify-content-center">
                     <div class="col-xs-12 col-lg-10 col-md-8 ">
                         <button class="btn btn-success btn-block" type="submit" >Solicitar Turno </button>
                     </div>
                 </div>
-    </form>
-                    </div>
-                </div>
+            </form>
+        </div>
+    </div>
      <!-- FIN CUERPO PAGINA -->
     <!-- INICIO PIE PAGINA -->
     <footer>
@@ -373,8 +402,11 @@
     </footer>
     <!-- FIN PIE PAGINA -->
 
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../js/func_bas.js"></script>
+    <script type="text/javascript" src="../../js/menu-movil.js"></script>
+    <!-- revisar -->
+    
 </body>
 </html>

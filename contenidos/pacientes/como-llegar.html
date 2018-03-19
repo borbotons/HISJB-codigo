@@ -2,28 +2,53 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Laboratorio - Hospital SJB</title>
 
     <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="../../css/llegar.css">
-    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+    
 
     <link rel="icon" href="../../img/iconos/mano3.ico">
 </head>
 <body onload="">
     <!-- INICIO HEADER PAGINA-->
-    <div class="container-fluid box1">
+    <div class="container-fluid box1  box1 d-none d-md-block d-lg-block d-xl-block">
         <div class="container">
             <a href="">HISJB</a>
             <p></p>
             <a href="">Emergencias</a>
         </div>
     </div>
+
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="../../index.html">INICIO</a></li>
+                    <li><a href="../../institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
    
-    <div class="container-fluid menu-principal" >
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
                 <div class="topic-container">
@@ -129,11 +154,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid " style="">
-        <div class="row justify-content-center titular">
+    <div class="container-fluid titular">
+        <div class="row justify-content-center ">
             <div class="col-md-10">
                     <h3 class="display-4">&iquest;C&oacutemo llegar al Hospital?</h3>
-                    <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
+                    <!-- <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p> -->
             </div>
         </div>
     </div>
@@ -218,6 +243,8 @@
 
     <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/menu-movil.js"></script>
+
     <script>
         function myMap() {
         var mapProp= {

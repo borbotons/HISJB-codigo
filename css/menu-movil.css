@@ -1,0 +1,115 @@
+.menu-movil{
+    z-index: 500000;
+}
+
+.toggleBtn {
+    position:fixed;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+
+    z-index: 20001;
+    }
+    .toggleBtn span {
+    display:block;
+    width:40px;
+    height:5px;
+    background: #3498db;
+    margin:6px 0px;
+    transition:all 300ms ease-in-out;
+
+    
+    }
+    .toggleBtn.active span {
+    background:white;
+    }
+
+    .toggleBtn.active span:nth-child(2) {
+    opacity:0;
+    }
+    .toggleBtn.active span:nth-child(1) {
+    transform-origin:left;
+    transform:rotate(45deg) translateX(5px);
+    }
+    .toggleBtn.active span:nth-child(3) {
+    transform-origin:left;
+    transform:rotate(-45deg) translateY(5px);
+    }
+
+    .menu {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;    /* con esta configuración hago que el menu salga completo sin importar la posición actual */
+        
+    width:100vw;
+    height:100vh;
+
+    z-index: 20000;
+    }
+
+    .menu:before,.menu:after {
+    content:"";
+    position:absolute;
+    top:0px;
+    width:0vw;
+    height:100vh;
+    transition:all 400ms ease-in-out;
+    /* background: #b94071; */
+    background: #1c7cd6;
+
+    z-index: 10000;
+    }
+    .menu:before {
+    left:0px;
+    }
+    .menu:after {
+    right:0px;
+    }
+    .menu.active:before,.menu.active:after {
+    width:50vw;
+    }
+    .menu ul {
+    position:absolute;
+    top:-100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    /* z-index:2; */
+    transition:all 400ms ease-in-out 400ms;
+    
+    padding-left: 10px;
+    z-index: 20001;
+    }
+    .menu ul li {
+    list-style:none;
+    font-size:30px;
+    margin:5px 0px;
+    color:#fff;
+    }
+    .menu.active ul {
+    top:50%;
+    }
+
+    li{
+      cursor: pointer;
+    }
+
+    .menu ul li a{
+        color: white;
+        font-family: "Saira ExtraCondensed";
+        font-size: 1.1em;
+        letter-spacing: 1px;
+
+        text-decoration: none;
+    }
+
+    .menu ul li a:hover{
+        color: #495057;
+        transition: 0.3s ease;
+    }
+
+
