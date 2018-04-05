@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internaciones - Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="../../css/lab.css"> 
+    <link rel="stylesheet" href="../../css/inter.css">
+    
+
+    <link rel="icon" href="../../img/iconos/mano3.ico">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    <div class="container-fluid box1 d-none d-md-block d-lg-block d-xl-block">
+        <div class="container">
+            <a href="">HISJB</a>
+            <p></p>
+            <a href="">Emergencias</a>
+        </div>
+    </div>
+
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="../../index.html">INICIO</a></li>
+                    <li><a href="../../institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block">
+        <div class="container">
+            <div class="topics-row">
+                <div class="topic-container">
+                    <a href="../../index.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/inicio.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/inicio.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">INICIO</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../institucional.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/hospital.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/hospital.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">INSTITUCIONAL</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container menu-pacientes">      
+                    <ul class="">
+                        <li class="dropdown"><a href="../../pacientes.html" class="ga-topic-selector">
+                                <div class="topic-link-container">
+                                    <div class="topic-link">
+                                        <img src="../../img/iconos/act/teamwork.svg" alt="" class="hover-on">
+                                        <img src="../../img/iconos/desact/teamwork.svg" alt="" class="hover-off">
+                                        <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-content">
+                                <li><a href="../../contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                                <li><a href="../../contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                                <li><a href="../../contenidos/pacientes/internaciones.html"><i class="fas fa-bed"></i> &nbsp;Internaciones</a></li>
+                                <li><a href="../../pacientes.html"><i class="far fa-clock"></i> &nbsp;Horarios de Visita</a></li>
+                                <li><a href="../../contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                                <li><a href="../../contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+                <!--
+                <div class="topic-container">
+                    <a href="../../noticias.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/globe.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/globe.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Noticias</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../educacion.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/statistics.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/statistics.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Educaci&oacuten</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../proveedores.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/list.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/list.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Proveedores</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+                <div class="topic-container">
+                    <a href="../../capellania.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/cityscape.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/cityscape.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">CAPELLANIA</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../contacto.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/user.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/user.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">CONTACTO</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid titular">
+        <div class="row justify-content-center ">
+            <div class="col-md-10">
+                    <h3 class="display-4">Internaciones</h3>
+                    <p class="lead">Le ofrecemos a continuaci&oacuten informaci&oacuten pertinente a las distintas modalidades de internaci&oacuten vigentes en el hospital
+                        San Juan Bautista.</p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; SECTOR DE INTERNACI&OacuteN EN SALAS GENERALES</h1>
+                    </div>
+                    <div class="row left right">
+                        <div class="col-12">
+                            <div class="alert alert-success" role="alert">
+                                    <i class="far fa-clock"></i> HORARIO DE VISITA: 11:00 A 13:00 HS Y DE 17:00 A 19:00 HS.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                        <br>
+                        <h6>INGRESO DE VISITAS AL INTERNADO</h6> 
+                        </div>
+                        <div class="col-12">
+                        <P>Por razones de bioseguridad, no podr&aacuten ingresar al sector con:</P>
+                        </div>
+                        <div class="col-12">
+                        <ol>
+                            <li>Alimentos y bebidas.</li>
+                            <li>Ropa de cama.</li>
+                            <li>Sillas y/o reposeras.</li>
+                            <li>Aparatos y equipos el&eacutectricos.</li>
+                        </ol>
+                        </div>
+                        <div class="col-12">
+                            <div class="alert alert-warning" role="alert">
+                                    <i class="fas fa-info-circle"></i> La instituci&oacuten no se responsabiliza por los elementos de valor que los pacientes ingresen a las habitaciones.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                        <h6>INGRESO DE PACIENTES</h6>
+                        </div>
+                        <div class="col-12">
+                        <P> <strong>REQUISITOS DOCUMENTALES:</strong></P>
+                        </div>
+                        <div class="col-12">
+                        <ol>
+                            <li>Presentar DNI (original y copia)</li>
+                            <li>Si anteriormente hizo consultas en el Hospital, traer el carnet o el n&uacutemero de historia cl&iacutenica que le fue otorgado.</li>
+                            <li>Presentar todos los estudios m&eacutedicos solicitados por el profesional: Res&uacutemenes de tratamientos e internaciones previas, resultados de laboratorios evaluado por el profesional, estudios de Rx y Cardiol&oacutegicos.</li>
+                            <li>Aparatos y equipos el&eacutectricos.</li>
+                        </ol>
+                        </div>
+                        <div class="col-12">
+                        <br>
+                        <P> <strong>OTRAS CONDICIONES:</strong></P>
+                        </div>
+                        <div class="col-12">
+                        <ol>
+                            <li>En caso de pacientes menores de edad, deber&aacute presentarse en compa&ntilde&iacutea de un mayor responsable, de lo contrario se debe informar al Servicio Social.</li>
+                            <li>Higiene corporal completo, higiene bucal.</li>
+                            <li>U&ntildeas cortas y sin esmalte</li>
+                            <li>Sin joyas y alhajas (anillos, pulseras, collares, piercing, etc.)</li>
+                        </ol>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box-mid">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; SECTORES DE INTERNACI&OacuteN EN CIRCUITOS CERRADOS</h1>
+                    </div>
+                    <div class="row left right">
+                        <div class="col-12">
+                        <p>Por razones de bioseguridad, no podr&aacuten ingresar a los diferentes sectores con:</p>
+                        </div>
+                        <div class="col-12">
+                        <ol>
+                            <li>Alimentos y bebidas.</li>
+                            <li>Ingreso con bolsos, mochilas o carteras.</li>
+                            <li>Aparatos y equipos el&eacutectricos.</li>
+                        </ol>  
+                        </div> 
+                        <div class="col-12">
+                            <div class="alert alert-warning" role="alert">
+                                    <i class="fas fa-info-circle"></i> La instituci&oacuten no se responsabiliza por los elementos de valor que los pacientes ingresen a las habitaciones.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                                <div class="alert alert-danger" role="alert">
+                                        <i class="fas fa-exclamation-triangle"></i> SE PROHIBE EL USO DE CELULARES POR PARTE DE LOS PACIENTES O SUS VISITAS.
+                                </div>
+                        </div>
+                        <div class="col-12">
+                            <br>
+                            <h4><i class="fas fa-heartbeat"></i> UNIDAD CORONARIA</h4>
+                        </div>
+                        <div class="col-12 col-md-6">
+                                <div class="alert alert-secondary" role="alert">
+                                        <i class="far fa-clock"></i> HORARIOS DE VISITAS:
+                                        Turno mañana 12.00 a 13.00 Hs.
+                                        Turno tarde 20.00 a 21.00 Hs.
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                                <div class="alert alert-primary" role="alert">
+                                        <i class="far fa-clock"></i> <strong>HORARIOS DE INFORMES M&EacuteDICOS:</strong>
+                                        De lunes a viernes a las 10.00 Hs.
+                                        Sabados, domingos y feriados: 20.00 Hs.
+                                </div>
+                        </div>
+                        <div class="col-12">
+                            <br>
+                            <h4><i class="fas fa-shield-alt"></i> UNIDAD DE CUIDADOS INTENSIVOS</h4>
+                        </div>
+                        <div class="col-12 col-md-6">
+                                <div class="alert alert-secondary" role="alert">
+                                        <i class="far fa-clock"></i>
+                                        Turno mañana: 11.30 a 12.30 Hs.
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                                <div class="alert alert-primary" role="alert">
+                                        <i class="far fa-clock"></i> <strong>HORARIOS DE INFORMES M&EacuteDICOS:</strong>
+                                        De lunes a viernes a las 11.00 Hs.
+                                        S&aacutebados, domingos y feriados: 12.00 Hs.
+                                </div>
+                        </div>
+
+                        <div class="col-12">
+                            <br>
+                            <h4><i class="fas fa-medkit"></i> SERVICIO DE QUEMADOS</h4>
+                        </div>
+                        <div class="col-12 col-md-6">
+                                <div class="alert alert-secondary" role="alert">
+                                        <i class="far fa-clock"></i> HORARIOS DE VISITAS: Turno mañana 12.00 a 13.00 Hs.
+                                        Turno tarde 19.00 a 21.00 Hs.
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                                <div class="alert alert-primary" role="alert">
+                                        <i class="fas fa-hand-paper"></i> <strong>INGRESO DE VISITAS AL SECTOR DEL QUEMADO:</strong>
+                                        Ingreso obligatorio con la vestimenta correspondiente: barbijo, camisol&iacuten, gorro y botas.
+                                        Es requisito el lavado de manos posterior a la colocaci&oacuten de la vestimenta obligada y previo al ingreso a las habitaciones de los pacientes.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+          
+        </div>
+    </div>
+
+    <div class="container-fluid dudas">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                    <h3 class="etiqueta">&iquest;Tienes dudas?</h3>    
+                    <p class="lead"><i class="fas fa-phone"></i> Comunicate con nosotros al 444449 de lunes a viernes
+                        de 8:00 a 18:00 hs
+                    </p>
+            </div>
+        </div>
+            
+    </div>
+     <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    <footer>
+        <div class="container-fluid pie">
+            <div class="container">
+                <div class="row justify-content-center barra-h">
+                    <div class="col-lg-2 ">
+                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="160px">
+                    </div>
+                </div>
+                <div class="row pie-menu justify-content-center">
+                    <div class="col-md-3 info info-b">
+                        <h3><i class="fas fa-shield-alt"></i> Pacientes</h3>
+                        <a href="">Especialidades</a>
+                        <a href="">Laboratorio</a>
+                        <a href="">Internaciones</a>
+                        <a href="">Horarios de visita</a>
+                        <a href="">Solicitar Turno online</a>
+                    </div>
+                    <div class="col-lg-3 info info-b">
+                        <h3><i class="fas fa-info"></i> Institucional</h3>
+                        <a href="">Organigrama</a>
+                        <a href="">Historia</a>
+                        <a href="">Innovaciones edilicias</a>
+                        <a href="">Trabaja con nosotros</a>
+                    </div>
+                    <div class="col-lg-3 info">
+                        <h3><i class="fas fa-bullhorn"></i> Contacto</h3>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid post-pie">
+            <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4>
+        </div>
+    </footer>
+    <!-- FIN PIE PAGINA -->
+
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/menu-movil.js"></script>
+</body>
+</html>

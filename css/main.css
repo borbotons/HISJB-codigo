@@ -1,6 +1,7 @@
 /*.................................................................................*/
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
 
 /*.................................................................................*/
 body{
@@ -346,6 +347,7 @@ body{
 -------------------------------------------------------------------------------------*/
 .carousel {
     background:#007aeb;
+    height: 80vh;
   }
   
   /*
@@ -626,21 +628,64 @@ body{
     -----------------------------------------   */
 .programas{
     background: white;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom: 5%;
 }
 
 .pro-uno{
-    background: #f03e3e;
+    background: #00a8ff;
 }
 
 .pro-dos{
-    background: #1862ab;
+    background: #fd79a8;
 }
 
 .pro-tres{
     background: #fab005;
 }
+
+#incucai, #cancer{
+    color: white;
+    padding: 2%;
+    font-size: 16px;
+}
+
+#cancer{
+    padding: 4% 2%;
+}
+
+.parte-a{
+    padding-top: 12%;  /* cambiar en responsive para moviles */
+}
+
+#incucai h1{
+    font-weight: 800;
+    line-height: 7px;
+    font-size: 50px;
+}
+
+#cancer h1{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#cancer .texto-dos{
+    font-weight: 300;
+    font-size: 30px;
+    color: #353b48;
+    
+    margin-bottom: 2%;
+}
+
+#incucai .texto-dos{
+    font-weight: 300;
+    font-size: 30px;
+    color: #718093;
+    
+    margin-bottom: 2%;
+}
+
+
 
 /*     --------------------------------------------------- 
                 SECCION PREFOOTER 
