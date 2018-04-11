@@ -16,7 +16,7 @@
 
   .titular {
     font-size: 40px;
-    font-family: "Saira ExtraCondensed";
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: rgb(52, 152, 219);
     line-height: 40px;
     text-align: center;
@@ -72,7 +72,7 @@
     
     .group-container .group:hover
         {
-        transform: scale(1.05);
+        transform: scale(1.2);
         transition: 0.3s ease;
     }
     
@@ -199,6 +199,11 @@
     color: #3d97d3;
 }
 
+.group-table:hover {
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
 .group-cell {
     display: table-cell;
     vertical-align: middle;
@@ -271,7 +276,7 @@
 
   .titular {
     font-size: 40px;
-    font-family: "Saira ExtraCondensed";
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: rgb(52, 152, 219);
     line-height: 40px;
     text-align: center;

@@ -17,6 +17,11 @@
    width: 100%;
 }
 
+.titular-barra{
+    border-bottom: 5px solid #3d97d3;
+  }
+  
+
 .form-pacientes
 {
     width: 100%;
@@ -28,7 +33,7 @@
 
 .titular {
     font-size: 35px;
-    font-family: "Saira ExtraCondensed";
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: rgb(52, 152, 219);
     line-height: 37px;
 

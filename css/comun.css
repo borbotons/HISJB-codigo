@@ -1,6 +1,8 @@
+/*----------------------- M E N U  +  F U E N T E S -------------------------------*/ 
 /*.................................................................................*/
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 
 /*.................................................................................*/
 
@@ -268,6 +270,8 @@ a:hover
     position: sticky;
     top: 0;
     z-index: 1020;
+    /* border-top: 2px solid #228ae6; */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.164);
 }
 
 div {

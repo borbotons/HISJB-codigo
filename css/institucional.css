@@ -133,7 +133,7 @@
                     CONTENIDO
   -------------------------------------------------------------*/
   .titular {
-    font-size: 30px;
+    font-size: 26px;
     font-family: "Saira ExtraCondensed";
     color: rgb(52, 152, 219);
     line-height: 30px;
@@ -162,7 +162,7 @@
   .mision h2{
       margin-bottom: 3%;
       margin-top: 2%;
-      font-size: 33px;
+      font-size: 26px;
       line-height: 40px;
       color: #303030; 
       text-align: start;
@@ -176,8 +176,8 @@
   .mision p{
     margin-bottom: 2%;
     color: #555555;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 28px;
     text-align: start;
     letter-spacing: normal;
 }

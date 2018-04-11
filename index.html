@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Hospital SJB</title>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
     <link rel="stylesheet" href="css/main.css">
@@ -21,12 +21,12 @@
    
     <!--  CARRUSEL INICIO PAGINA -->
     <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
             <li data-target="#carousel" data-slide-to="3"></li>
-        </ol>
+        </ol> -->
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <a href="#">
@@ -38,16 +38,16 @@
                     What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
                         -->
                     <picture>
-                        <source srcset="img/baner/laboratorio.jpg" media="(min-width: 1400px)">
-                        <source srcset="img/baner/laboratorio.jpg" media="(min-width: 769px)">
-                        <source srcset="img/baner/laboratorio.jpg" media="(min-width: 577px)">
-                        <img srcset="img/baner/laboratorio.jpg" alt="responsive image" class="d-block img-fluid">
+                        <source srcset="img/baner/fachada.jpg" media="(min-width: 1400px)">
+                        <source srcset="img/baner/fachada769.jpg" media="(min-width: 769px)">
+                        <source srcset="img/baner/fachada577.jpg" media="(min-width: 577px)">
+                        <img srcset="img/baner/fachada577.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption izquierda">
                         <div class="baner-azul">
-                            <h2>DOCENCIA E INVESTIGACI&OacuteN</h2>
-                            <p>Nutrido con profesionales de reconocida trayectoria.</p>
+                            <h2>HOSPITAL INTERZONAL SAN JUAN BAUTISTA</h2>
+                            <p>Contenci&oacuten. Protecci&oacuten. Solidaridad. Transparencia.</p>
                             
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                     <div class="carousel-caption justify-content-start align-items-center">
                         <div class="baner-verde">
                             <h2>CL&IacuteNICA DE NUTRICI&OacuteN</h2>
-                            <p>Porque la base para un buen desempeño es contar con la alimentación adecuada.</p>
+                            <p>Porque la base para un buen desempeño es contar con la alimentaci&oacuten adecuada.</p>
                             
                         </div>
                     </div>
@@ -306,7 +306,7 @@
     <!-- SECCION ENLACES UTILES PARA EL PACIENTE -->
     <div class="container-fluid acceso ">
         <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-11 col-md-10">
                         <div class="row justify-content-start titular-barra">
                             <h1 class="titular">INFORMACI&OacuteN PARA PACIENTES</h1>
                         </div>
@@ -324,6 +324,70 @@
                                     <p>Obra Social de los Jubilados y Pensionados</p>
                             </div>
                         </div>
+                        <div class="row pacientes-rapido mt-2">
+                            <div class="col-md-3">
+                                <div class="bloque1">
+                                    <div class="row">
+                                        <img src="img/baner/turno.jpg" alt="mujer solicitando turno online">
+                                    </div>
+                                    <div class="row texto">
+                                        Solicite un turno
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="bloque1">
+                                    <div class="row">
+                                        <img src="img/baner/donar.jpg" alt="flor roja signo de la donacion de sangre">
+                                    </div>
+                                    <div class="row texto">
+                                        Donación de sangre
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="bloque1">
+                                    <div class="row">
+                                        <img src="img/baner/llegar.jpg" alt="joven mirando un mapa">
+                                    </div>
+                                    <div class="row texto">
+                                        Cómo llegar al HISJB
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="bloque1">
+                                    <div class="row">
+                                        <img src="img/baner/especialidad.jpg" alt="profesional de la salud asistiendo a un paciente">
+                                    </div>
+                                    <div class="row texto">
+                                        Especialidades
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-1 d-block d-md-none d-lg-none d-xl-none">
+                            <div class="col-6 col-md-2">
+                                <div class="btn">
+                                    <button type="btn" class="btn btn-success">Solicitá un turno</button>
+                                </div>  
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="btn">
+                                    <button type="btn" class="btn btn-primary">Dona sangre</button>
+                                </div> 
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="btn">
+                                    <button type="btn" class="btn btn-primary">Cómo llegar</button>
+                                </div> 
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="btn">
+                                    <button type="btn" class="btn btn-primary">Especialidades</button>
+                                </div> 
+                            </div>
+                        </div>
                  </div>
         </div> 
     </div>
@@ -331,7 +395,7 @@
     <!-- SECCION NOTICIAS -->
     <div class="container-fluid">
             <div class="row justify-content-center m-top">
-                    <div class="col-md-10">
+                    <div class="col-11 col-md-10">
                             <div class="row justify-content-start titular-barra">
                                 <h1 class="titular">NOTICIAS DESTACADAS Y NOVEDADES</h1>
                             </div> 
@@ -344,7 +408,7 @@
                 <h6 class="fecha">10/11/17</h6>
                 <h6 class="categoria">Institucional</h6>
                 <a href="">Titular de noticia uno con enlace</a>
-                <p>Características de la posición: En su rol de
+                <p>Características de la posici&oacuten: En su rol de
                      front end developer, será el encargado de convertir
                       el diseño de pantallas entregado por el cliente o nuestra
                        propia área de diseño, en interfaces navegables para diversos
@@ -357,7 +421,7 @@
                 <h6 class="fecha">10/11/17</h6>
                 <h6 class="categoria">Institucional</h6>
                 <a href="">Titular de noticia uno con enlace</a>
-                <p>Características de la posición: En su rol de
+                <p>Características de la posici&oacuten: En su rol de
                         front end developer, será el encargado de convertir
                         el diseño de pantallas entregado por el cliente o nuestra
                         propia área de diseño, en interfaces navegables para diversos
@@ -370,7 +434,7 @@
                 <h6 class="fecha">10/11/17</h6>
                 <h6 class="categoria">Institucional</h6>
                 <a href="">Titular de noticia uno con enlace</a>
-                <p>Características de la posición: En su rol de
+                <p>Características de la posici&oacuten: En su rol de
                         front end developer, será el encargado de convertir
                         el diseño de pantallas entregado por el cliente o nuestra
                         propia área de diseño, en interfaces navegables para diversos
@@ -385,7 +449,7 @@
                     <h6 class="fecha">10/11/17</h6>
                     <h6 class="categoria">Proveedores</h6>
                     <a href="">Titular de noticia uno con enlace</a>
-                    <p>Características de la posición: En su rol de
+                    <p>Características de la posici&oacuten: En su rol de
                             front end developer, será el encargado de convertir
                             el diseño de pantallas entregado por el cliente o nuestra
                             propia área de diseño, en interfaces navegables para diversos
@@ -398,7 +462,7 @@
                         <h6 class="fecha">10/11/17</h6>
                         <h6 class="categoria">Educaci&oacuten</h6>
                         <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posición: En su rol de
+                        <p>Características de la posici&oacuten: En su rol de
                                 front end developer, será el encargado de convertir
                                 el diseño de pantallas entregado por el cliente o nuestra
                                 propia área de diseño, en interfaces navegables para diversos
@@ -413,7 +477,7 @@
                         <h6 class="fecha">10/11/17</h6>
                         <h6 class="categoria">Institucional</h6>
                         <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posición: En su rol de
+                        <p>Características de la posici&oacuten: En su rol de
                                 front end developer, será el encargado de convertir
                                 el diseño de pantallas entregado por el cliente o nuestra
                                 propia área de diseño, en interfaces navegables para diversos
@@ -426,7 +490,7 @@
                         <h6 class="fecha">10/11/17</h6>
                         <h6 class="categoria">Institucional</h6>
                         <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posición: En su rol de
+                        <p>Características de la posici&oacuten: En su rol de
                                 front end developer, será el encargado de convertir
                                 el diseño de pantallas entregado por el cliente o nuestra
                                 propia área de diseño, en interfaces navegables para diversos
@@ -439,7 +503,7 @@
                         <h6 class="fecha">10/11/17</h6>
                         <h6 class="categoria">Institucional</h6>
                         <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posición: En su rol de
+                        <p>Características de la posici&oacuten: En su rol de
                                 front end developer, será el encargado de convertir
                                 el diseño de pantallas entregado por el cliente o nuestra
                                 propia área de diseño, en interfaces navegables para diversos
@@ -616,9 +680,9 @@
     <!-- SECCION PROGRAMAS Y CAMPAÑAS DE SALUD -->
     <div class="container-fluid programas">
         <div class="row justify-content-center m-top">
-                <div class="col-md-10">
+                <div class="col-11 col-md-10">
                         <div class="row justify-content-start titular-barra">
-                            <h1 class="titular">PROGRAMAS ACTIVOS EN HISJB</h1>
+                            <h1 class="titular">CAMPA&NtildeAS Y PROGRAMAS EN HISJB</h1>
                         </div> 
                 </div>
         </div>
@@ -629,33 +693,37 @@
                     <div id="incucai" class="row">
                         <div class="col-12 col-md-6 parte-a">
                             <div class="row">
-                                <h1><span><i class="far fa-check-circle"></i></span> INCUCAI Y CAICA</h1> 
+                                <h1><span><i class="far fa-check-circle"></i></span> INCUCAI <br>  Y CAICA</h1> 
                                 <h1></h1>
                             </div>
                             <div class="row texto-dos">
-                                    DONAR ÓRGANOS SALVA VIDAS
+                                    Donar organos salva vidas
                             </div>
                             <div class="row">
                                     En Argentina más de <strong> &nbsp; 11 mil personas esperan un trasplante.</strong>
                             </div>
                             
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 centro">
+                            
                             <div class="row">
-                                    http://www.incucai.gov.ar/
-                            </div>
-                            <div class="row">
-                                    HORARIOS DE ATENCIÓN:
+                                    <i class="far fa-clock"></i> &nbsp; <strong>HORARIOS DE ATENCIÓN:</strong> 
                             </div>
                             <div class="row">
                                     Lunes a Viernes de 09:00 A 16:00 Hs.
+                                    <br>
+                                    <br>
                             </div>
                             <div class="row">
-                                    CONTACTO:
+                                
+                                  <strong> CONTACTO:</strong> 
                             </div>
                             <div class="row">
                                     CAICA – Catamarca 0383 4437902 caica1@ciudad.com.ar
                                     INCUCAI – Instituto Nacional Central Único Coordinador de Ablación e Implante Ramsay 2250 – C1428BAJ – Ciudad Autónoma de Buenos Aires Tel: 0800 555 4628
+                            </div>
+                            <div class="row">
+                                    http://www.incucai.gov.ar/
                             </div>
                         </div>
                     </div>
@@ -694,7 +762,7 @@
                             <strong>HORARIOS DE ATENCIÓN:</strong>   
                         </div> 
                         <div class="col-12">
-                                Sin tunos previos, se atiende por presentación espontánea.
+                                Sin tunos previos, se atiende por presentaci&oacuten espontánea.
                                 Lunes a Viernes de 07:30 a 12:30 Hrs.
                                 Lunes a Jueves de 14:00 a 18:00 Hrs.
                         </div>
@@ -702,7 +770,24 @@
                     
                 </div>
                 <div class="col-md-6 pro-tres mt-2">
-                    <h6>Programa 3</h6>
+                    <div class="row" id="vih">
+                       <div class="col-12" >
+                            <h1><span><i class="far fa-check-circle"></i></span> CAMPAÑA DE <br> PREVENCIÓN DEL VIH</h1>
+                       </div>
+                       <div class="col-12 texto-dos">
+                           Pruebas que salvan vidas
+                       </div>
+                       <div class="col-12">
+                            TEST RAPIDO para VIH, Sífilis y Hepatitis B.
+                            De lunes a viernes en los horarios de 08.00 a 12.00 Hs, 
+                            podes realizarte los estudios y los resultados estan en sólo 15 minutos.
+                       </div>
+                       <div class="col-12">
+                            <strong>Son estudios gratuitos, voluntarios y confidenciales.</strong> 
+                            Es importante que las embarazadas para el test obligatorio se acerquen junto a su pareja.
+                       </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -742,7 +827,7 @@
                     </div>
                     <div class="col-12 col-md-3 info">
                         <h3><i class="fas fa-bullhorn"></i> Contacto</h3>
-                        <a href=""></a>
+                        <a href="">4444987</a>
                     </div>
                 </div>
             </div>

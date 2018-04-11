@@ -129,8 +129,8 @@ body{
         } 
     
         .titular {
-            font-size: 32px;
-            font-family: "Saira ExtraCondensed";
+            font-size: 26px;
+            font-family: 'Saira Extra Condensed', sans-serif;
             color: rgb(52, 152, 219);
             line-height: 35px;
             text-align: center;
@@ -213,7 +213,7 @@ body{
     
     .noticias-block .fecha
     {
-        font-family: "Saira ExtraCondensed";
+        font-family: 'Saira Extra Condensed', sans-serif;
         color: #706F6F;
     
         padding-top: 15px;
@@ -347,7 +347,7 @@ body{
 -------------------------------------------------------------------------------------*/
 .carousel {
     background:#007aeb;
-    /* height: 80vh; */
+    height: 70vh;
   }
   
   /*
@@ -355,6 +355,7 @@ body{
   */
   .carousel-item .img-fluid {
     width:100%;
+    height: 70vh;
   }
   
   /* 
@@ -457,15 +458,15 @@ body{
     -----------------------------------------     */
 .acceso
 {
-    background: #efefef;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    background: white;
+    padding-bottom: 3%;
+    padding-top: 4%;
 
 } 
 
 .titular {
     font-size: 40px;
-    font-family: "Saira ExtraCondensed";
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: rgb(52, 152, 219);
     line-height: 40px;
     text-align: center;
@@ -496,7 +497,7 @@ body{
     .enlaces
     {
         text-align: center;
-        padding-top: 15px;
+        padding-top: 2%;
     }
 
     .enlaces .col-lg-4 p
@@ -505,8 +506,28 @@ body{
         font-size: 14px;
     }
 
-  
+    .acceso button{
+        width: auto;
+        height: 50px;
+    }
 
+    
+    .pacientes-rapido img{
+        width: 95%;
+        height: 95%;
+    }
+
+    .pacientes-rapido .texto{
+        font-size: 18px;
+        font-weight: bold;
+        color: #353b48;
+        margin-top: 3%;
+    }
+
+    .bloque1:hover{
+        transform: scale(1.06);
+        transition: 0.3s ease;
+    }
 /*      -------------------------------------------------------
              fin SECCION ACCESO RAPIDO DE PACIENTES 
         -------------------------------------------------------     */
@@ -553,7 +574,7 @@ body{
 
 .noticias-block .fecha
 {
-    font-family: "Saira ExtraCondensed";
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: #706F6F;
 
     padding-top: 15px;
@@ -644,7 +665,70 @@ body{
     background: #fab005;
 }
 
-#incucai, #cancer{
+#incucai{
+    background-image: url(../img/baner/pacientes.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+#incucai::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #007aeb;
+    position: absolute;
+    opacity: 0.6;
+
+    top: 0;
+    left: 0;
+}
+
+#cancer{
+    background-image: url(../img/baner/mujer.jpg);
+    width: auto;
+    height: 800px;
+    background-size: cover;
+    position: relative;
+}
+
+#cancer::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fd79a8;
+    position: absolute;
+    opacity: 0.7;
+
+    top: 0;
+    left: 0;
+}
+
+#vih{
+    background-image: url(../img/baner/hiv.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    
+}
+
+#vih::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #007aeb;
+    position: absolute;
+    opacity: 0.8;
+
+    top: 0;
+    left: 0;
+}
+
+
+
+#incucai, #cancer, #vih{
     color: white;
     padding: 2%;
     font-size: 16px;
@@ -660,13 +744,13 @@ body{
 
 #incucai h1{
     font-weight: 800;
-    line-height: 7px;
-    font-size: 50px;
+    line-height: 40px;
+    font-size: 40px;
 }
 
-#cancer h1{
+#cancer h1, #vih h1{
     font-weight: 800;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #cancer .texto-dos{
@@ -677,15 +761,20 @@ body{
     margin-bottom: 2%;
 }
 
-#incucai .texto-dos{
+#incucai .texto-dos, #vih .texto-dos{
     font-weight: 300;
     font-size: 30px;
-    color: #718093;
+    color: #cfd7e0;
     
     margin-bottom: 2%;
 }
 
-
+.centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*     --------------------------------------------------- 
                 SECCION PREFOOTER 
