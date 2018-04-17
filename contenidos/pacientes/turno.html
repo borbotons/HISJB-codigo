@@ -111,6 +111,9 @@
     <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
+                <div class="col-md-1 centrar pr-5 isologo">
+                    <img src="../../img/iconos/isologo.png" width="170px" alt="isologo identificatorio del hospital interzonal San Juan Bautista">
+                </div>
                 <div class="topic-container">
                         <a href="../../index.html" class="ga-topic-selector">
                             <div class="topic-link-container">
@@ -215,26 +218,33 @@
         </div>
     </div>
     <div class="container-fluid titular-base">
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center " style="max-width:100%;">
             <div class="col-10 col-md-10">
-                    <h3 class="display-4 text-white">Solicitud de Turno on-line
+                    <h3 class="display-4 text-white">Solicitud de Turno
                         <small class="text-muted">HISJB</small>
                     </h3>
-                    <p class="lead">Para solicitar su turno on-line, por favor complete los siguientes campos. Evaluaremos su petici&oacuten a la brevedad y nos comunicaremos con usted.</p>
+                    <p class="lead">Para solicitar su turno online, por favor complete el siguiente formulario. 
+                        Su petici&oacuten se evaluar&aacute a la brevedad y nos comunicaremos con usted. Tambi&eacuten le ofrecemos informaci&oacuten 
+                    para que pueda realizar la solicitud de turno de manera presencial en nuestras instalaciones.</p>
             </div>
         </div>
     </div>
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
     <div class="container-fluid form-pacientes">
-        <div class="container">          
+        <div class="container">    
+            <div class="row titular-barra mb-4">
+                <div class="col-11 col-md-8 col-lg-10 ">
+                    <h3 class="titular">Modalidad online</h3>
+                </div>
+            </div>      
             <form action="../../controladores/turno.php" method="GET" name="turnos">
-                <div class="row titular-barra mb-4">
+                <div class="row barra-subtitulo mb-4">
                     <div class="col-11 col-md-8 col-lg-10 ">
-                        <h3 class="titular">Datos personales</h3>
+                        <h3 class="titular"><i class="fas fa-user"></i> Datos del paciente</h3>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-sm-6 form-group">
                     <label for="nombre" >Nombre Completo</label>
                     <input class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo" type="text" required>
@@ -246,18 +256,34 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-sm-6 form-group">
                         <label for="fechanac" >Fecha de Nacimiento</label>
                         <input class="form-control" id="fechanac" name="fechanac" placeholder="" type="date" required>
                     </div>
-                    
+                    <div class="col-sm-6 form-group">
+                            <label for="">Obra Social</label>
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
+                                        Tengo Obra Social
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
+                                        Sin Obra Social
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
                 </div>
 
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-sm-6 form-group">
-                        <label for="">Obra Social</label>
-                        <!-- <div class="col-sm-6 form-group"> -->
+                        <!-- <label for="">Obra Social</label>
+                        
                         <div class="row justify-content-center">
                             <label class="form-check-label">
                                 <input class="form-check-input" type="radio" name="exampleRadios"  value="os_si"  onclick="mostrar()">
@@ -269,8 +295,8 @@
                                 <input class="form-check-input" type="radio" name="exampleRadios" value="os_no" onclick="ocultar()" >
                                 Sin Obra Social
                             </label>
-                        </div>
-                        <!-- </div> -->      
+                        </div> -->
+                             
                     </div>  
                     <div class="col-sm-6 form-group" id="flo" style="display:none;">
                         <label for="obra_soci" >Obra Social</label>
@@ -278,12 +304,12 @@
                     </div>  
                 </div> 
                 
-                <div class="row mt-2 mb-4 titular-barra">
+                <div class="row mt-2 mb-4 barra-subtitulo">
                     <div class="col-11 col-md-8 col-lg-10  ">
-                        <h3 class="titular">Datos de contacto</h3>
+                        <h3 class="titular"><i class="far fa-comments"></i> Datos de contacto</h3>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-sm-6 form-group">
                         <label for="domicilio" >Domicilio</label>
                         <input class="form-control" id="domicilio" name="domicilio" placeholder="Domicilio del paciente" type="text" required>
@@ -293,7 +319,7 @@
                         <input class="form-control" id="telefono" name="telefono" placeholder="Ingrese cel/tel" type="number" required>
                     </div>
                 </div> 
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-sm-6 form-group">
                         <label for="mail" >Email</label>
                         <input class="form-control" id="mail" name="mail" placeholder="mail@mail.com" type="text" required>
@@ -301,16 +327,16 @@
                     
                 </div> 
 
-                <div class="row mt-3 mb-4 titular-barra">
-                    <div class="col-11 col-md-8 col-lg-10  ">
-                        <h3 class="titular">Datos de consulta</h3>
+                <div class="row mt-3 mb-4 barra-subtitulo ">
+                    <div class="col-11 col-md-8 col-lg-10 ">
+                        <h3 class="titular"><i class="fas fa-user-md"></i> Datos de consulta</h3>
                     </div>
                 </div>
                 
                 <div class="row form-style justify-content-center">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label for="especialidad">Especialidad</label>
+                            <label for="especialidad">1. Especialidad</label>
                             <select name="especia" id="especialidad" class="form-control" onchange="mostrarmed(this.value)" required>
                                     <option value="" disabled selected>Seleccione</option>
                                     <option value="cardiologia">Cardiolog&iacutea</option>
@@ -323,7 +349,7 @@
                     
                     <div class="col-md-3">
                         <div class="form-group">
-                                <label for="med">Especialista</label>
+                                <label for="med">2. Especialista</label>
                                 <select name="med" id="med" class="form-control" onclick="mostrardia(this.value)">
                                         
                                 </select>
@@ -332,7 +358,7 @@
                 
                     <div class="col-md-3">
                         <div class="form-group">
-                                <label for="diamed">D&iacutea de preferencia</label>
+                                <label for="diamed">3. D&iacutea de preferencia</label>
                                 <select name="diamed" id="diamed" class="form-control" required>
                                         
                                 </select>
@@ -344,7 +370,7 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                                <label for="turn">Turno</label>
+                                <label for="turn">4. Turno de preferencia</label>
                                 <select name="turn" id="turn" class="form-control" required>
                                         <option value="" disabled selected>Seleccione</option>
                                         <option value="mañana">ma&ntildeana</option>
@@ -363,6 +389,49 @@
             </form>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="container">    
+            <div class="row titular-barra mb-4">
+                <div class="col-11 col-md-8 col-lg-10 ">
+                    <h3 class="titular">Modalidad presencial</h3>
+                </div>
+            </div>  
+            <div class="row mb-5">
+                <div class="col-12 col-md-6">
+                    <div class="alert alert-success" role="alert">
+                            <i class="far fa-clock"></i> De lunes a viernes:
+                            turno ma&ntildeana a partir de las 07:00 Hs.
+                            Turno tarde a partir de las 14:00 Hs.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="alert alert-info" role="alert">
+                            <i class="far fa-clock"></i> Recuerde que si es del interior puede solicitar sus turnos de manera telef&oacutenica llamando al n&uacutemero 
+                            del consultorio de Orientaci&oacuten, <strong>(0383) 4437661 interno 129</strong> . Atenci&oacuten de 06:00 a 11:00 hs.
+                    </div>
+                </div>
+                <div class="col-12 rotulo">
+                    <h4><i class="fas fa-check-circle"></i> REQUISITOS:</h4>
+                </div>
+                <div class="col-12 col-md-10">
+                    <ol class="pacientes">
+                        <li>El pacientes debe tener siempre <strong>16 a&ntildeos</strong>  o m&aacutes.</li>
+                        <li>Se debe presentar siempre el <strong>DNI</strong>.</li>
+                        <li>Si anteriormente hizo consultas en el Hospital, debe traer el <strong> carnet</strong> o el <strong>n&uacutemero de historia cl&iacutenica</strong>  que 
+                            le fue otorgado. Si lo extravi&oacute ind&iacutequelo a quien lo atienda: es importante saberlo para localizar 
+                            su historia cl&iacutenica y conocer mejor su estado de salud.</li>
+                        <li>En el caso que el paciente sea un menor, los datos que debe proporcionar tanto en admisi&oacuten como al 
+                            profesional m&eacutedico, son los del adolescente y no los del responsable que los acompa&ntildea.</li>
+                        <li>Recuerde que laa prioridad en la solicitud de turnos, es para pacientes del interior que se acerquen de manera 
+                            personal y para personas mayores de 70 o con capacidades diferentes.</li>
+                        <li>Tenga a bien <strong>respetar tanto sus turnos como horarios y recomendaciones m&eacutedicas</strong> , puesto que 
+                            su derecho de atenci&oacuten, tambi&eacuten es de los dem&aacutes.</li>
+                    </ol>
+                </div>
+            </div>   
+        </div>
+    </div>
      <!-- FIN CUERPO PAGINA -->
     <!-- INICIO PIE PAGINA -->
     <footer>
@@ -370,34 +439,42 @@
             <div class="container">
                 <div class="row justify-content-center barra-h">
                     <div class="col-lg-2 ">
-                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="160px">
+                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="160px" style="opacity:0.6;">
                     </div>
-                </div>     
+                </div>
                 <div class="row pie-menu justify-content-center">
-                    <div class="col-md-3 info info-b">
+                    <div class="col-12 col-md-4 info info-b">
                         <h3><i class="fas fa-shield-alt"></i> Pacientes</h3>
                         <a href="">Especialidades</a>
                         <a href="">Laboratorio</a>
                         <a href="">Internaciones</a>
                         <a href="">Horarios de visita</a>
                         <a href="">Solicitar Turno online</a>
+                        <h3 class="mt-3"><i class="fas fa-bullhorn"></i> Contacto</h3>
+                        <a href="">Dirección de Emergencias: 437832</a>
+                        <a href="">Telefonía de Emergencias: 3834242265</a>
                     </div>
-                    <div class="col-lg-3 info info-b">
-                        <h3><i class="fas fa-info"></i> Institucional</h3>
-                        <a href="">Organigrama</a>
+
+                    <div class="col-12 col-md-8 info info-b">
+                        <h3><i class="fas fa-info"></i> Ubicación del Hospital</h3>
+                        <!-- <a href="">Organigrama</a>
                         <a href="">Historia</a>
                         <a href="">Innovaciones edilicias</a>
-                        <a href="">Trabaja con nosotros</a>
+                        <a href="">Trabaja con nosotros</a> -->
+                        <div class="row">
+                                <div class="col-md-12 contenido-variable">  
+                                    <div id="googleMap" style="width:100%;height:250px;"></div>  
+                                </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 info">
-                        <h3><i class="fas fa-bullhorn"></i> Contacto</h3>
-                        <a href=""></a>
+                    <div class="col-12 col-md-3 info">
+                        
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid post-pie">
-            <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4>
+            <!-- <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4> -->
         </div>
     </footer>
     <!-- FIN PIE PAGINA -->
@@ -408,5 +485,24 @@
     <script type="text/javascript" src="../../js/menu-movil.js"></script>
     <!-- revisar -->
     
+    <script>
+            function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(-28.461666, -65.790112),
+                zoom:15,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+            var marker=new google.maps.Marker({
+                position:new google.maps.LatLng(-28.461666, -65.790112),
+                map:map,
+                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+            }
+    
+            
+        </script>
+            
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA19Nmy1g7Ga9P0jJ_QgLbLbGcU4vvwQig&callback=myMap"></script>
 </body>
 </html>

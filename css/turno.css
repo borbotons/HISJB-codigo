@@ -29,6 +29,7 @@
     padding-top: 5%;
     padding-bottom: 6%;
 
+    font-size: 16px;
 }
 
 .titular {
@@ -40,4 +41,16 @@
     font-weight: 300;
 }
 
+.barra-subtitulo{
+    border-bottom: 2px dotted #3d97d3;
+}
 
+.pacientes li{
+    margin-bottom: 2%;
+    font-size: 16px;
+}
+
+.rotulo{
+    color: #3d97d3;
+    margin-bottom: 1.5%;
+}
