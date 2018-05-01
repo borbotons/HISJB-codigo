@@ -7,6 +7,41 @@
 /*.................................................................................*/
 
 
+/*---------------------------- A N I M A C I O N E S -------------------------------*/ 
+
+#primero {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    /* animation-iteration-count: infinite; */
+}
+
+#segundo {
+animation-duration: 1s;
+animation-delay: 0.35s;
+/* animation-iteration-count: infinite; */
+}
+
+#tercero {
+    animation-duration: 1s;
+    animation-delay: 0.55s;
+    /* animation-iteration-count: infinite; */
+}
+
+#cuarto {
+    animation-duration: 1s;
+    animation-delay: 0.75s;
+    /* animation-iteration-count: infinite; */
+}
+
+#quinto {
+    animation-duration: 3s;
+    animation-delay: 0.95s;
+    /* animation-iteration-count: infinite; */
+  }
+
+
+/*----------------------------------------------------------------------------------------*/
+
 /* / Extra small devices (portrait phones, less than 576px)*/
    
     body 

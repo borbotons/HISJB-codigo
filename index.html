@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/calendario.css">
     <link rel="stylesheet" href="css/menu-movil.css">
     <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css"> 
 
     <link rel="icon" href="img/iconos/mano3.ico">
 </head>
@@ -20,7 +21,7 @@
     <!-- INICIO HEADER PAGINA-->
    
     <!--  CARRUSEL INICIO PAGINA -->
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+    <div id="carousel" class="carousel slide carousel-fade animated fadeIn" id="segundo" data-ride="carousel" data-interval="600000">
         <!-- <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
@@ -28,8 +29,7 @@
             <li data-target="#carousel" data-slide-to="3"></li>
         </ol> -->
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <a href="#">
+            <div class="carousel-item active">           
                     <!-- 
                     If you need more browser support use https://scottjehl.github.io/picturefill/
                     If a picture looks blurry on a retina device you can add a high resolution like this
@@ -38,42 +38,41 @@
                     What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
                         -->
                     <picture>
-                        <source srcset="img/baner/fachada.jpg" media="(min-width: 1400px)">
-                        <source srcset="img/baner/fachada769.jpg" media="(min-width: 769px)">
-                        <source srcset="img/baner/fachada577.jpg" media="(min-width: 577px)">
-                        <img srcset="img/baner/fachada577.jpg" alt="responsive image" class="d-block img-fluid">
+                        <source srcset="img/baner/fachada3.jpg" media="(min-width: 1400px)">
+                        <source srcset="img/baner/fachada3.jpg" media="(min-width: 769px)">
+                        <source srcset="img/baner/fachada3.jpg" media="(min-width: 577px)">
+                        <img srcset="img/baner/fachada3.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption izquierda">
-                        <div class="baner-azul">
-                            <h2>HOSPITAL INTERZONAL SAN JUAN BAUTISTA</h2>
+                        <div class="baner-azul animated fadeInLeft" id="segundo">
+                            <h2>HOSPITAL <br> INTERZONAL <br> SAN JUAN BAUTISTA</h2>
                             <p>Contenci&oacuten. Protecci&oacuten. Solidaridad. Transparencia.</p>
                             
                         </div>
                     </div>
-                </a>
             </div>
             <!-- /.carousel-item -->
             <div class="carousel-item">
                 <a href="contenidos/pacientes/especialidades.html">
                     <picture>
-                        <source srcset="img/baner/luces.jpg" media="(min-width: 1400px)">
-                        <source srcset="img/baner/luces.jpg" media="(min-width: 769px)">
-                        <source srcset="img/baner/luces.jpg" media="(min-width: 577px)">
-                        <img srcset="img/baner/luces.jpg" alt="responsive image" class="d-block img-fluid">
+                        <source srcset="img/baner/luces3.jpg" media="(min-width: 1400px)">
+                        <source srcset="img/baner/luces3.jpg" media="(min-width: 769px)">
+                        <source srcset="img/baner/luces3.jpg" media="(min-width: 577px)">
+                        <img srcset="img/baner/luces3.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption justify-content-center align-items-center">
-                        <div class="baner-rojo">
-                            <h2>M&AacuteS DE 15 ESPECIALIDADES</h2>
-                            <p>Tenemos asistencia para cada necesidad.</p>
+                        <div class="baner-rojo animated fadeIn" id="segundo">
+                            <h2>TENEMOS <br> M&AacuteS DE 15 ESPECIALIDADES</h2>
+                            <p>Contamos con la asistencia para cada necesidad.</p>
                             
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> 
             <!-- /.carousel-item -->
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <a href="#">
                         <picture>
                         <source srcset="img/baner/nutricion.jpg" media="(min-width: 1400px)">
@@ -84,26 +83,26 @@
 
                     <div class="carousel-caption justify-content-start align-items-center">
                         <div class="baner-verde">
-                            <h2>CL&IacuteNICA DE NUTRICI&OacuteN</h2>
-                            <p>Porque la base para un buen desempeño es contar con la alimentaci&oacuten adecuada.</p>
+                            <h2>SOLICITUD DE TURNO ONLINE</h2>
+                            <p>Nos modernizamos para simplificarte las consultas.</p>
                             
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> -->
             <!-- /.carousel-item -->
             <div class="carousel-item">
                 <a href="contenidos/pacientes/laboratorio.html">
                         <picture>
-                        <source srcset="img/baner/ensayos.jpg" media="(min-width: 1400px)">
-                        <source srcset="img/baner/ensayos.jpg" media="(min-width: 769px)">
-                        <source srcset="img/baner/ensayos.jpg" media="(min-width: 577px)">
-                        <img srcset="img/baner/ensayos.jpg" alt="responsive image" class="d-block img-fluid">
+                        <source srcset="img/baner/ensayos2.jpg" media="(min-width: 1400px)">
+                        <source srcset="img/baner/ensayos2.jpg" media="(min-width: 769px)">
+                        <source srcset="img/baner/ensayos2.jpg" media="(min-width: 577px)">
+                        <img srcset="img/baner/ensayos2.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption justify-content-center align-items-center">
-                        <div class="baner-mora">
-                            <h2>LABORATORIO Y ENSAYOS CL&IacuteNICOS</h2>
+                        <div class="baner-mora animated fadeIn" id="segundo">
+                            <h2>ENSAYOS CL&IacuteNICOS Y LABORATORIO</h2>
                             <p>Realizamos estudios de variada complejidad.</p>
                             
                         </div>
@@ -152,10 +151,10 @@
     <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
-                <div class="col-md-1 centrar pr-5 isologo">
+                <div class="col-md-1 centrar pr-5 isologo animated fadeIn" id="primero">
                     <img src="img/iconos/isologo.png" width="170px" alt="isologo identificatorio del hospital interzonal San Juan Bautista">
                 </div>
-                <div class="topic-container">
+                <div class="topic-container animated zoomIn" data-wow-delay="0.45s">
                         <a href="index.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
@@ -166,7 +165,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
+                    <div class="topic-container animated zoomIn" id="segundo">
                         <a href="institucional.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
@@ -177,7 +176,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container menu-pacientes">      
+                    <div class="topic-container menu-pacientes animated zoomIn" id="tercero">      
                         <ul class="">
                             <li class="dropdown"><a href="pacientes.html" class="ga-topic-selector">
                                     <div class="topic-link-container">
@@ -233,7 +232,7 @@
                             </div>
                         </a>
                     </div>-->
-                    <div class="topic-container">
+                    <div class="topic-container animated zoomIn" id="cuarto">
                         <a href="capellania.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
@@ -244,7 +243,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
+                    <div class="topic-container animated zoomIn" id="quinto">
                         <a href="#" id="btn-toggle" class="ga-topic-selector btn-toggle">
                             <div class="topic-link-container">
                                 <div class="topic-link">
@@ -328,7 +327,7 @@
                             </div>
                         </div>
                         <div class="row pacientes-rapido mt-2">
-                            <div class="col-md-3">
+                            <div class="col-md-3 animated fadeIn" id="primero">
                                 <div class="bloque1">
                                     <a href="contenidos/pacientes/turno.html">
                                     <div class="row">
@@ -342,7 +341,7 @@
                                 </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 animated fadeIn" id="segundo">
                                 <div class="bloque1">
                                     <a href="contenidos/pacientes/donar.html">
                                         <div class="row">
@@ -354,7 +353,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 animated fadeIn" id="tercero">
                                 <div class="bloque1">
                                     <a href="contenidos/pacientes/como-llegar.html">
                                         <div class="row">
@@ -366,7 +365,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 animated fadeIn" id="cuarto">
                                 <div class="bloque1">
                                     <a href="contenidos/pacientes/especialidades.html">
                                         <div class="row">
@@ -406,16 +405,17 @@
     </div>
 
     <!-- SECCION NOTICIAS -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
             <div class="row justify-content-center mt-5">
                     <div class="col-11 col-md-10">
-                            <div class="row justify-content-start titular-barra">
+                            <div class="row justify-content-start titular-barra animated wow fadeIn" data-wow-delay="0.45s">
                                 <h1 class="titular">NOTICIAS DESTACADAS Y NOVEDADES</h1>
                             </div> 
                     </div>
             </div> 
     </div>
-    <div class="container noticias">
+    <div class="container noticias"> -->
+
         <!-- <div class="row justify-content-around notiicas-fila">
             <div class="col-lg-3 noticias-block bt">
                 <h6 class="fecha">10/11/17</h6>
@@ -457,79 +457,110 @@
                 <a href="" class="leer-mas">+Leer art&iacuteculo</a>
             </div>
         </div> -->
+
+        <!-- <div class="row">
+
+                        <div class="col-12 noticias-block evento item">
+                                <h6 class="fecha">13/04/2018</h6>
+                                <h6 class="categoria">Institucional</h6>
+                                <a href="">13 de abril, <br> Dia del kinesiologo</a>
+                                <p>En el día de hoy queremos saludar a todos los Kinesiologos que componen nuestro Hospital.
+                                        Agradecer por el alivio que sus manos y sus cuidados llevan a cada uno de nuestros #pacientes.
+                                        FELICIDADES!
+                                </p>
+                                
+                            </div>  -->
+                            <!-- <div class=" noticias-block evento item">
+                                    <h6 class="fecha">13/04/2018</h6>
+                                    <h6 class="categoria">Institucional</h6>
+                                    <a href="">13 de abril, <br> Dia del kinesiologo</a>
+                                    <p>En el día de hoy queremos saludar a todos los Kinesiologos que componen nuestro Hospital.
+                                            Agradecer por el alivio que sus manos y sus cuidados llevan a cada uno de nuestros #pacientes.
+                                            FELICIDADES!
+                                    </p>
+                                    
+                                </div> 
+                                <div class=" noticias-block evento item">
+                                        <h6 class="fecha">13/04/2018</h6>
+                                        <h6 class="categoria">Institucional</h6>
+                                        <a href="">13 de abril, <br> Dia del kinesiologo</a>
+                                        <p>En el día de hoy queremos saludar a todos los Kinesiologos que componen nuestro Hospital.
+                                                Agradecer por el alivio que sus manos y sus cuidados llevan a cada uno de nuestros #pacientes.
+                                                FELICIDADES!
+                                        </p>
+                                        
+                                    </div> 
+                                    <div class=" noticias-block evento item">
+                                            <h6 class="fecha">13/04/2018</h6>
+                                            <h6 class="categoria">Institucional</h6>
+                                            <a href="">13 de abril, <br> Dia del kinesiologo</a>
+                                            <p>En el día de hoy queremos saludar a todos los Kinesiologos que componen nuestro Hospital.
+                                                    Agradecer por el alivio que sus manos y sus cuidados llevan a cada uno de nuestros #pacientes.
+                                                    FELICIDADES!
+                                            </p>
+                                            
+                                        </div>  -->
+            
+            
+        <!-- </div>
+             
         <div class="row justify-content-around notiicas-fila">
-                <div class="col-lg-5 noticias-block br">
-                    <h6 class="fecha">10/11/17</h6>
-                    <h6 class="categoria">Proveedores</h6>
-                    <a href="">Titular de noticia uno con enlace</a>
-                    <p>Características de la posici&oacuten: En su rol de
-                            front end developer, será el encargado de convertir
-                            el diseño de pantallas entregado por el cliente o nuestra
-                            propia área de diseño, en interfaces navegables para diversos
-                            dispositivos (responsive). Tareas y responsabilidades: Trabajará 
-                            como (...)
+
+                <div class="col-lg-4 noticias-block br wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+                    <h6 class="fecha">25/04/2018</h6>
+                    <h6 class="categoria">Comunidad</h6>
+                    <a href="">Empleados del Hospital San Juan se capacitaron en informática</a>
+                    <p>Treinta empleados del Hospital San Juan Bautista recibieron este miércoles 
+                        sus certificados por haber asistido y aprobado el curso de Introducción a la 
+                        Informática ofrecido por el Instituto Provincial de la Administración Pública (IPAP).
                     </p>
-                    <a href="" class="leer-mas">+Leer art&iacuteculo</a>
+                    <a href="http://sanfernandodigital.com.ar/noticias/2018/04Abril/EmpleadosdelHospitalSanJuansecapacitaroneninformatica.html" class="leer-mas">+Leer art&iacuteculo</a>
                 </div>
-                <div class="col-lg-5 noticias-block br">
-                        <h6 class="fecha">10/11/17</h6>
-                        <h6 class="categoria">Educaci&oacuten</h6>
-                        <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posici&oacuten: En su rol de
-                                front end developer, será el encargado de convertir
-                                el diseño de pantallas entregado por el cliente o nuestra
-                                propia área de diseño, en interfaces navegables para diversos
-                                dispositivos (responsive). Tareas y responsabilidades: Trabajará 
-                                como (...)
+                <div class="col-lg-4 noticias-block br">
+                        <h6 class="fecha">24/04/2018</h6>
+                        <h6 class="categoria">Institucional</h6>
+                        <a href="">Se inauguró la nueva Sala de Yesos del Hospital Interzonal San Juan Bautista</a>
+                        <p>El Ministro de Salud Dr. Ramón Figueroa Castellanos junto a las Autoridades de Nuestro Hospital, 
+                            pusieron en funcionamiento la nueva y moderna Sala de Yesos del Hospital Interzonal San Juan Bautista.
                         </p>
                         <a href="" class="leer-mas">+Leer art&iacuteculo</a>
-                </div>    
-            </div>
-            <div class="row justify-content-around notiicas-fila">
-                    <div class="col-lg-3 noticias-block">
-                        <h6 class="fecha">10/11/17</h6>
-                        <h6 class="categoria">Institucional</h6>
-                        <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posici&oacuten: En su rol de
-                                front end developer, será el encargado de convertir
-                                el diseño de pantallas entregado por el cliente o nuestra
-                                propia área de diseño, en interfaces navegables para diversos
-                                dispositivos (responsive). Tareas y responsabilidades: Trabajará 
-                                como (...)
+                </div>   
+                <div class="col-lg-3 noticias-block evento">
+                    <h6 class="fecha">13/04/2018</h6>
+                    <h6 class="categoria">Institucional</h6>
+                    <a href="">13 de abril, <br> Dia del kinesiologo</a>
+                    <p>En el día de hoy queremos saludar a todos los Kinesiologos que componen nuestro Hospital.
+                            Agradecer por el alivio que sus manos y sus cuidados llevan a cada uno de nuestros #pacientes.
+                            FELICIDADES!
+                    </p>
+                    
+                </div> 
+            </div> -->
+            <!-- <div class="row justify-content-around notiicas-fila">
+                    <div class="col-lg-4 noticias-block bt">
+                        <h6 class="fecha">20/04/2018</h6>
+                        <h6 class="categoria">Comunidad</h6>
+                        <a href="">Se detectaron bajas en las estadísticas de embarazos no deseados de un 24,5% al 19% </a>
+                        <p>Salud junto a Educación y Desarrollo Social, inician tareas dentro del Plan Nacional de Prevención y Reducción del EMBARAZO NO INTENCIONAL EN LA ADOLESCENCIA (ENIA). 
+                                El desafío es siempre, seguir bajando las estadísticas y trabajar comprometidos con las problemáticas que aquejan a nuestra población.
                         </p>
                         <a href="" class="leer-mas">+Leer art&iacuteculo</a>
                     </div>
-                    <div class="col-lg-3 noticias-block">
-                        <h6 class="fecha">10/11/17</h6>
-                        <h6 class="categoria">Institucional</h6>
-                        <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posici&oacuten: En su rol de
-                                front end developer, será el encargado de convertir
-                                el diseño de pantallas entregado por el cliente o nuestra
-                                propia área de diseño, en interfaces navegables para diversos
-                                dispositivos (responsive). Tareas y responsabilidades: Trabajará 
-                                como (...)
+                    <div class="col-lg-4 noticias-block bt">
+                        <h6 class="fecha">18/04/2018</h6>
+                        <h6 class="categoria">Educación</h6>
+                        <a href="">Se llevo a cabo el 2do Ateneo Central Interdisciplinario</a>
+                        <p>La exposicion estuvo a cargo de la Médica Oncohematologa Gisbert y la Lic. en Kinesiologia con la presentación 
+                            del caso Linfoma de Hodgkin con compromiso de columna cervical. 
                         </p>
                         <a href="" class="leer-mas">+Leer art&iacuteculo</a>  
                     </div>
-                    <div class="col-lg-3 noticias-block">
-                        <h6 class="fecha">10/11/17</h6>
-                        <h6 class="categoria">Institucional</h6>
-                        <a href="">Titular de noticia uno con enlace</a>
-                        <p>Características de la posici&oacuten: En su rol de
-                                front end developer, será el encargado de convertir
-                                el diseño de pantallas entregado por el cliente o nuestra
-                                propia área de diseño, en interfaces navegables para diversos
-                                dispositivos (responsive). Tareas y responsabilidades: Trabajará 
-                                como (...)
-                        </p>
-                        <a href="" class="leer-mas">+Leer art&iacuteculo</a>
-                    </div>
-                </div>
+                    
+            </div> -->
     </div>
 
     <!-- SECCION CALENDARIO Y EVENTOS -->
-    <div class="container-fluid calendario">
+    <div class="container-fluid calendario wow fadeIn " data-wow-delay="0.1s">
         <div class="container">
             <div class="row titular">
                 <h1 class="blanco"><i class="far fa-calendar-alt"></i> PR&OacuteXIMOS EVENTOS EN HISJB</h1>
@@ -880,6 +911,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/contacto.js"></script>
     <script type="text/javascript" src="js/menu-movil.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript">       
         $(function() {
             
@@ -903,7 +935,7 @@
                 windows.location.href = "index.html";
             });
 
-        })(); 
+        })
     </script>
     
     <script>
