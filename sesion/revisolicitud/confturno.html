@@ -63,19 +63,21 @@
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <label for="espec" >Especialidad</label>
-                        <input class="form-control" type="text" name="espec" value="<?php echo $resulta['especialidad'] ?>" disabled />
+                        <input class="form-control" type="text" name="esp" value="<?php echo $resulta['especia'] ?>" disabled />
                     </div>
                     <input type="hidden" name="espec2"   value="<?php echo $resulta['especialidad']; ?>"  />
                     <div class="col-sm-6 form-group">
                         <label for="motivo" >Motivo</label>
                         <input class="form-control" type="text" name="motivo" value="<?php echo $resulta['descripcion'] ?>" disabled />
+                        
                     </div>
+                    <input type="hidden" name="motivo2"   value="<?php echo $resulta['descripcion']; ?>"  />
                     
             </div>
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <label for="med" >Medico</label>
-                        <input class="form-control" type="text" name="med" value="<?php echo $resulta['medico'] ?>"  disabled/>
+                        <input class="form-control" type="text" name="med" value="<?php echo $resulta['apellidomed']." ".$resulta['nombremed'] ?>"  disabled/>
                     </div>
                     <input type="hidden" name="med2"   value="<?php echo $resulta['medico']; ?>"  />
                     <div class="col-sm-6 form-group">

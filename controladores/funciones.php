@@ -27,8 +27,7 @@ function limpiar($datos){
 function comprobar_ses_norm(){
 
     if(isset($_SESSION['usuario'])){
-        //preguntar luego por el admin aqui... o sea si la session iniciada pertenece al admin o algun
-        //otro usuario comun para que segun eso haga la redireccion.
+        
         
         header('Location:/admin');
         

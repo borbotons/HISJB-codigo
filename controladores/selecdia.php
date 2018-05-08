@@ -9,7 +9,7 @@ list($prof, $nombre1, $apellido) = explode(" ", $dia_med);
 try {
 
 
-	$conex = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
+	$conex = new PDO('mysql:host=127.0.0.1;dbname=wi871598_hsjb','wi871598_hsjb','22puGAkori');
 
 	$statement = $conex->prepare('SELECT apellido,dia1atenc,dia2atenc,dia3atenc,dia4atenc,dia5atenc FROM medicos WHERE nombre=:espec');
 

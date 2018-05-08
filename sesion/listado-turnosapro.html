@@ -34,7 +34,7 @@
                     <a href=""><i class="fas fa-desktop"></i> &nbsp;RESUMEN</a>
                     <a href="../controladores/panel_user.php"><i class="far fa-clock"></i> &nbsp;PEDIDOS PENDIENTES</a>
                     <div class="activo"><a href="../controladores/turnoaprov.php"><i class="fas fa-check"></i> &nbsp;PEDIDOS APROBADOS</a></div>
-                    <a href=""><i class="fas fa-ban"></i> &nbsp;PEDIDOS RECHAZADOS</a> 
+                    <a href="../controladores/turnosrec.php"><i class="fas fa-ban"></i> &nbsp;PEDIDOS RECHAZADOS</a> 
                     <a href="../controladores/cerrar_ses.php"><i class="fas fa-sign-out-alt"></i> &nbsp;CERRAR SESION</a>
             </div>
             <div class="col-md-9 contenido">
@@ -60,9 +60,9 @@
                     <?php foreach ($resulta as $result ) { ?>
                     <tr>
                       <td><?php echo $result['paciente']; ?></td>
-                      <td><?php echo $result['especialidad']; ?></td>
+                      <td><?php echo $result['especia']; ?></td>
                       <td><?php echo $result['descripcion']; ?></td>
-                      <td><?php echo $result['medico']; ?></td>
+                      <td><?php echo $result['apellidomed']." ".$result['nombremed']; ?></td>
                       <td><?php echo $result['diapedido']; ?></td>
                       <td><?php echo $result['dia']; ?></td>
                       <td><?php echo $result['horario']; ?></td>

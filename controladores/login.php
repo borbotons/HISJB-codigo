@@ -32,7 +32,7 @@ if (($_SERVER['REQUEST_METHOD'] =='POST')&&( $_POST['usuario'] != null)){
 
     try {
 
-        $conexion = new PDO('mysql:host=localhost ;dbname=hsjb','root','');
+        $conexion = new PDO('mysql:host=127.0.0.1;dbname=wi871598_hossjb','wi871598_hsjb17','Hospitalsanjuan17');
 
 
     }catch(PDOException $e){

@@ -1,14 +1,15 @@
 <?php 
 
 
-$espec_med=$_POST['cod_banda'];
+//$espec_med=$_POST['cod_banda'];
+$espec_med=$_POST["cod_banda"];
 
 
 try {
 
 
-	$conex = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
-
+	$conexion = new PDO('mysql:host=127.0.0.1;dbname=wi871598_hsjb','wi871598_hsjb','22puGAkori');
+	
 	$statement = $conex->prepare('SELECT nombre,apellido,sexo FROM medicos WHERE especialidad=:espec');
 
 	$statement->execute(
