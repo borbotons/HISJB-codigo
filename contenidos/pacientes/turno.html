@@ -14,65 +14,23 @@
 
     <link rel="icon" href="../../img/iconos/mano3.ico">
 
-<script>
-            
-            function mostrarmed(cod){
-            
-            if (window.XMLHttpRequest)
-            {// code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {// code for IE6, IE5
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange=function()
-            {
-            if (xmlhttp.readyState==4 && xmlhttp.status==200)
-            {
-            document.getElementById("datos").innerHTML=xmlhttp.responseText;
-            document.getElementById("med").innerHTML=xmlhttp.responseText;
-            }else{ 
-            document.getElementById("datos").innerHTML='Cargando...';
-            }
-            }
-            xmlhttp.open("POST","../../controladores/selecmed.php",true);
-            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-            xmlhttp.send("cod_banda="+cod);
-            
-            }
-            
-</script>
-            
-<script>
-                
-                function mostrardia(medi){
-                
-                if (window.XMLHttpRequest)
-                {// code for IE7+, Firefox, Chrome, Opera, Safari
-                xmlhttp=new XMLHttpRequest();
-                }
-                else
-                {// code for IE6, IE5
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-                }
-                xmlhttp.onreadystatechange=function()
-                {
-                if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                document.getElementById("datos2").innerHTML=xmlhttp.responseText;
-                document.getElementById("diamed").innerHTML=xmlhttp.responseText;
-                }else{ 
-                document.getElementById("datos2").innerHTML='Cargando...';
-                }
-                }
-                xmlhttp.open("POST","../../controladores/selecdia.php",true);
-                xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-                xmlhttp.send("cod_banda="+medi);
-                
-                }
-                
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
     <!-- INICIO HEADER PAGINA-->
@@ -336,22 +294,25 @@
                 <div class="row form-style justify-content-center">
                     <div class="col-md-3">
                         <div class="form-group">
+                            <div class="selector-especialidad">
                             <label for="especialidad">1. Especialidad</label>
-                            <select name="especia" id="especialidad" class="form-control" onchange="mostrarmed(this.value)" required>
+                            <select name="especia" id="especialidad" class="form-control"  onclick="selecmedico()" required>
                                     <option value="" disabled selected>Seleccione</option>
                                     <option value="cardiologia">Cardiolog&iacutea</option>
                                     <option value="cirugia">Cirug&iacutea General</option>
                                     <option value="clinica">Cl&iacutenica M&eacutedica</option>
                                     <option value="ginecologia">Ginecolog&iacutea</option>
                             </select>
+                           </div>
                         </div>
                     </div>
                     
                     <div class="col-md-3">
                         <div class="form-group">
+                                <div class="con-json"> 
                                 <label for="med">2. Especialista</label>
-                                <select name="med" id="med" class="form-control" onclick="mostrardia(this.value)">
-                                        
+                                <select name="med" id="med"   >
+                                </div>        
                                 </select>
                         </div>
                     </div>
@@ -504,5 +465,22 @@
         </script>
             
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA19Nmy1g7Ga9P0jJ_QgLbLbGcU4vvwQig&callback=myMap"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(selecmedico function () {
+    $(".selector-especialidad select").change(function() {
+    $(".con-json select").empty();
+    $.getJSON('../controladores/selecmed_json.php?especialid='+$(".selector-especialidad select").val(),function(data){
+        $.each(data, function(cod_med,value){
+        $(".con-json select").append('<option value="'+cod_med+'">'+value+'</option>');
+        });
+    });
+    });
+});
+</script>
+
+
 </body>
 </html>
