@@ -539,6 +539,14 @@ body{
         transform: scale(1.06);
         transition: 0.3s ease;
     }
+
+     .bloque1:hover img{
+         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+     }
+
+     .bloque1:hover texto{
+        color: white;
+     }
 /*      -------------------------------------------------------
              fin SECCION ACCESO RAPIDO DE PACIENTES 
         -------------------------------------------------------     */
