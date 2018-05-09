@@ -20,7 +20,7 @@ $estado = 'pendiente';
 
 try {
 
-    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
+    $conexion = new PDO('mysql:host=127.0.0.1;dbname=wi871598_hossjb','wi871598_hsjb17','Hospitalsanjuan17');
 
 
     }catch(PDOException $e){
@@ -28,7 +28,7 @@ try {
        echo "Error:" .$e->getMessage();;
     }
     #Podemos ordenar mediante el dia y hora...
-   $statemente = $conexion->prepare('SELECT cod_solicitud,paciente,estado,diapedido,descripcion,medico FROM solicitud WHERE estado = :estado ORDER BY paciente');
+   $statemente = $conexion->prepare('SELECT * FROM solicitud WHERE estado = :estado ORDER BY dia');
 
    $statemente->execute(array(
         ':estado' => $estado

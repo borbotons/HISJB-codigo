@@ -11,7 +11,7 @@ $nombrepdf = getdate();
 
 
 
-
+$fecha = $nombrepdf['mday'] . ' ' . $nombrepdf['month'] . ' ' . $nombrepdf['year'];
 
 
 $estado = 'pendiente';
@@ -21,8 +21,8 @@ $estado = 'pendiente';
 
 try {
 
-    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
-
+    $conexion = new PDO('mysql:host=127.0.0.1;dbname=wi871598_hossjb','wi871598_hsjb17','Hospitalsanjuan17');
+    
     }catch(PDOException $e){
 
        echo "Error:" .$e->getMessage();;
@@ -59,7 +59,7 @@ try {
           </div>
           <div class="col-md-4"></div>  
           <div class="col-md-4" class="fecha">
-              <p class="lead">Fecha: 20/02/2018</p>
+              <p class="lead">Fecha: <?php echo $fecha ?> </p>
           </div>
         </div>
         <div class="row subtitular ">
@@ -91,13 +91,7 @@ try {
             </tr>
             <?php } ?>
 
-            <tr>
-              <td>Chayle Facundo L.</td>
-              <th><br></th>
-              <td>Pendiente</span></td>
-              <th><br></th>
-              <td>Dec 13, 2016</td>
-            </tr>
+            
       </table>
     </div>
                

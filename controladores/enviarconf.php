@@ -27,8 +27,8 @@ $correodest = $_POST['email2'];
 
 try {
 
-    $conexion = new PDO('mysql:host=172.31.130.183 ;dbname=hsjb','wolfwolf','sdb37462532');
-
+	$conexion = new PDO('mysql:host=127.0.0.1;dbname=wi871598_hossjb','wi871598_hsjb17','Hospitalsanjuan17');
+    
 	
  	}catch(PDOException $e){
 
@@ -48,13 +48,13 @@ try {
 
        //esto debe ser un UPDATE con el numero id que tengo y cambiando principalmente el estado y ademas agregar todo esto a la lista de TURNOS que queda asentada dentro de la base de datos.
    $statemente = $conexion->prepare('UPDATE solicitud
-   SET estado = :estado, descripcion = :des, medico = :med,dia = :dia, horario = :hora, observacion = :obs                
+   SET estado = :estado, medico = :med,dia = :dia, horario = :hora, observacion = :obs                
    WHERE cod_solicitud = :id ');
 
    $statemente->execute(array(
         ':id' => $id ,
         ':estado' => $estado ,
-        ':des' => $desc ,
+        
         ':med' => $medi ,
         ':dia' => $dia ,
         ':hora' => $hora ,
@@ -89,7 +89,7 @@ try {
    //$statement->execute();
 
    $resulta2 = $statementz->fetch();
-   header( "refresh:0;http://www.hisjb.com.mialias.net/HISJB-codigo/controladores/panel_user.php" );
+   header( "refresh:0;http://hospitalsanjuanbautista.org/controladores/panel_user.php" );
    echo "<script>alert('Turno Confirmado.');</script>";
 
 
@@ -108,13 +108,12 @@ try {
   //Accion2 Rechazado
 
    $statemente = $conexion->prepare('UPDATE solicitud 
-   SET estado = :estado, descripcion = :des, medico = :med, observacion = :obs                
+   SET estado = :estado, medico = :med, observacion = :obs                
    WHERE cod_solicitud = :id ');
 
    $statemente->execute(array(
         ':id' => $id ,
         ':estado' => $estado2 ,
-        ':des' => $desc ,
         ':med' => $medi ,
         ':obs' => $obs
         
@@ -125,7 +124,7 @@ try {
    $resulta = $statemente->fetch();
 
 
-   header( "refresh:0;http://www.hisjb.com.mialias.net/HISJB-codigo/controladores/panel_user.php" );
+   header( "refresh:0;http://hospitalsanjuanbautista.org/controladores/panel_user.php" );
    echo "<script>alert('Turno Rechazado.');</script>";
     
   }  
