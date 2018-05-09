@@ -4,7 +4,8 @@
 }*/
 
 .titular{
-    background:  #228ae6; /* celeste claro #228ae6 celeste oscuro #3d97d3*/
+    /*background:  #228ae6;  celeste claro #228ae6 celeste oscuro #3d97d3*/
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     padding-top: 8%;
     padding-bottom: 6%;
  }

@@ -656,7 +656,8 @@ body{
         ---------------------------------------------------     */
 .calendario
 {
-    background: #3d97d3;
+    /* background: #3d97d3; */
+    background: linear-gradient(19deg, #3d97d3 0%, #007aeb 100%);
 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -827,6 +828,13 @@ body{
     align-items: center;
 }
 
+.articulos{
+    /* background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); */
+    /* background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); */
+    /* background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+    background: linear-gradient(19deg, #21D4FD 0%, #007aeb 100%);
+}
+
 /*     --------------------------------------------------- 
                 SECCION PREFOOTER 
        ---------------------------------------------------     */
@@ -993,6 +1001,8 @@ z-index: 12;
     top: 293.688px;
     z-index: 15;
   }
+
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
