@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../css/listado-turnos.css"> <!-- hoja de estilo con header y footer -->
+
+    <link rel="icon" href="../img/iconos/mano3.ico">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <div class="container-fluid">
+        <div class="row titular">
+            <div class="col-md-3 titulo-hospital">
+                <h4>Turnos Aprobados</h4>
+            </div>
+            <div class="col-md-9 titulo-usuario">
+                <h2>Gesti&oacuten de turnos</h2>
+            </div>
+        </div>
+        <div class="row cuerpo">
+            <div class="col-md-3 submenu">
+                    <p>OPCIONES DE USUARIO</p>
+                    
+                    
+                    <a href=""><i class="fas fa-desktop"></i> &nbsp;RESUMEN</a>
+                    <a href="../controladores/panel_user.php"><i class="far fa-clock"></i> &nbsp;PEDIDOS PENDIENTES</a>
+                    <div class="activo"><a href="../controladores/turnoaprov.php"><i class="fas fa-check"></i> &nbsp;PEDIDOS APROBADOS</a></div>
+                    <a href="../controladores/turnosrec.php"><i class="fas fa-ban"></i> &nbsp;PEDIDOS RECHAZADOS</a> 
+                    <a href="../controladores/cerrar_ses.php"><i class="fas fa-sign-out-alt"></i> &nbsp;CERRAR SESION</a>
+            </div>
+            <div class="col-md-9 contenido">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input class="form-control" type="text" placeholder="Buscar paciente...">
+                    </div>
+              </div>
+              
+              <br>
+
+              <table class="table table-striped table-hover">
+                    <tr>
+                      <th>Nombre y Apellido</th>
+                      <th>Especialidad</th>
+                      <th>Motivo</th>
+                      <th>M&eacutedico</th>
+                      <th>Fecha petici&oacuten</th>
+                      <th>Fecha Turno</th>
+                      <th>Hora Turno</th>
+                      
+                    </tr>
+                    <?php foreach ($resulta as $result ) { ?>
+                    <tr>
+                      <td><?php echo $result['paciente']; ?></td>
+                      <td><?php echo $result['especia']; ?></td>
+                      <td><?php echo $result['descripcion']; ?></td>
+                      <td><?php echo $result['apellidomed']." ".$result['nombremed']; ?></td>
+                      <td><?php echo $result['diapedido']; ?></td>
+                      <td><?php echo $result['dia']; ?></td>
+                      <td><?php echo $result['horario']; ?></td>
+                    </tr>
+                    <?php } ?>
+
+
+              </table>
+               <?php if(!empty($errores)): ?>
+                            <div class="text-warning">
+                            <ul>
+                                <?php echo $errores; ?>
+
+                            </ul>
+
+                            </div>
+                            <?php endif; ?>
+             
+              <div class="row imprimir">
+                  <a class="btn btn-default" href="../controladores/imprimir.php" target="_blank">Imprimir listado</a>
+              </div> 
+            </div>
+        </div>
+    </div>
+    <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    
+    <!-- FIN PIE PAGINA -->
+
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

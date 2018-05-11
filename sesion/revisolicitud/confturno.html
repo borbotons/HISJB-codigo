@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmacion de turno - Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="../confirmacion-turno.css">
+
+    <link rel="icon" href="../../img/iconos/mano3.ico">
+</head>
+<body>
+
+<div class="container-fluid base">
+    <div class="container">
+            <h1><i class="fas fa-list-ol"></i> Turno nro: <?php echo $resulta['cod_solicitud']; ?></h1>
+    </div>
+</div>
+<div class="container-fluid datos">
+    <div class="container">
+        <form  name="conf" action="enviarconf.php" method="post" enctype="multipart/form-data">
+            <div class="datos-paciente">
+                <div class="row ">
+                    <div class="col-sm-12 barra">
+                        <input type="hidden" name="numero"   value="<?php echo $resulta['cod_solicitud']; ?>"  />
+                        <h3><i class="fas fa-male"></i> Datos del Paciente</h3>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="nombre" >Nombre completo</label>
+                        <input class="form-control" type="text" name="nombre" value="<?php echo $resulta['paciente'] ?>" disabled />
+                    </div>
+                    <input type="hidden" name="nombre2"   value="<?php echo $resulta['paciente']; ?>"  />
+                    <div class="col-sm-6 form-group">
+                        <label for="nombre" >Dni</label>
+                        <input class="form-control" type="text" name="dni" value="<?php echo $resulta['dni'] ?>" disabled />
+                    </div>
+                    <input type="hidden" name="dni2"   value="<?php echo $resulta['dni']; ?>"  />
+                    <div class="col-sm-6 form-group">
+                        <label for="tel" >Telefono</label>
+                        <input class="form-control" type="text" name="tel" value="<?php echo $resulta['telefono'] ?>" size="10" disabled />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="email" >Email</label>
+                        <input class="form-control" type="email" name="email" value="<?php echo $resulta['email'] ?>" size="25" disabled />
+                    </div>
+                     <input type="hidden" name="email2"   value="<?php echo $resulta['email']; ?>"  />
+                </div>
+                
+            </div>
+
+            <div class="datos-paciente">
+                <div class="row">
+                    <div class="col-sm-12 barra">
+                        <h3><i class="fas fa-edit"></i> Datos de la Solicitud</h3>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="espec" >Especialidad</label>
+                        <input class="form-control" type="text" name="esp" value="<?php echo $resulta['especia'] ?>" disabled />
+                    </div>
+                    <input type="hidden" name="espec2"   value="<?php echo $resulta['especialidad']; ?>"  />
+                    <div class="col-sm-6 form-group">
+                        <label for="motivo" >Motivo</label>
+                        <input class="form-control" type="text" name="motivo" value="<?php echo $resulta['descripcion'] ?>" disabled />
+                        
+                    </div>
+                    <input type="hidden" name="motivo2"   value="<?php echo $resulta['descripcion']; ?>"  />
+                    
+            </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="med" >Medico</label>
+                        <input class="form-control" type="text" name="med" value="<?php echo $resulta['apellidomed']." ".$resulta['nombremed'] ?>"  disabled/>
+                    </div>
+                    <input type="hidden" name="med2"   value="<?php echo $resulta['medico']; ?>"  />
+                    <div class="col-sm-6 form-group">
+                        <label for="diapref" >Dia Preferencia</label>
+                        <input class="form-control" type="text" name="diapref" value="<?php echo $resulta['diapreferencia'] ?>" disabled  />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="turnopref" >Turno Preferencia</label>
+                        <input class="form-control" type="text" name="turnopref" value="<?php echo $resulta['turnopreferencia'] ?>" disabled  />
+                    </div>
+                </div>
+            </div>
+
+            <div class="datos-paciente">
+                <div class="row">
+                    <div class="col-sm-12 barra">
+                        <h3><i class="fas fa-search"></i> Observaciones</h3> 
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="fechatur" >Fecha Turno</label>
+                        <input class="form-control" type="date" name="fechatur" value="10/02/2018"   />
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="horatur" >Hora Turno</label>
+                        <input class="form-control" type="time" name="horatur" value="13:50" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="observatur" >Observaciones</label>
+                        <textarea class="form-control" id="comments" name="observatur" placeholder="Escriba aqui su observacion..." rows="5" required ></textarea>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="file1" >Informacion Util</label>
+                        <input class="form-control" type=file size=60 name="file1" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--<div class="col-sm-4 form-group">
+                    <button class="md-close btn btn-secondary btn-block" type="submit" onclick="conf.submit();">Aceptar</button>
+                </div>-->
+                <div class="col-sm-4 form-group">
+                <input type='submit'  class="btn btn-success btn-block" name='boton1' value='Confirmar'>
+                </div> 
+                <div class="col-sm-4 form-group">
+                <input type='submit' class="btn btn-danger btn-block" name='boton2' value='Rechazar'>
+                </div> 
+
+
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container-fluid pie">
+    <div class="row justify-content-center">
+        <h4> <strong> Hospital Interzonal</strong> San Juan Bautista</h4>
+    </div>
+</div>
+
+
+
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion HISJB</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/component.css"/>
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/modernizr.custom.js"></script>
+
+    <link rel="icon" href="../img/iconos/mano3.ico">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <!-- colección de ventanas modales  -->
+    <div class="md-modal md-effect-1" id="modal-1">
+        <div class="md-content">
+            <h3>Nuevo Usuario</h3>
+            <div>
+                <div class="row justify-content-around">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>       
+                    <div class="form-group">
+                        <label for="apellido">apellido</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="number" name="dni" id="dni">
+                    </div>
+                </div>
+                
+                    <button class="md-close">Incorporar</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="md-modal md-effect-2" id="modal-2">
+        <div class="md-content">
+            <h3>Listado de Usuarios</h3>
+            <div>
+                <p>This is a modal window. You can do the following things with it:</p>
+                <ul>
+                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                </ul>
+                <button class="md-close">Close me!</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-modal md-effect-2" id="modal-3">
+        <div class="md-content">
+            <h3>Dar de baja a Usuario</h3>
+            <div>
+                <p>Recuerde que dar de baja a un usuario implica un cambio irreversible:</p>
+                <ul>
+                    <li><strong>Nota:</strong> Asegurese de colocar el DNI correcto correspondiente al usuario que se desea dar de baja.</li>
+                    
+                </ul>
+                <div class="row justify-content-center">
+                    <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="number" name="dni" id="dni">
+                    </div>
+                </div>
+                <button class="md-close">Close me!</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-modal md-effect-2" id="modal-4">
+        <div class="md-content">
+            <h3>Estad&iacutesticas</h3>
+            <div>
+                <p>This is a modal window. You can do the following things with it:</p>
+                <ul>
+                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                </ul>
+                <button class="md-close">Close me!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container "> <!-- esta clase debe estar sola de lo contrario no se activan los modales -->
+        <div class="base">
+            <div class="row justify-content-center titulo">
+                <h1>Listado de Usuarios Activos - HISJB</h1>
+            </div>
+                       
+                    <a class="btn btn-success btn-block" href="../controladores/panel_admin.php">Volver atras</a>
+                <div class="fondo">
+                    <div class="row justify-content-center">
+                    <table>
+                        <tr>
+                            <th>Nombre y Apellido</th>
+                            <th>Division</th>
+                            <th>Dni</th>
+                            <th>Email</th>
+                        
+                        </tr>
+                        <?php foreach ($resulta as $result ) { ?>
+                        <tr>
+                        <td><?php echo $result['nombrecomp']; ?></td>
+                        <td><?php echo $result['division']; ?></td>
+                        <td><?php echo $result['dni']; ?></td>
+                        <td><?php echo $result['email']; ?></td>
+                        
+                        </tr>
+                        <?php } ?>
+                        
+                                                                                        
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <img src="../img/iconos/isologo-blanco.png" alt="">
+        </div>
+    </div><!-- /container -->
+    <div class="container-fluid login-base"></div>
+    <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    <!-- FIN PIE PAGINA -->
+
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <div class="md-overlay"></div><!-- fondo de emergente modal -->
+	
+	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+	<script src="../js/classie.js"></script>
+	<script src="../js/modalEffects.js"></script>
+
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script src="../js/cssParser.js"></script>
+	<script src="../js/css-filters-polyfill.js"></script>
+</body>
+</html>

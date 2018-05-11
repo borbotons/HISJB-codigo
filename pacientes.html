@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pacientes - Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/pacientes.css">
+   
+
+    <link rel="icon" href="img/iconos/mano3.ico">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    
+    <div class="container-fluid imagen-movil d-block d-md-none d-lg-none d-xl-none">
+        <h1 class="rotulo">_Pacientes</h1>   
+    </div>
+
+    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block animated fadeIn" id="segundo">
+            <h1 class="rotulo animated fadeInUp" id="tercero">_Pacientes</h1>
+        
+            <div class="isologo_blanco">
+                <img src="img/iconos/isotipo blanco.png" alt="">
+            </div>
+            <h4 class="HOSPITAL_INTERZONAL">Hospital Interzonal</h4>
+            <h4 class="SAN_JUAN_BAUTISTA">San Juan Bautista</h4>
+    </div>
+
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
+        <div class="container">
+            <div class="topics-row">
+                <div class="col-md-1 centrar pr-5 isologo animated fadeIn" id="primero">
+                    <img src="img/iconos/isologo.png" width="170px" alt="isologo identificatorio del hospital interzonal San Juan Bautista">
+                </div>
+                <div class="topic-container animated zoomIn" data-wow-delay="0.45s">
+                        <a href="index.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/inicio.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/inicio.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">INICIO</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="topic-container animated zoomIn" id="segundo">
+                        <a href="institucional.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/hospital.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/hospital.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">INSTITUCIONAL</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="topic-container animated zoomIn" id="tercero">
+                        <a href="pacientes.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/teamwork.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/teamwork.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">PACIENTES</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--
+                    <div class="topic-container">
+                        <a href="noticias.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/globe.svg" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/globe.svg" alt="" class="hover-off">
+                                    <h5 class="topic-title">NOTICIAS</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="topic-container">
+                        <a href="educacion.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/statistics.svg" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/statistics.svg" alt="" class="hover-off">
+                                    <h5 class="topic-title">EDUCACI&OacuteN</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="topic-container">
+                        <a href="proveedores.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/list.svg" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/list.svg" alt="" class="hover-off">
+                                    <h5 class="topic-title">PROVEEDORES</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>-->
+                    <div class="topic-container animated zoomIn" id="cuarto">
+                        <a href="capellania.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/cityscape.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/cityscape.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="topic-container animated zoomIn" id="quinto">
+                        <a href="#" id="btn-toggle" class="ga-topic-selector btn-toggle">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/user.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/user.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">CONTACTO</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+  
+    
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <div class="seccionToggle d-none">
+        <div class="wrap">
+            
+            <div class="row justify-content-center sobre">
+                <h1><i class="far fa-envelope-open"></i></h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="nombre">1- Ingrese su nombre</label>
+                    <input class="form-control" id="nombre" name="nombre" placeholder="Juan Perez" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                        <label for="nombre">2- Ingrese su correo</label>
+                    <input class="form-control" id="habitacion" name="habitacion" placeholder="mail@ejemplo.com" type="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                        <div class="form-group">
+                            <label for="servicio">3- Seleccione el motivo del contacto</label>
+                            <select class="form-control" id="servicio">
+                                <option>Consulta</option>
+                                <option value="">Sugerencia</option>
+                                <option>Denuncia</option>
+                                <option>Otro</option>  
+                            </select>
+                        </div>
+                </div>
+            </div>    
+            <br>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Escriba aqui su comentario..." rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-block pull-right" type="submit">Enviar</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row justify-content-start cerrar">
+            <h3 id="btn-toggle2"><i class="fas fa-chevron-circle-left"></i> CERRAR</h3>
+        </div>
+    </div>  
+
+    <div class="md-modal md-effect-9" id="modal-12">
+        <div class="md-content">
+            <h3 class="display-4">Horarios de Visita</h3>
+            <div class="row ">
+                    <p class="lead"><i class="fas fa-plus"></i> HORARIO DE <strong>VISITA AL INTERNADO</strong>: </p> 
+            </div>
+            <div class="row justify-content-center">
+                    <p> De  &nbsp;<i class="far fa-clock"></i> <strong> 11 hs a 13 hs</strong>  
+                     y de &nbsp;<i class="far fa-clock"></i> <strong> 18 hs a 21 hs</strong>.</p>
+            </div>
+            <div class="row ">
+                    <p class="lead"><i class="fas fa-plus"></i> HORARIO VISITA <strong>U.C.O Y QUEMADO</strong></p>
+            </div>
+            <div class="row justify-content-center">
+                    <p> De  &nbsp;<i class="far fa-clock"></i> <strong>12 hs a 13 hs</strong> 
+                     y de  &nbsp;<i class="far fa-clock"></i> <strong>20 hs a 21 hs</strong>.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                        <button class="md-close btn btn-secondary btn-block">Cerrar</button>
+                </div>
+                    
+            </div>
+            
+        </div>
+    </div>
+
+        <div class="container-fluid menu-pacientes">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-10">
+                        <div class="row justify-content-start titular-barra">
+                            <h1 class="titular">SERVICIOS PARA PACIENTES <small class="text-muted">HISJB</small></h1>
+                        </div>
+                </div>
+            </div> 
+        
+            <div class="container">
+            <div class="row justify-content-center m-top animated fadeIn" id="primero">
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="#" class="md-trigger" data-modal="modal-12">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/visita.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Horarios de Visita
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/especialidades.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/especialidad.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Especialidades
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/como-llegar.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/llegar.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                            &iquest;C&oacutemo llegar?
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+            </div>
+            <div class="row justify-content-center animated fadeIn" id="segundo">
+                <!--<div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
+                    <a href="/dataset?groups=agri">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/atencion.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Horarios de Atenci&oacuten
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>-->
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                      
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/surgeon.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Preparaci&oacuten Quir&uacutergica <span class="badge badge-success">Pr&oacuteximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/turno.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/turnoss.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Solicitud de turno
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="https://www.facebook.com/Hospital-Interzonal-San-Juan-Bautista-1565077120424570/" target="_blank">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/comentario.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Dejanos tu comentario
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+            </div>
+            <div class="row justify-content-center animated fadeIn" id="tercero">
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                       
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/interno.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Mapa interno <br> <span class="badge badge-success">Pr&oacuteximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/internaciones.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/internacion.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Internaciones 
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/laboratorio.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/lab.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Laboratorio del Hospital
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+            </div>
+            <div class="row justify-content-center animated fadeIn" id="cuarto">
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                       
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/callcenter.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell" style="color:darkgray">
+                                        Farmacia <br> <span class="badge badge-success">Pr&oacuteximamente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                      
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/donar.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/donar.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Donaci&oacuten de sangre
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/carnet.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/carnet.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Carnet sanitario
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+            </div>
+            <div class="row justify-content-center animated fadeIn" id="quinto">
+                <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
+                    <a href="contenidos/pacientes/cur.html">   
+                        <div class="group show-icons active">
+                            <div class="group-text">
+                                <img src="img/pacientes/cur.png" alt="">
+                                <div class="group-table">
+                                    <div class="group-cell">
+                                        Centro &uacutenico <br> de referencia
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>    
+                </div>
+            </div>
+        </div>
+        </div>
+     <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    <footer>
+        <div class="container-fluid pie">
+            <div class="container">
+                <div class="row justify-content-center barra-h">
+                    <div class="col-lg-2 ">
+                            <img src="img/iconos/isologo-blanco.png" alt="" width="160px" style="opacity:0.6;">
+                    </div>
+                </div>
+                <div class="row pie-menu justify-content-center">
+                    <div class="col-12 col-md-4 info info-b">
+                        <h3><i class="fas fa-shield-alt"></i> Pacientes</h3>
+                        <a href="">Especialidades</a>
+                        <a href="">Laboratorio</a>
+                        <a href="">Internaciones</a>
+                        <a href="">Horarios de visita</a>
+                        <a href="">Solicitar Turno online</a>
+                        <h3 class="mt-3"><i class="fas fa-bullhorn"></i> Contacto</h3>
+                        <a href="">Dirección de Emergencias: 437832</a>
+                        <a href="">Telefonía de Emergencias: 3834242265</a>
+                    </div>
+
+                    <div class="col-12 col-md-8 info info-b">
+                        <h3><i class="fas fa-info"></i> Ubicación del Hospital</h3>
+                        <!-- <a href="">Organigrama</a>
+                        <a href="">Historia</a>
+                        <a href="">Innovaciones edilicias</a>
+                        <a href="">Trabaja con nosotros</a> -->
+                        <div class="row">
+                                <div class="col-md-12 contenido-variable">  
+                                    <div id="googleMap" style="width:100%;height:250px;"></div>  
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 info">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid post-pie">
+            <!-- <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4> -->
+        </div>
+    </footer>
+    <!-- FIN PIE PAGINA -->
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
+    <script src="js/menu-movil.js"></script>
+
+    <div class="md-overlay"></div><!-- fondo de emergente modal -->
+	
+	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script src="js/cssParser.js"></script>
+    <script src="Js/css-filters-polyfill.js"></script>
+    
+
+    <script>
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(-28.461666, -65.790112),
+            zoom:15,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker=new google.maps.Marker({
+            position:new google.maps.LatLng(-28.461666, -65.790112),
+            map:map,
+            icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+        });
+        }  
+    </script>
+        
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA19Nmy1g7Ga9P0jJ_QgLbLbGcU4vvwQig&callback=myMap"></script>        
+    
+</body>
+</html>

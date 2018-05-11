@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    
+    
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <div class="container-fluid login-base">
+        <div class="base">
+            <div class="row">
+                <div class="col-md-6 texto">
+                    <p>Gesti&oacuten </br> de Turnos</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form">
+                        <h4>HISJB</h4>
+                        <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?> " method="post" name="login">
+                            
+
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label for="usuario">Id de Usuario</label>
+                                    <input class="form-control" id="usuario" name="usuario" placeholder="Usuario" type="text" required>
+                                </div>
+                                
+                            </div> 
+
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label for="usuario">Ingrese contrase&ntilde;a</label>
+                                    <input class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a" type="password" required>
+                                </div>
+                            </div> 
+
+                            <button class="btn btn-success btn-block" type="submit" onclick="login.submit()">Ingresar </button>
+                            <p><i>Los datos de inicio requeridos para el ingreso en el sistema, son proporcionados &uacutenicamente por <strong>personal autorizado del HISJB</strong>.</i></p>
+                        
+                            <?php if(!empty($errores)): ?>
+                            <div class="text-danger">
+                            <ul>
+                                <?php echo $errores; ?>
+
+                            </ul>
+
+                            </div>
+                            <?php endif; ?>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    <!-- FIN PIE PAGINA -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>
