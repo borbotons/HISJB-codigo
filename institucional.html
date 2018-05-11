@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/institucional.css">
     
 
@@ -21,8 +22,8 @@
         <h1 class="rotulo">_Institucional</h1>   
     </div>
 
-    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block">
-        <h1 class="rotulo">_Institucional</h1>
+    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block animated fadeIn" id="segundo">
+        <h1 class="rotulo animated fadeInUp" id="tercero">_Institucional</h1>
         
         <div class="isologo_blanco">
             <img src="img/iconos/isotipo blanco.png" alt="">
@@ -55,13 +56,14 @@
         </nav>
     </div>
 
+    <!-- MENU DESKTOP -->
     <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
-                <div class="col-md-1 centrar pr-5 isologo">
+                <div class="col-md-1 centrar pr-5 isologo animated fadeIn" id="primero">
                     <img src="img/iconos/isologo.png" width="170px" alt="isologo identificatorio del hospital interzonal San Juan Bautista">
                 </div>
-                <div class="topic-container">
+                <div class="topic-container animated zoomIn" data-wow-delay="0.45s">
                         <a href="index.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
@@ -72,7 +74,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
+                    <div class="topic-container animated zoomIn" id="segundo">
                         <a href="institucional.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
@@ -83,16 +85,16 @@
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container menu-pacientes">      
+                    <div class="topic-container menu-pacientes animated zoomIn" id="tercero">      
                         <ul class="">
                             <li class="dropdown"><a href="pacientes.html" class="ga-topic-selector">
                                     <div class="topic-link-container">
-                                        <div class="topic-link">
+                                        <div class="topic-link">    
                                             <img src="img/iconos/act/teamwork.png" alt="" class="hover-on">
-                                            <img src="img/iconos/desact/teamwork.png" alt="" class="hover-off">
-                                            <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                            <img src="img/iconos/desact/teamwork.png" alt="" class="hover-off">            
+                                            <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>      
                                         </div>
-                                    </div>
+                                    </div> 
                                 </a>
                                 <ul class="dropdown-content">
                                     <li><a href="contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
@@ -104,7 +106,7 @@
                                 </ul>
                             </li>
                         </ul> 
-                    </div> 
+                    </div>
                     <!--
                     <div class="topic-container">
                         <a href="noticias.html" class="ga-topic-selector">
@@ -112,7 +114,7 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/globe.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/globe.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Noticias</h5>
+                                    <h5 class="topic-title">NOTICIAS</h5>
                                 </div>
                             </div>
                         </a>
@@ -123,7 +125,7 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/statistics.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/statistics.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Educaci&oacuten</h5>
+                                    <h5 class="topic-title">EDUCACI&OacuteN</h5>
                                 </div>
                             </div>
                         </a>
@@ -134,12 +136,12 @@
                                 <div class="topic-link">
                                     <img src="img/iconos/act/list.svg" alt="" class="hover-on">
                                     <img src="img/iconos/desact/list.svg" alt="" class="hover-off">
-                                    <h5 class="topic-title">Proveedores</h5>
+                                    <h5 class="topic-title">PROVEEDORES</h5>
                                 </div>
                             </div>
                         </a>
                     </div>-->
-                    <div class="topic-container">
+                    <div class="topic-container animated zoomIn" id="cuarto">
                         <a href="capellania.html" class="ga-topic-selector">
                             <div class="topic-link-container">
                                 <div class="topic-link">
@@ -150,7 +152,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="topic-container">
+                    <div class="topic-container animated zoomIn" id="quinto">
                         <a href="#" id="btn-toggle" class="ga-topic-selector btn-toggle">
                             <div class="topic-link-container">
                                 <div class="topic-link">

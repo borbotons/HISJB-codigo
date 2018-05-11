@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/component.css"/>
     <link rel="stylesheet" href="css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/pacientes.css">
+   
 
     <link rel="icon" href="img/iconos/mano3.ico">
 </head>
@@ -21,8 +23,8 @@
         <h1 class="rotulo">_Pacientes</h1>   
     </div>
 
-    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block">
-            <h1 class="rotulo">_Pacientes</h1>
+    <div class="container-fluid imagen d-none d-md-block d-lg-block d-xl-block animated fadeIn" id="segundo">
+            <h1 class="rotulo animated fadeInUp" id="tercero">_Pacientes</h1>
         
             <div class="isologo_blanco">
                 <img src="img/iconos/isotipo blanco.png" alt="">
@@ -55,104 +57,107 @@
         </nav>
     </div>
 
+    <!-- MENU DESKTOP -->
     <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block" >
         <div class="container">
             <div class="topics-row">
-                <div class="col-md-1 centrar pr-5 isologo">
+                <div class="col-md-1 centrar pr-5 isologo animated fadeIn" id="primero">
                     <img src="img/iconos/isologo.png" width="170px" alt="isologo identificatorio del hospital interzonal San Juan Bautista">
                 </div>
-                <div class="topic-container">
-                    <a href="index.html" class="ga-topic-selector">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/inicio.png" alt="" class="hover-on">
-                                <img src="img/iconos/desact/inicio.png" alt="" class="hover-off">
-                                <h5 class="topic-title">INICIO</h5>
+                <div class="topic-container animated zoomIn" data-wow-delay="0.45s">
+                        <a href="index.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/inicio.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/inicio.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">INICIO</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="topic-container">
-                    <a href="institucional.html" class="ga-topic-selector">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/hospital.png" alt="" class="hover-on">
-                                <img src="img/iconos/desact/hospital.png" alt="" class="hover-off">
-                                <h5 class="topic-title">INSTITUCIONAL</h5>
+                        </a>
+                    </div>
+                    <div class="topic-container animated zoomIn" id="segundo">
+                        <a href="institucional.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/hospital.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/hospital.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">INSTITUCIONAL</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="topic-container">
-                    <a href="pacientes.html" class="ga-topic-selector">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/teamwork.png" alt="" class="hover-on">
-                                <img src="img/iconos/desact/teamwork.png" alt="" class="hover-off">
-                                <h5 class="topic-title">PACIENTES</h5>
+                        </a>
+                    </div>
+                    <div class="topic-container animated zoomIn" id="tercero">
+                        <a href="pacientes.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/teamwork.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/teamwork.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">PACIENTES</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!--
-                <div class="topic-container">
-                    <a href="noticias.html" class="ga-topic-selector">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/globe.svg" alt="" class="hover-on">
-                                <img src="img/iconos/desact/globe.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Noticias</h5>
+                        </a>
+                    </div>
+                    <!--
+                    <div class="topic-container">
+                        <a href="noticias.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/globe.svg" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/globe.svg" alt="" class="hover-off">
+                                    <h5 class="topic-title">NOTICIAS</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="topic-container">
-                    <a href="educacion.html" class="ga-topic-selector">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/statistics.svg" alt="" class="hover-on">
-                                <img src="img/iconos/desact/statistics.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Educaci&oacuten</h5>
+                        </a>
+                    </div>
+                    <div class="topic-container">
+                        <a href="educacion.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/statistics.svg" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/statistics.svg" alt="" class="hover-off">
+                                    <h5 class="topic-title">EDUCACI&OacuteN</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="topic-container">
-                    <a href="proveedores.html" class="ga-topic-selector">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/list.svg" alt="" class="hover-on">
-                                <img src="img/iconos/desact/list.svg" alt="" class="hover-off">
-                                <h5 class="topic-title">Proveedores</h5>
+                        </a>
+                    </div>
+                    <div class="topic-container">
+                        <a href="proveedores.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/list.svg" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/list.svg" alt="" class="hover-off">
+                                    <h5 class="topic-title">PROVEEDORES</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>-->
-                <div class="topic-container">
-                    <a href="capellania.html" class="ga-topic-selector">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/cityscape.png" alt="" class="hover-on">
-                                <img src="img/iconos/desact/cityscape.png" alt="" class="hover-off">
-                                <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
+                        </a>
+                    </div>-->
+                    <div class="topic-container animated zoomIn" id="cuarto">
+                        <a href="capellania.html" class="ga-topic-selector">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/cityscape.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/cityscape.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">CAPELLANIA SAN JUAN BAUTISTA</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="topic-container">
-                    <a href="#" id="btn-toggle" class="ga-topic-selector btn-toggle">
-                        <div class="topic-link-container">
-                            <div class="topic-link">
-                                <img src="img/iconos/act/user.png" alt="" class="hover-on">
-                                <img src="img/iconos/desact/user.png" alt="" class="hover-off">
-                                <h5 class="topic-title">CONTACTO</h5>
+                        </a>
+                    </div>
+                    <div class="topic-container animated zoomIn" id="quinto">
+                        <a href="#" id="btn-toggle" class="ga-topic-selector btn-toggle">
+                            <div class="topic-link-container">
+                                <div class="topic-link">
+                                    <img src="img/iconos/act/user.png" alt="" class="hover-on">
+                                    <img src="img/iconos/desact/user.png" alt="" class="hover-off">
+                                    <h5 class="topic-title">CONTACTO</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div> 
+                        </a>
+                    </div>
             </div>
         </div>
     </div>
+
+  
     
     <!-- FIN HEADER PAGINA -->
     <!-- INICIO CUERPO PAGINA -->
@@ -236,7 +241,7 @@
             </div> 
         
             <div class="container">
-            <div class="row justify-content-center m-top">
+            <div class="row justify-content-center m-top animated fadeIn" id="primero">
                 <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="#" class="md-trigger" data-modal="modal-12">   
                         <div class="group show-icons active">
@@ -280,7 +285,7 @@
                     </a>    
                 </div>
             </div>
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center animated fadeIn" id="segundo">
                 <!--<div class="group-container he col-xs-12 col-sm-4 col-md-3"> 
                     <a href="/dataset?groups=agri">   
                         <div class="group show-icons active">
@@ -296,7 +301,7 @@
                     </a>    
                 </div>-->
                 <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
-                    <a href="#">   
+                      
                         <div class="group show-icons active">
                             <div class="group-text">
                                 <img src="img/pacientes/surgeon.png" alt="">
@@ -307,7 +312,7 @@
                                 </div>
                             </div>
                         </div> 
-                    </a>    
+                        
                 </div>
                 <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="contenidos/pacientes/turno.html">   
@@ -338,9 +343,9 @@
                     </a>    
                 </div>
             </div>
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center animated fadeIn" id="tercero">
                 <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
-                    <a href="#">   
+                       
                         <div class="group show-icons active">
                             <div class="group-text">
                                 <img src="img/pacientes/interno.png" alt="">
@@ -351,7 +356,7 @@
                                 </div>
                             </div>
                         </div> 
-                    </a>    
+                        
                 </div>
                 <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="contenidos/pacientes/internaciones.html">   
@@ -382,7 +387,7 @@
                     </a>    
                 </div>
             </div>
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center animated fadeIn" id="cuarto">
                 <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                        
                         <div class="group show-icons active">
@@ -426,7 +431,7 @@
                     </a>    
                 </div>
             </div>
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center animated fadeIn" id="quinto">
                 <div class="group-container he col-xs-12 col-sm-6 col-md-3"> 
                     <a href="contenidos/pacientes/cur.html">   
                         <div class="group show-icons active">
