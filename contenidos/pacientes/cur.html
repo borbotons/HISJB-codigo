@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUR - Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="../../css/lab.css"> 
+    <link rel="stylesheet" href="../../css/donar.css"> 
+    
+    
+
+    <link rel="icon" href="../../img/iconos/mano3.ico">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    <div class="container-fluid box1 d-none d-md-block d-lg-block d-xl-block">
+        <div class="container">
+            <a href="">HISJB</a>
+            <p></p>
+            <a href="">Emergencias</a>
+        </div>
+    </div>
+
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="../../index.html">INICIO</a></li>
+                    <li><a href="../../institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block">
+        <div class="container">
+            <div class="topics-row">
+                <div class="col-md-1 centrar pr-5 isologo">
+                    <img src="../../img/iconos/isologo.png" width="170px" alt="isologo identificatorio del hospital interzonal San Juan Bautista">
+                </div>
+                <div class="topic-container">
+                    <a href="../../index.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/inicio.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/inicio.png" alt="" class="hover-off">
+                                <h5 class="topic-title">INICIO</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../institucional.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/hospital.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/hospital.png" alt="" class="hover-off">
+                                <h5 class="topic-title">INSTITUCIONAL</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container menu-pacientes">      
+                    <ul class="">
+                        <li class="dropdown"><a href="../../pacientes.html" class="ga-topic-selector">
+                                <div class="topic-link-container">
+                                    <div class="topic-link">
+                                        <img src="../../img/iconos/act/teamwork.png" alt="" class="hover-on">
+                                        <img src="../../img/iconos/desact/teamwork.png" alt="" class="hover-off">
+                                        <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-content">
+                                <li><a href="../../contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                                <li><a href="../../contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                                <li><a href="../../contenidos/pacientes/internaciones.html"><i class="fas fa-bed"></i> &nbsp;Internaciones</a></li>
+                                <li><a href="../../pacientes.html"><i class="far fa-clock"></i> &nbsp;Horarios de Visita</a></li>
+                                <li><a href="../../contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                                <li><a href="../../contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+                <!--
+                <div class="topic-container">
+                    <a href="../../noticias.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/globe.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/globe.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Noticias</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../educacion.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/statistics.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/statistics.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Educaci&oacuten</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../proveedores.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/list.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/list.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Proveedores</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+                <div class="topic-container">
+                    <a href="../../capellania.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/cityscape.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/cityscape.png" alt="" class="hover-off">
+                                <h5 class="topic-title">CAPELLANIA</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../contacto.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/user.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/user.png" alt="" class="hover-off">
+                                <h5 class="topic-title">CONTACTO</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid titular">
+        <div class="row justify-content-center ">
+            <div class="col-md-10">
+                    <h3 class="display-4">Centro único de referencia</h3>
+                    <p class="lead">Información para detección de infecciones de transmisión sexual ( sifilis, gonorrea, clamidiasis, herpes, hepatitis B y C y VIH ).</p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; ATENCIÓN EN EL CUR (CENTRO ÚNICO DE REFERENCIA)</h1>
+                    </div>
+                    <div class="row left right">
+                        <div class="col-12 col-md-6">
+                            <div class="alert alert-success" role="alert">
+                                    <i class="far fa-clock"></i> HORARIOS DE ATENCI&OacuteN: Lunes a viernes de 07:30 a 11:30 Hs
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="alert alert-info" role="alert">
+                                    <i class="fas fa-info-circle"></i> <strong>Distribución gratuita de preservativos</strong> 
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <br>
+                            <h6>¿Qué son las ITS?</h6> 
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                    Las ITS (Infecciones de Transmisión Sexual) son infecciones que pueden transmitirse de una persona a otra durante una relación sexual vaginal, anal u oral.
+                                    La falta de tratamiento produce infertildad, discapacidad, cáncer de cuello uterino, problemas durante el embarazo, entre otras consecuencias.
+                                    Por esta razón, es importante saber que la detección permite su tratamiento y en muchos casos su cura. Los exámenes son públicos y gratuitos y se pueden realizar sin el pedido médico.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <br>
+                            <h6>¿Cómo las prevenimos?</h6> 
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                    La mayoría de ellas se previene a través del uso del preservativo desde el comienzo de la Relación Sexual.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <br>
+                            <h6>¿Cómo puedo reconocerlas? ¿Cuáles son sus síntomas?</h6> 
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                    Las ITS pueden provocar lastimaduras n la zona genital (que duelen o no), secreciones de pus en los genitales (vagina o pene), ardor al orina, flujo genital diferente al habitual, dolor en la parte baja del abdomen.
+                                    Sin embargo, algunas pueden no dar síntomas, como el VIH o la Hepatitis B, que solo se detectan con un análisis.
+                                    A veces, también sucede que los síntomas desaparecen en pocos días, pero eso no significa su cura.
+                            </p>
+                        </div>
+                       
+                     
+                    </div>
+                </div>  
+            </div>
+
+           
+            
+            
+            
+            
+          
+        </div>
+    </div>
+
+    <div class="container-fluid dudas">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                    <h3 class="etiqueta">&iquest;Tienes dudas?</h3>    
+                    <p class="lead"><i class="fas fa-phone"></i> Comunicate con nosotros al 444449 de Lunes a Viernes
+                        de 8:00 a 18:00 hs
+                    </p>
+            </div>
+        </div>
+            
+    </div>
+     <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    <footer>
+        <div class="container-fluid pie">
+            <div class="container">
+                <div class="row justify-content-center barra-h">
+                    <div class="col-lg-2 ">
+                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="160px" style="opacity:0.6;">
+                    </div>
+                </div>
+                <div class="row pie-menu justify-content-center">
+                    <div class="col-12 col-md-4 info info-b">
+                        <h3><i class="fas fa-shield-alt"></i> Pacientes</h3>
+                        <a href="">Especialidades</a>
+                        <a href="">Laboratorio</a>
+                        <a href="">Internaciones</a>
+                        <a href="">Horarios de visita</a>
+                        <a href="">Solicitar Turno online</a>
+                        <h3 class="mt-3"><i class="fas fa-bullhorn"></i> Contacto</h3>
+                        <a href="">Dirección de Emergencias: 437832</a>
+                        <a href="">Telefonía de Emergencias: 3834242265</a>
+                    </div>
+
+                    <div class="col-12 col-md-8 info info-b">
+                        <h3><i class="fas fa-info"></i> Ubicación del Hospital</h3>
+                        <!-- <a href="">Organigrama</a>
+                        <a href="">Historia</a>
+                        <a href="">Innovaciones edilicias</a>
+                        <a href="">Trabaja con nosotros</a> -->
+                        <div class="row">
+                                <div class="col-md-12 contenido-variable">  
+                                    <div id="googleMap" style="width:100%;height:250px;"></div>  
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 info">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid post-pie">
+            <!-- <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4> -->
+        </div>
+    </footer>
+    <!-- FIN PIE PAGINA -->
+
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/menu-movil.js"></script>
+
+
+    <script>
+            function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(-28.461666, -65.790112),
+                zoom:15,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+            var marker=new google.maps.Marker({
+                position:new google.maps.LatLng(-28.461666, -65.790112),
+                map:map,
+                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+            }
+    
+            
+        </script>
+            
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA19Nmy1g7Ga9P0jJ_QgLbLbGcU4vvwQig&callback=myMap"></script>
+</body>
+</html>

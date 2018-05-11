@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio - Hospital SJB</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../css/comun.css"> <!-- hoja de estilo con header y footer -->
+    <link rel="stylesheet" href="../../css/lab.css">
+    
+
+    <link rel="icon" href="../../img/iconos/mano3.ico">
+</head>
+<body>
+    <!-- INICIO HEADER PAGINA-->
+    <div class="container-fluid box1 d-none d-md-block d-lg-block d-xl-block">
+        <div class="container">
+            <a href="">HISJB</a>
+            <p></p>
+            <a href="">Emergencias</a>
+        </div>
+    </div>
+
+    <div class="menu-principal-movil sticky-top d-block d-md-none d-lg-none d-xl-none">
+        <nav>
+            <div>
+                    <i class="fa fa-bars"></i>
+                    <p class="float-right">HISJB</p>
+            </div>
+
+            <ul>
+                    <li><a href="../../index.html">INICIO</a></li>
+                    <li><a href="../../institucional.html">INSTITUCIONAL</a></li>
+                    <li><a href="#">PACIENTES <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                            <li><a href="especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                            <li><a href="laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                            <li><a href="turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                            <li><a href="como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../capellania.html">CAPELLANIA SJB</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container-fluid menu-principal d-none d-md-block d-lg-block d-xl-block">
+        <div class="container">
+            <div class="topics-row">
+                <div class="col-md-1 centrar pr-5 isologo">
+                    <img src="../../img/iconos/isologo.png" width="170px" alt="isologo identificatorio del hospital interzonal San Juan Bautista">
+                </div>
+                <div class="topic-container">
+                    <a href="../../index.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/inicio.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/inicio.png" alt="" class="hover-off">
+                                <h5 class="topic-title">INICIO</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../institucional.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/hospital.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/hospital.png" alt="" class="hover-off">
+                                <h5 class="topic-title">INSTITUCIONAL</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container menu-pacientes">      
+                    <ul class="">
+                        <li class="dropdown"><a href="../../pacientes.html" class="ga-topic-selector">
+                                <div class="topic-link-container">
+                                    <div class="topic-link">
+                                        <img src="../../img/iconos/act/teamwork.png" alt="" class="hover-on">
+                                        <img src="../../img/iconos/desact/teamwork.png" alt="" class="hover-off">
+                                        <h5 class="topic-title">PACIENTES <i class="fas fa-angle-down"></i></h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-content">
+                                <li><a href="../../contenidos/pacientes/especialidades.html"><i class="fas fa-cube"></i> &nbsp;Especialidades</a></li>
+                                <li><a href="../../contenidos/pacientes/laboratorio.html"><i class="fas fa-flask"></i> &nbsp;Laboratorio</a></li>
+                                <li><a href="../../contenidos/pacientes/internaciones.html"><i class="fas fa-bed"></i> &nbsp;Internaciones</a></li>
+                                <li><a href="../../pacientes.html"><i class="far fa-clock"></i> &nbsp;Horarios de Visita</a></li>
+                                <li><a href="../../contenidos/pacientes/turno.html"><i class="fas fa-child"></i> &nbsp;Solicitar Turno</a></li>
+                                <li><a href="../../contenidos/pacientes/como-llegar.html"><i class="fas fa-map-marker-alt"></i> &nbsp;&iquest;C&oacutemo llegar?</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+                <!--
+                <div class="topic-container">
+                    <a href="../../noticias.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/globe.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/globe.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Noticias</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../educacion.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/statistics.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/statistics.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Educaci&oacuten</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../proveedores.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/list.svg" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/list.svg" alt="" class="hover-off">
+                                <h5 class="topic-title">Proveedores</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+                <div class="topic-container">
+                    <a href="../../capellania.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/cityscape.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/cityscape.png" alt="" class="hover-off">
+                                <h5 class="topic-title">CAPELLANIA</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="topic-container">
+                    <a href="../../contacto.html" class="ga-topic-selector">
+                        <div class="topic-link-container">
+                            <div class="topic-link">
+                                <img src="../../img/iconos/act/user.png" alt="" class="hover-on">
+                                <img src="../../img/iconos/desact/user.png" alt="" class="hover-off">
+                                <h5 class="topic-title">CONTACTO</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid titular">
+        <div class="row justify-content-center ">
+            <div class="col-md-10">
+                    <h3 class="display-4">An&aacutelisis de Laboratorio</h3>
+                    <p class="lead">Le ofrecemos a continuaci&oacuten la informaci&oacuten necesaria para que usted pueda realizarse an&aacutelisis de laboratorio en nuestras instalaciones.</p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN HEADER PAGINA -->
+    <!-- INICIO CUERPO PAGINA -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; Solicitud de turno para paciente ambulatorio</h1>
+                    </div>
+                    <div class="row left right">
+                        <h5>HORARIO DE EXTRACCION: 07:00 A 09:00 HS.</h5>
+                        <ul>
+                            <li>Concurrir al laboratorio con un ayuno de 8 a 12 horas previo a la extracci&oacuten,
+                                    es decir el día anterior a las 20 hs., realizar una cena liviana de una infusi&oacuten
+                                    con 2 o 3 galletas de agua o una fruta.</li>
+                            <li>Luego de esta cena NO consumir ning&uacuten tipo de alimentos, bebidas
+                                    alcoh&oacutelicas, gaseosas, agua saborizada, mate, caf&eacute, te, ni fumar.</li>
+                            <li>No tomar ninguna medicación a la mañana, hasta después de la extracción.</li>
+                            <li>Ingerir solamente agua durante el ayuno.</li>
+                            <li>Pacientes diab&eacuteticos NO deben tomar sus medicamentos o inyectarse la
+                                    insulina hasta despu&eacutes de obtenida la muestra a menos que el m&eacutedico
+                                    tratante indique lo contrario.</li>
+                            <li>REQUISITOS PARA LA OBRA SOCIAL
+                                <ul>
+                                    <li>Fotocopia Recibo de Sueldo (ultimo- OSEP)</li>
+                                </ul>
+                            </li>
+                            <li>PASAR POR LA COOPERADORA</li>
+                            <li>Concurrir con Documento de Identidad (DNI)</li>
+                            <li>N&uacutemero de teléfono preferentemente celular</li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box-mid">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; Prueba de Glucosa post prandial</h1>
+                    </div>
+                    <div class="row left right">
+                        <p>Preparaci&oacuten del paciente: </p>
+                        <ol>
+                            <li>El d&iacutea del examen debe estar en ayunas (&uacuteltima comida a las 20:00 del d&iacutea
+                                    anterior como se indica en el instructivo general de ayuno)</li>
+                            <li>El examen se demora dos horas, por lo tanto, debe presentar su orden en
+                                    ventanilla de 07 a 8.00 horas.</li>
+                            <li>Traer vianda con el desayuno que realiza normalmente el paciente.</li>
+                            <li>Procedimiento:
+                                <ol>
+                                    <li> Se le tomar&aacute una muestra de sangre basal en ayunas.</li>
+                                    <li>Deber&aacute desayunar con lo que trajo en la vianda.</li>
+                                    <li>A continuaci&oacuten, deber&aacute esperar, en reposo, dos horas para tomar la
+                                            segunda muestra de sangre.</li>
+                                </ol>
+                            </li>
+                        </ol>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box-mid">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; Prueba de tolerancia a la Glucosa</h1>
+                    </div>
+                    <div class="row left right">
+                        <p>Preparaci&oacuten del paciente: </p>
+                        <ol>
+                            <li>El d&iacutea del examen debe estar en ayunas (&uacuteltima comida a las 20:00 del d&iacutea
+                                    anterior como se indica en el instructivo general de ayuno)</li>
+                            <li> Debe traer dos limones limpios.</li>
+                            <li>El examen se demora dos horas, por lo tanto, debe presentar su orden en
+                                    ventanilla de 7:00 a 8.00 horas.</li>
+                            <li>Preferentemente debe venir acompañado de un familiar.</li>
+                            <li>Procedimiento:
+                                <ol>
+                                    <li>Se le tomar&aacute una muestra de sangre basal en ayunas.</li>
+                                    <li>Si el paciente tuviera una Glucosa en ayunas por arriba de 125 mg/l,
+                                            no se realizar&aacute dicha prueba</li>
+                                    <li>Si el resultado es igual o menor a 125 mg/dl, deber&aacute ingerir en 5 minutos,
+                                            una soluci&oacuten de glucosa con lim&oacuten disuelta en agua.</li>
+                                    <li>A continuaci&oacuten, deber&aacute esperar, en reposo, dos horas para tomar la
+                                            segunda muestra de sangre. Al t&eacutermino del proceso debe avisar si se siente
+                                            mal por la sobrecarga de glucosa ingerida.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box-mid">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; Toma de Muestras de Orina completa</h1>
+                    </div>
+                    <div class="row left right">
+                        <ol>
+                            <li>La muestra debe obtenerse en forma as&eacuteptica, en envase para muestras de
+                                    orina limpio y seco, despu&eacutes de un aseo prolijo con agua y jab&oacuten en zona
+                                    genital. Enjuague con abundante agua.</li>
+                            <li> <strong>La muestra ideal es la primera orina de la mañana</strong>, por ser de mayor
+                                    concentraci&oacuten.</li>
+                            <li> Si el traslado al laboratorio demora m&aacutes de una hora, la orina se debe
+                                    mantener y transportar <strong>refrigerada entre 2ºC a 8ºC</strong>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box-mid">
+                    <div class="row left right ">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; Toma de muestra para hematíes dismorficos</h1>
+                    </div>
+                    <div class="row left right">
+                        <ol>
+                            <li>La noche anterior al estudio, en la medida de lo posible, cenar un bife
+                                    mediano de carne vacuna o de pollo, o un huevo duro y restringir la toma
+                                    de l&iacutequidos a partir de las 22:00 horas.</li>
+                            <li>A la mañana siguiente, despu&eacutes de un aseo prolijo con agua y jab&oacuten en
+                                    zona genital y enjuague con abundante agua juntar la muestra de orina,
+                                    en una botella de agua mineral vac&iacutea de 500 ml, sin lavado previo, toda
+                                    la micci&oacuten.</li>
+                            <li>Tener en cuenta que la retenci&oacuten de orina debe ser de por lo menos dos
+                                    horas para este estudio, por si el paciente tiene costumbre orinar
+                                    durante la noche.</li>
+                            <li>Una vez obtenida la muestra, llevar al laboratorio lo antes posible, para
+                                    asegurar el correcto procesamiento.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row margen-bot box-mid">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; Recolecci&oacuten de Orina 24 horas</h1>
+                    </div>
+                    <div class="row left right">
+                        <ol>
+                            <li>El d&iacutea previo al an&aacutelisis, tener preparadas tres botellas de agua mineral
+                                    vac&iacuteas. Sin lavado previo, en dos de ellas se juntara la muestra de orina de
+                                    24 horas, la tercera la cortaremos a la altura de las dos terceras partes para
+                                    juntar en ella el volumen total de cada micci&oacuten y con la parte superior hacer
+                                    de embudo para ir colocando lo recolectado en las otras botellas sin perder
+                                    nada de volumen.</li>
+                            <li>Vaciar la vejiga a las 6.00 horas de la mañana. Descartar la orina.</li>
+                            <li>A partir de ese momento recoger todas las orinas emitida en el día y la
+                                    noche, en la botella de agua mineral vac&iacutea, previamente preparada para tal
+                                    fin, hasta las 6.00 AM del d&iacutea del estudio. Incluir esta &uacuteltima a la muestra
+                                    recolectada.</li>
+                            <li> Si el paciente adem&aacutes tiene orina completa, en ese caso esta &uacuteltima juntar
+                                    en una botella de agua mineral de 500 ml, sin lavado previo, vac&iacuteo y seco
+                                    por separado toda la micci&oacuten.</li>
+                            <li>Durante la recolecci&oacuten, mantener las botellas con orina en la puerta de la
+                                    heladera.</li>
+                            <li>Completar peso y talla del paciente</li>
+                            <li>Le solicitamos no mezclar la orina con papel higi&eacutenico, deposiciones o flujo
+                                    menstrual. Si hay presencia de este último, la recolección de orina debe realizarse
+                                    una vez finalizado el per&iacuteodo menstrual.</li>
+                            <li>COLOCAR SU NOMBRE Y APELLIDO EN EL ENVASE.</li>
+                        </ol>
+                        <p>Si la muestra recolectada es para Clearence de Creatinina</p>
+                            <ul>
+                                <li>El paciente no debe realizar ejercicio f&iacutesico por lo menos 24 horas antes
+                                        del estudio.</li>
+                                <li>No ingerir carne 24 horas antes</li>
+                                <li> <strong>IMPORTANTE:</strong> Horario de entrega de la muestra:
+                                        Lunes a Viernes de 7:00 a 9:00 horas.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="row box-mid margen-bot">
+                    <div class="row left right">
+                        <h1><i class="fas fa-check-circle"></i>&nbsp; Indicaciones para paciente internado</h1>
+                    </div>
+                    <div class="row left right">
+                        <ul>
+                            <li>Ayuno de 12 horas.</li>
+                            <li>No tomar ninguna medicación hasta despu&eacutes de la extracci&oacuten.</li>
+                            <li>Ingerir solamente agua durante el ayuno.</li>
+                            <li>Procedencia.</li>
+                            <li>Nombres y apellidos completos del usuario.</li>
+                            <li>N&uacutemero de documento de identidad</li>
+                            <li>Edad</li>
+                            <li>Sexo</li>
+                            <li>Servicio</li>
+                            <li>N&uacutemero de cama</li>
+                            <li>Ex&aacutemenes solicitados</li>
+                            <li>Para gases arteriales se requiere si la paciente está o no recibiendo ox&iacutegeno y el porcentaje.</li>
+                            <li>Para pruebas de coagulaci&oacuten se anota si el paciente est&aacute o no anti coagulado y el tipo de medicamento que est&aacute recibiendo.</li>
+                            <li>Si en la orden para ex&aacutemenes falta uno de estos datos, lo debe completar la persona que toma la muestra, a excepci&oacuten del diagn&oacutestico cl&iacutenico.</li>
+                            <li>Toda orden para ex&aacutemenes debe llevar nombre o firma del responsable de la solicitud.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid dudas">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                    <h3 class="etiqueta">&iquest;Tienes dudas?</h3>    
+                    <p class="lead"><i class="fas fa-phone"></i> Comunicate con nosotros al 444449 de Lunes a Viernes
+                        de 8:00 a 18:00 hs
+                    </p>
+            </div>
+        </div>
+            
+    </div>
+     <!-- FIN CUERPO PAGINA -->
+    <!-- INICIO PIE PAGINA -->
+    <footer>
+        <div class="container-fluid pie">
+            <div class="container">
+                <div class="row justify-content-center barra-h">
+                    <div class="col-lg-2 ">
+                            <img src="../../img/iconos/isologo-blanco.png" alt="" width="160px" style="opacity:0.6;">
+                    </div>
+                </div>
+                <div class="row pie-menu justify-content-center">
+                    <div class="col-12 col-md-4 info info-b">
+                        <h3><i class="fas fa-shield-alt"></i> Pacientes</h3>
+                        <a href="">Especialidades</a>
+                        <a href="">Laboratorio</a>
+                        <a href="">Internaciones</a>
+                        <a href="">Horarios de visita</a>
+                        <a href="">Solicitar Turno online</a>
+                        <h3 class="mt-3"><i class="fas fa-bullhorn"></i> Contacto</h3>
+                        <a href="">Dirección de Emergencias: 437832</a>
+                        <a href="">Telefonía de Emergencias: 3834242265</a>
+                    </div>
+
+                    <div class="col-12 col-md-8 info info-b">
+                        <h3><i class="fas fa-info"></i> Ubicación del Hospital</h3>
+                        <!-- <a href="">Organigrama</a>
+                        <a href="">Historia</a>
+                        <a href="">Innovaciones edilicias</a>
+                        <a href="">Trabaja con nosotros</a> -->
+                        <div class="row">
+                                <div class="col-md-12 contenido-variable">  
+                                    <div id="googleMap" style="width:100%;height:250px;"></div>  
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 info">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid post-pie">
+            <!-- <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"</h4> -->
+        </div>
+    </footer>
+    <!-- FIN PIE PAGINA -->
+
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/menu-movil.js"></script>
+
+    <script>
+            function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(-28.461666, -65.790112),
+                zoom:15,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+            var marker=new google.maps.Marker({
+                position:new google.maps.LatLng(-28.461666, -65.790112),
+                map:map,
+                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+            }
+    
+            
+        </script>
+            
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA19Nmy1g7Ga9P0jJ_QgLbLbGcU4vvwQig&callback=myMap"></script>
+</body>
+</html>
