@@ -1,0 +1,19 @@
+h6{
+    color: #3d97d3;
+    /* border-bottom: 1px solid #3d97d34f; */
+    padding-bottom: 3px;
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+}
+
+.titular{
+    background:  #228ae6; /* celeste claro #228ae6 celeste oscuro #3d97d3*/
+        background-image: url(../img/baner/baner-donar.jpg); 
+        background-repeat: repeat;
+        background-position: 50% 50%;
+        height: 350;
+    padding-top: 8%;
+    padding-bottom: 6%;
+ }
+
+ 

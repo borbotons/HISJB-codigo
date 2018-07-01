@@ -1,0 +1,27 @@
+.titular{
+    padding-top: 3%;
+}
+
+.titular h3{
+    
+    font-size: 22px;
+    line-height: 24px;
+
+    font-weight: 500;
+}
+
+.titular .fecha{
+    text-align: right;
+    line-height: 1;
+}
+
+.lead{
+    line-height: 1.0;
+}
+
+.subtitular{
+    padding-bottom:0;
+    border-bottom: 1px solid #555555;
+
+    margin-bottom: 3%;
+}

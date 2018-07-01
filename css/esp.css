@@ -1,0 +1,151 @@
+.titular{
+    background:  #228ae6; /* celeste claro #228ae6 celeste oscuro #3d97d3*/
+        background-image: url(../img/baner/baner-especialidades.jpg); 
+        background-repeat: repeat;
+        background-position: 50% 0;
+    padding-top: 8%;
+    padding-bottom: 6%;
+ }
+
+ .display-4{
+     color: white;
+ }
+
+.contenido-variable
+{
+    background: white;
+    border-top: 6px solid #3d97d3;
+    
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenido-variable h1 
+{
+    
+    font-size: 36px;
+    margin: 0;
+    padding: 34px 0 30px;
+    text-transform: uppercase;
+    font-family: 'Saira Extra Condensed', sans-serif;
+
+    color: #3d97d3;
+}
+
+.letras{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.barra
+{
+    border-top: 1px dotted #ccc;
+}
+
+.left
+{
+    padding-left: 20px !important;
+}
+
+.right
+{
+    padding-right: 20px;
+}
+
+.base-esp
+{
+    background: white;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 1px solid #3d97d3;
+}
+
+.base-esp:hover
+{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.base-esp h2
+{
+    background: #3d97d3;
+    color: white;
+
+    font-size: 25px;
+    line-height: 28px;
+
+    position: absolute;
+    left: 0;
+
+    padding: 5px 20px;
+}
+
+.base-esp p
+{
+    margin-top: 45px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+}
+
+h4
+{
+    text-align: center;
+    font-size: 20px;
+
+    background: rgba(61, 151, 211, 0.75);
+    color: white;
+}
+
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 20px 20px;
+    background: #fd7e14;
+    color: #fff;
+  }
+
+  .ayuda p {
+      font-size: 16px;
+      color: #495057;
+  }
+
+  .etiqueta{
+    background: #fab005;
+    display: inline;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border-radius: 9999px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 30px;
+}
+
+h6.etiqueta{
+    margin-top: 10%;
+}
+
+h6{   
+    margin-top: 1%;
+}
+
+.tarde{
+    margin-top: 3%;
+}

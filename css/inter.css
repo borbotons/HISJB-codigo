@@ -1,0 +1,24 @@
+h5, h6{
+    display: block;
+}
+
+h6{
+    color: #3d97d3;
+}
+
+h4{
+    color: #3d97d3;
+    border-bottom: 1px solid #3d97d39d;
+    padding-bottom: 2px;
+    margin-bottom: 13px;
+    letter-spacing: 2px;
+}
+
+.titular{
+    background:  #228ae6; /* celeste claro #228ae6 celeste oscuro #3d97d3*/
+        background-image: url(../img/baner/baner-internacion.jpg); 
+        background-repeat: repeat;
+        background-position: 50% 0;
+    padding-top: 8%;
+    padding-bottom: 6%;
+ }

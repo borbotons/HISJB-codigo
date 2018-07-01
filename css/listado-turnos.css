@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.titular{
+    background: #3d97d3;
+
+   /* padding-top: 1%;
+    padding-bottom: 1%;*/
+
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.titulo-hospital{
+    
+}
+
+.titulo-hospital h4{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    letter-spacing: 15px;
+}
+
+.titulo-usuario{
+    background: #2a84c0;
+}
+
+.titulo-usuario h2{
+    line-height: 50px;
+
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.cuerpo{
+    background: red;
+}
+
+.contenido{
+    background: #fafafa;
+    padding-top: 1%;
+}
+
+/*  submenu */
+
+.submenu
+{
+    background: white;
+    border-top: 6px solid #3d97d3;
+    
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+    min-height: 90vh;
+}
+
+.submenu a 
+{
+    display: block;
+    line-height: 40px;
+
+    padding-left: 30px;
+}
+
+.submenu p
+{
+    color: #404040;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 2%;
+}
+
+.submenu a:hover
+{
+    background: #3d97d3;
+    color: white;
+
+    transition: 0.3s ease;
+    width: 100%;
+
+    text-decoration: none;
+}
+
+.activo
+{
+    background: #3d97d3;
+    color: white;
+}
+
+.activo a 
+{
+    color: white;
+}

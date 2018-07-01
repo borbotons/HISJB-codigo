@@ -1,0 +1,9 @@
+.titular{
+    background:  #228ae6; /* celeste claro #228ae6 celeste oscuro #3d97d3*/
+        background-image: url(../img/baner/baner-carnet.jpg); 
+        background-repeat: repeat;
+        background-position: center center;
+        height: 350px;
+    padding-top: 8%;
+    padding-bottom: 6%;
+ }

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900');
+
+#pacientes{
+    background: white;
+    padding-bottom: 100px;
+}
+
+#pacientes h2{
+    font-size: 30px;
+    color: #a4a4a4;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#pacientes .opcion{
+    background: #0057ff;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pacientes .op-bienvenida{
+    padding: 90px;
+}
+
+#pacientes .op-bienvenida h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#pacientes .op-bienvenida p{
+    text-align: center;
+}
+
+#pacientes .op-1{
+    background: #f9f9f9;
+}
+
+#pacientes .op-2{
+    background: #e8e8e8;
+}
+
+#pacientes button{
+    background: #0057ff;
+    width: 200px;
+    cursor: pointer;
+    color: white;
+}
+
+#pacientes button:hover{
+    background: white;
+    color: #0057ff;
+    border: 1px dashed #0057ff;
+}
+
+
+
+/* ----------------------------
+        CALENDARIO
+-----------------------------*/
+
+#calendario{
+    background: #3d97d3;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#calendario .responsive-calendar{
+    margin: 10px;
+}
+
+#calendario h2{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#calendario .item-calendario{
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+#calendario .item-calendario h3{
+    font-size: 20px;
+    color: #0057ff;
+}
+
+#calendario .item-calendario p{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+/* ----------------------------
+        CAMPAÑAS
+-----------------------------*/
+
+#campañas{
+    background: white;
+    padding-bottom: 100px;
+}
+
+#campañas h2{
+    font-size: 30px;
+    color: #a4a4a4;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#campañas .item-campaña{
+    background: white;
+    margin: 10px;
+    min-height: 200px;
+    padding-right: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#campañas .item-campaña .cuerpo{
+    padding: 20px;
+    padding-left: 30px;
+}
+
+#campañas .item-campaña .cuerpo h1{
+    font-size: 18px;
+    background: #0057ff;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#campañas .item-campaña .cuerpo p{
+    /* margin-top: 20px; */
+    color: #7e7e7e;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+#campañas .item-campaña .cuerpo strong{
+    font-size: 20px;
+    color: #212121;
+}
+
+#campañas .item-campaña .cuerpo ul{
+    color: #414141;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+#campañas .item-campaña img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ----------------------------
+        institucional
+-----------------------------*/
+#institucional{
+    background: url(../img/baner/acercade.jpg);
+    background-repeat: no-repeat;
+    width: auto;
+    height: 800px;
+    background-size: cover;
+    /* position: relative; */
+
+    padding-top: 50px;
+}
+
+#institucional h2{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#institucional p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family:  Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+#institucional .institucion-item{
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#institucional .institucion-item:hover{
+    background: #3d97d3;
+    transition: 0.8s ease;
+    color: white;
+}
+
+#institucional .institucion-item:hover h3{
+    font-size: 20px;
+    transition: 0.8s ease;
+    color: white;
+}
+
+@media (max-width: 575.98px) {
+    #institucional .institucion-item h3{
+        font-size: 16px;
+
+    }
+}
+
+/* ----------------------------
+        mapa hospital
+-----------------------------*/
+#mapa{
+    background: url(../img/baner/mapahospital.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 370px;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 20px;
+}
+
+#mapa .mapa-item{
+    background: #3d97d3;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+#mapa button{
+    background: white;
+    color: #0057ff;
+    cursor: pointer;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    #mapa .mapa-item{
+        background: #3d97d3;
+        padding: 20px;
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+        border-radius: 5px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

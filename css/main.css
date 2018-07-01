@@ -1,0 +1,1032 @@
+/*.................................................................................*/
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
+
+/*.................................................................................*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+
+  .carousel {
+    background:#007aeb;
+  }
+  
+  /*
+  Forces image to be 100% width and not max width of 100%
+  */
+  .carousel-item .img-fluid {
+    width:100%;
+    height: 60vh;                                               /* RESPONSIVE */
+  }
+  
+  /* 
+  anchors are inline so you need ot make them block to go full width
+  */
+  .carousel-item a {
+    display: block;
+    width:100%;
+  }
+  
+  .izquierda{
+      position: absolute;
+
+  }
+
+  .carousel-caption{
+      position: absolute;
+      right: 0 !important;
+      left: 0 !important;
+  }
+
+  .baner-mora h2{
+    background: #a16ac5;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .baner-mora p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+  .baner-rojo h2{
+    background: #ef4247;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .baner-rojo p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+  .baner-verde h2{
+    background: #17b800;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .baner-verde p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+  .baner-azul h2{
+    background: #3a63c2;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .baner-azul p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+
+/*  ----------------------------------------- 
+        SECCION ACCESO RAPIDO DE PACIENTES 
+    -----------------------------------------     */
+        .acceso
+        {
+            background: #efefef;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        
+        } 
+    
+        .titular {
+            font-size: 26px;
+            font-family: 'Saira Extra Condensed', sans-serif;
+            color: rgb(52, 152, 219);
+            line-height: 35px;
+            text-align: center;
+            z-index: 139;
+        
+            font-weight: 300;
+        }
+    
+        .titular-barra{
+            border-bottom: 5px solid #3d97d3;
+        }
+      
+        .enlaces-externos
+        {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 40px;
+        }
+    
+        .enlaces-externos p
+        {
+            color: #3d97d3;
+            font-size: 16px;
+            line-height: 16px;
+            margin-top: 5px;
+        }
+
+        .enlaces
+        {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .enlaces .col-lg-4 p
+        {
+            color: #706F6F;
+            font-size: 14px;
+        }
+
+
+/*  -------------------------------------------------------------- 
+                SECCION NOTICIAS 
+    --------------------------------------------------------------     */
+    .m-top{
+        margin-top: 2%;
+    }
+    
+    .noticias
+    {
+        padding-top: 3%;
+        padding-bottom: 20px;
+    }
+    
+    .noticias a {
+        color: #706F6F;
+    }
+    
+    .noticias a:hover {
+        color: #3d97d3;
+    }
+    
+    .noticias-block
+    {
+        width: 300px;
+        min-height: 250px;
+    
+        background: white;
+        padding-bottom: 10px; 
+    }
+    
+    .bt 
+    {
+        border-top: 5px solid #3d97d3;
+    }
+    
+    .br 
+    {
+        border-right: 5px solid #3d97d3;
+    }
+    
+    .noticias-block .fecha
+    {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: #706F6F;
+    
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+    }
+    
+    .noticias-block .categoria
+    {
+        background: #3d97d3;
+        padding: 0 5px;
+        color: white;
+        font-size: 12px;
+        line-height: 15px;
+        width: 80px;;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        top: 15px;
+    
+    }
+    
+    .noticias-block .leer-mas
+    {
+        font-size: 15px;
+        color: #3d97d3;
+    }
+    
+    .noticias-block a 
+    {
+        font-size: 25px;
+        line-height: 25px;
+        border-bottom: 1px dotted #706F6F;
+    }
+    
+    .noticias-block p 
+    {
+        padding-top: 15px;
+    }
+    
+    .notiicas-fila
+    {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+
+        /*      ---------------------------------------------------
+                 SECCION EVENTOS 
+        ---------------------------------------------------     */
+        .calendario
+        {
+            background: #3d97d3;
+
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .blanco
+        {
+            color: white;
+        }
+
+        .calendario .titular
+        {
+            padding-bottom: 20px;
+        }
+
+
+/*  ----------------------------------------- 
+        SECCION PROGRAMAS 
+    -----------------------------------------   */
+    .programas{
+        background: white;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        text-align: left;
+    }
+
+    #incucai h1, #cancer h1, #vih h1, #gripe h1{
+        font-size: 25px;
+        color: #007aeb;
+        margin-top: 5%;
+    }
+
+
+    
+    .pro-uno{
+        background: #f03e3e;
+    }
+    
+    .pro-dos{
+        background: #1862ab;
+    }
+    
+    .pro-tres{
+        background: #fab005;
+    }
+
+
+
+    .bloque1 img{
+        width: 100%;
+    }
+
+
+        /*     --------------------------------------------------- 
+                SECCION PREFOOTER 
+       ---------------------------------------------------     */
+        .pre-footer
+        {
+            height: 300px;
+            
+            background-image: url(../img/baner/baner-main-2.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
+            padding-top: 20px;
+        }
+
+        .pre-footer h2 {
+            display: inline;
+            background: white;
+            color: #3d97d3;
+
+            padding: 0 10px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+        
+/* ////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+............................ Small devices (landscape phones, 576px and up)......................
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 576px) {  }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+............................ Medium devices (tablets, 768px and up) ...............................
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 768px) { 
+     
+/*  ----------------------------------------------------------------------------------
+        carrusel   -    estilos y caracteristicas
+-------------------------------------------------------------------------------------*/
+.carousel {
+    background:#007aeb;
+    height: 70vh;
+  }
+  
+  /*
+  Forces image to be 100% width and not max width of 100%
+  */
+  .carousel-item .img-fluid {
+    width:100%;
+    height: 70vh;
+  }
+  
+  /* 
+  anchors are inline so you need ot make them block to go full width
+  */
+  .carousel-item a {
+    display: block;
+    width:100%;
+  }
+  
+  .izquierda{
+      position: absolute;
+
+  }
+
+  .carousel-caption{
+      position: absolute;
+      right: 0 !important;
+      left: 0 !important;
+  }
+
+  .baner-mora h2{
+    background: none;
+    width: 500px;
+    font-weight: bold;
+    font-size: 60px;
+    padding-left: 40px;
+
+    text-align: right;
+    right: 0;
+    position: absolute;
+    top: -220px;
+    margin-right: 40px;
+  }
+
+  .baner-mora p{
+    background: white;
+    padding: 1%;
+    
+    color: #494949;
+    font-weight: 300;
+
+    margin-top: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .baner-rojo h2{
+    background: none;
+    width: 500px;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .baner-rojo p{
+    background: white;
+    padding: 1%;
+    
+    color: #494949;
+    font-weight: 300;
+
+    margin-top: 0;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .baner-verde h2{
+    background: #17b800;
+    padding: 1%;
+    
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .baner-verde p{
+    background: white;
+    padding: 1%;
+    
+    color: #706F6F;
+    font-weight: 300;
+
+    margin-top: 0;
+  }
+
+  .baner-azul h2{
+    background: none;
+    width: 800px;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .baner-azul p{
+    width: 700px;
+    background: white;
+    padding: 1%;
+    
+    color: #494949;
+    font-weight: 300;
+
+    margin-top: 0;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+/*  ----------------------------------------- 
+        SECCION ACCESO RAPIDO DE PACIENTES 
+    -----------------------------------------     */
+.acceso
+{
+    background: white;
+    padding-bottom: 3%;
+    padding-top: 4%;
+
+} 
+
+.titular {
+    font-size: 40px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: rgb(52, 152, 219);
+    line-height: 40px;
+    text-align: center;
+    z-index: 139;
+
+    font-weight: 300;
+  }
+
+  .titular-barra{
+    border-bottom: 5px solid #3d97d3;
+  }
+  
+  .enlaces-externos
+  {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 40px;
+  }
+
+  .enlaces-externos p
+  {
+      color: #3d97d3;
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 5px;
+  }
+
+    .enlaces
+    {
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .enlaces .col-lg-4 p
+    {
+        color: #706F6F;
+        font-size: 14px;
+    }
+
+    .acceso button{
+        width: auto;
+        height: 50px;
+    }
+
+    
+    .pacientes-rapido img{
+        width: 95%;
+        height: 95%;
+    }
+
+    .pacientes-rapido .texto{
+        font-size: 18px;
+        font-weight: bold;
+        color: #353b48;
+        margin-top: 3%;
+    }
+
+    .bloque1:hover{
+        transform: scale(1.06);
+        transition: 0.3s ease;
+    }
+
+    .bloque1:hover img{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+    }
+/*      -------------------------------------------------------
+             fin SECCION ACCESO RAPIDO DE PACIENTES 
+        -------------------------------------------------------     */
+
+/*      -------------------------------------------------------------- 
+                 SECCION NOTICIAS 
+        --------------------------------------------------------------     */
+.m-top{
+    margin-top: 2%;
+}
+
+.noticias
+{
+    padding-top: 3%;
+    padding-bottom: 20px;
+}
+
+.noticias a {
+    color: #706F6F;
+}
+
+.noticias a:hover {
+    color: #3d97d3;
+}
+
+.noticias-block
+{
+    width: 300px;
+    min-height: 250px;
+
+    background: white;
+    padding-bottom: 10px; 
+}
+
+.bt 
+{
+    border-top: 5px solid #3d97d3;
+}
+
+.br 
+{
+    border-right: 5px solid #3d97d3;
+}
+
+.noticias-block .fecha
+{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #706F6F;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.noticias-block .categoria
+{
+    background: #3d97d3;
+    padding: 0 5px;
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+    width: 80px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 15px;
+
+}
+
+.noticias-block .leer-mas
+{
+    font-size: 15px;
+    color: #3d97d3;
+}
+
+.noticias-block a 
+{
+    font-size: 25px;
+    line-height: 30px;
+    border-bottom: 1px dotted #706F6F;
+}
+
+.noticias-block p 
+{
+    padding-top: 20px;
+}
+
+.notiicas-fila
+{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.evento{
+    background: #007aeb;
+    color: white;
+}
+
+.evento a{
+    color: white;
+}
+
+
+.item{
+    width: 300px;
+    min-height: 250px;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+/*     ----------------------------------- fin SECCION NOTICIAS -----------------------------------------     */
+
+/*      ---------------------------------------------------
+                 SECCION EVENTOS 
+        ---------------------------------------------------     */
+.calendario
+{
+    background: #3d97d3;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blanco
+{
+    color: white;
+}
+
+.calendario .titular
+{
+    padding-bottom: 20px;
+}
+/*     ----------------------------------- fin SECCION EVENTOS -----------------------------------------     */
+
+/*  ----------------------------------------- 
+        SECCION PROGRAMAS 
+    -----------------------------------------   */
+.programas{
+    background: white;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+
+
+.pro-uno{
+    background: #00a8ff;
+}
+
+.pro-dos{
+    background: #fd79a8;
+}
+
+.pro-tres{
+    background: #fab005;
+}
+
+#incucai h1, #cancer h1, #vih h1, #gripe h1{
+    color: white;
+    margin-top: 5%;
+}
+
+#incucai{
+    background-image: url(../img/baner/pacientes.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+#incucai::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #007aeb;
+    position: absolute;
+    opacity: 0.6;
+
+    top: 0;
+    left: 0;
+}
+
+#cancer{
+    background-image: url(../img/baner/mujer.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    position: relative;
+}
+
+#cancer::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fd79a8;
+    position: absolute;
+    opacity: 0.7;
+
+    top: 0;
+    left: 0;
+}
+
+#vih{
+    background-image: url(../img/baner/hiv.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    position: relative;
+    
+}
+
+#vih::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #007aeb;
+    position: absolute;
+    opacity: 0.8;
+
+    top: 0;
+    left: 0;
+}
+
+#gripe{
+    background-image: url(../img/baner/gripe.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    position: relative;
+    
+}
+
+#gripe::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fab005;
+    position: absolute;
+    opacity: 0.75;
+
+    top: 0;
+    left: 0;
+}
+
+
+
+#incucai, #cancer, #vih, #gripe{
+    color: white;
+    padding: 2%;
+    font-size: 16px;
+}
+
+#cancer{
+    padding: 4% 2%;
+}
+
+.parte-a{
+    padding-top: 12%;  /* cambiar en responsive para moviles */
+}
+
+#incucai h1{
+    font-weight: 800;
+    line-height: 40px;
+    font-size: 40px;
+}
+
+#cancer h1, #vih h1, #gripe h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#cancer .texto-dos, #gripe .texto-dos{
+    font-weight: 300;
+    font-size: 30px;
+    color: #353b48;
+    
+    margin-bottom: 2%;
+}
+
+
+#incucai .texto-dos, #vih .texto-dos{
+    font-weight: 300;
+    font-size: 30px;
+    color: #cfd7e0;
+    
+    margin-bottom: 2%;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*     --------------------------------------------------- 
+                SECCION PREFOOTER 
+       ---------------------------------------------------     */
+.pre-footer
+{
+    height: 300px;
+    
+    background-image: url(../img/baner/baner-main-2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+    padding-top: 20px;
+}
+
+.pre-footer h2 {
+    display: inline;
+    background: white;
+    color: #3d97d3;
+
+    padding: 0 10px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+/*     ----------------------------------- fin SECCION PREFOOTER -----------------------------------------     */
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+
+/* screen de bienvenida  */
+.welcome-section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+    overflow: hidden;
+
+    z-index: 50000;
+}
+.welcome-section .content-wrap {
+  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.welcome-section .content-wrap .fly-in-text {
+    list-style: none;
+    padding: 0;
+}
+.welcome-section .content-wrap .fly-in-text li {
+    display: block;
+    /*margin-right: 30px;*/
+
+    font-size: 5em;
+    line-height: 1em;
+    /* font-family: 'Lato'; */
+    font-weight: 700;
+    color: #aab8c2;
+    opacity: 1;
+    transition: all 2s ease;
+}
+.welcome-section .content-wrap .fly-in-text li:last-child {
+    margin-right: 0;
+}
+.welcome-section .content-wrap .enter-button {
+    display: block;
+
+    text-align: left;
+    font-size: 1em;
+    line-height: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3d97d3;
+
+    opacity: 1;
+    transition: all 1s ease 2s;
+}
+
+.small{
+    display: block;
+
+    color: #898f92;
+    text-align: right;
+    font-size: 1em;
+    line-height: 1em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    opacity: 1;
+    transition: all 1.2s ease 2s;
+}
+
+.welcome-section.content-hidden .content-wrap .fly-in-text li { opacity: 0; }
+.welcome-section.content-hidden .content-wrap .fly-in-text li:nth-child(1) { transform: translate3d(-100px, 0, 0); }
+.welcome-section.content-hidden .content-wrap .fly-in-text li:nth-child(2) { transform: translate3d(100px, 0, 0); }
+.welcome-section.content-hidden .content-wrap .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
+.welcome-section.content-hidden .content-wrap .small { opacity: 0; transform: translate3d(0, -30px, 0); }
+
+@media (min-width: 800px) {
+    .welcome-section .content-wrap .fly-in-text li { font-size: 4em; }
+    .welcome-section .content-wrap .enter-button { font-size: 5em; }
+}
+
+/*  cuerpo pagina */
+
+.baner
+{
+    height: 400px;
+    
+    background-image: url(../img/baner/baner-main-1.jpg);
+    background-size: 100% 80%;
+    background-attachment: fixed;
+}
+
+.HOSPITAL_INTERZONAL {
+    font-size: 30px;
+    font-family: "Source Sans Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: justifyLeft;
+    -moz-transform: matrix( 0.9998122413285,0,0,1,0,0);
+    -webkit-transform: matrix( 0.9998122413285,0,0,1,0,0);
+    -ms-transform: matrix( 0.9998122413285,0,0,1,0,0);
+    position: absolute;
+    left: 494.492px;
+    top: 143.5px;
+    z-index: 13;
+}
+
+.SAN_JUAN_BAUTISTA {
+font-size: 55px;
+font-family: "Source Sans Pro";
+color: rgb(255, 255, 255);
+line-height: 1.2;
+text-align: justifyLeft;
+-moz-transform: matrix( 0.9998122413285,0,0,1,0,0);
+-webkit-transform: matrix( 0.9998122413285,0,0,1,0,0);
+-ms-transform: matrix( 0.9998122413285,0,0,1,0,0);
+position: absolute;
+left: 491.548px;
+top: 168px;
+z-index: 14;
+}
+
+.isologo_blanco {
+position: absolute;
+left: 388px;
+top: 151px;
+z-index: 12;
+}
+
+.frase {
+    font-size: 25px;
+    font-family: "Source Sans Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: justifyLeft;
+    position: absolute;
+    left: 216.975px;
+    top: 293.688px;
+    z-index: 15;
+  }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+............................ Large devices (desktops, 992px and up) ...............................
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////*/
+  @media (min-width: 992px) {  }
+
+

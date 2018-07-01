@@ -88,7 +88,7 @@ try {
 	  
 		 $resulta2 = $statement->fetch();
 		  //resulta2 siempre sera negativo porque no devuelve nada
-		  sleep ( 4 );		  
+		  sleep ( 8 );		  
 		  header( "refresh:0;http://hospitalsanjuanbautista.org" );
 		  //echo "<script>alert('Turno Solicitado.');</script>";
 		  die();

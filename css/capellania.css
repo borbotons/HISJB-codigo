@@ -1,0 +1,242 @@
+
+.imagen-movil{
+    height: 40vh;
+    background-image: url(../img/baner/san-juan-bautista.jpg);
+    background-size: 100% 50% cover;
+    background-attachment: fixed;
+}
+
+ .rotulo{
+    font-size: 2em;
+    /* font-family: "Source Sans Pro"; */
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    letter-spacing: 5px;
+    padding-top: 35%;               /* responsive */
+  }
+
+    .acceso{
+    padding-top: 3%;
+    }
+
+    .titular {
+    font-size: 40px;
+    font-family: "Saira ExtraCondensed";
+    color: rgb(52, 152, 219);
+    line-height: 40px;
+    text-align: center;
+    z-index: 139;
+
+    font-weight: 300;
+    }
+
+    .titular-barra{
+        border-bottom: 5px solid #3d97d3;
+    }
+
+    .base {
+        padding: 60px 50px;
+    }
+
+    .base img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #303030;
+        margin-bottom: 3%;
+    }
+
+    h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+        margin-bottom: 4%;
+    }
+
+    .bg-white{
+        background: white;
+    }
+
+    .bg-verde{
+        background: #12b886;
+    }
+
+    .bg-blue{
+        background: #228ae6;
+    }
+
+    .verde-titulo{
+        padding-top: 5%;
+        padding-bottom: 4%;
+    }
+
+    .verde-titulo h2 {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 3%;
+    }
+
+    .verde-titulo h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: white;
+        font-weight: 400;
+        
+    }
+
+    .uncion-titulo h2{
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #303030;
+        margin-bottom: 3%;
+    }
+
+    .uncion-titulo h4{
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+    }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+............................ Medium devices (tablets, 768px and up) ...............................
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 768px) { 
+
+    .acceso{
+        padding-top: 3%;
+    }
+
+    .titular {
+        font-size: 40px;
+        font-family: "Saira ExtraCondensed";
+        color: rgb(52, 152, 219);
+        line-height: 40px;
+        text-align: center;
+        z-index: 139;
+
+        font-weight: 300;
+    }
+
+    .titular-barra{
+        border-bottom: 5px solid #3d97d3;
+    }
+
+    .base {
+        padding: 60px 50px;
+    }
+
+    #misa{
+        background-image: url(../img/baner/esperanza.jpg);
+        width: auto;
+        height: 460px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        
+    }
+    
+    #misa::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #fab005;
+        position: absolute;
+        opacity: 0.75;
+    
+        top: 0;
+        left: 0;
+    }
+
+    h2 {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #303030;
+        margin-bottom: 3%;
+    }
+
+    h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+        margin-bottom: 4%;
+    }
+
+    .bg-white{
+        background: white;
+    }
+
+    .bg-verde{
+        background: #12b886;
+    }
+
+    .bg-blue{
+        background: #228ae6;
+    }
+
+    .verde-titulo{
+        padding-top: 5%;
+        padding-bottom: 4%;
+    }
+
+    .verde-titulo h2 {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 3%;
+    }
+
+    .verde-titulo h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: white;
+        font-weight: 400;
+        
+    }
+
+    .uncion-titulo h2{
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #303030;
+        margin-bottom: 3%;
+    }
+
+    .uncion-titulo h4{
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+    }
+
+    .imagen{
+        background-image: url(../img/baner/san-juan-bautista.jpg);
+        background-size: 100% 70%;
+        background-attachment: fixed;
+
+        
+    }
+
+    .baner-titulo{
+        position: absolute;
+        bottom: 255px;
+    }
+
+    h1{
+        font-size: 80px;
+        /* font-family: "Source Sans Pro"; */
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: justifyLeft;
+    }
+
+}
